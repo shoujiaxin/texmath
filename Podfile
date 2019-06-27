@@ -6,5 +6,6 @@ target 'LaTeXMathematics' do
   use_frameworks!
 
   # Pods for LaTeXMathematics
+  pod 'iosMath', :git => 'https://github.com/kostub/iosMath.git'
 
 end

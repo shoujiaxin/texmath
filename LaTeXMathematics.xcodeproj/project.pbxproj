@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B01158AA6A23B0624353BF4 /* Pods_LaTeXMathematics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738A75E07B311A9A74DABCD /* Pods_LaTeXMathematics.framework */; };
 		5134E0C622C4C2E200F7DEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134E0C522C4C2E200F7DEC3 /* AppDelegate.swift */; };
 		5134E0C822C4C2E200F7DEC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134E0C722C4C2E200F7DEC3 /* ViewController.swift */; };
 		5134E0CA22C4C2E200F7DEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5134E0C922C4C2E200F7DEC3 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2738A75E07B311A9A74DABCD /* Pods_LaTeXMathematics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaTeXMathematics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A27CC76E1F96E3BEF57332 /* Pods-LaTeXMathematics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeXMathematics.release.xcconfig"; path = "Target Support Files/Pods-LaTeXMathematics/Pods-LaTeXMathematics.release.xcconfig"; sourceTree = "<group>"; };
 		5134E0C222C4C2E200F7DEC3 /* LaTeXMathematics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTeXMathematics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5134E0C522C4C2E200F7DEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5134E0C722C4C2E200F7DEC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		5134E0CC22C4C2E200F7DEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5134E0CE22C4C2E200F7DEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5134E0CF22C4C2E200F7DEC3 /* LaTeXMathematics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaTeXMathematics.entitlements; sourceTree = "<group>"; };
+		7D41746C5438F3E03E624E11 /* Pods-LaTeXMathematics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeXMathematics.debug.xcconfig"; path = "Target Support Files/Pods-LaTeXMathematics/Pods-LaTeXMathematics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B01158AA6A23B0624353BF4 /* Pods_LaTeXMathematics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34DFD6BB383BD7680CB137BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D41746C5438F3E03E624E11 /* Pods-LaTeXMathematics.debug.xcconfig */,
+				37A27CC76E1F96E3BEF57332 /* Pods-LaTeXMathematics.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5134E0B922C4C2E200F7DEC3 = {
 			isa = PBXGroup;
 			children = (
 				5134E0C422C4C2E200F7DEC3 /* LaTeXMathematics */,
 				5134E0C322C4C2E200F7DEC3 /* Products */,
+				34DFD6BB383BD7680CB137BB /* Pods */,
+				E06C756199B754991344ECA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +80,14 @@
 			path = LaTeXMathematics;
 			sourceTree = "<group>";
 		};
+		E06C756199B754991344ECA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2738A75E07B311A9A74DABCD /* Pods_LaTeXMathematics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5134E0D222C4C2E200F7DEC3 /* Build configuration list for PBXNativeTarget "LaTeXMathematics" */;
 			buildPhases = (
+				4558A1A9B69DB547913991F7 /* [CP] Check Pods Manifest.lock */,
 				5134E0BE22C4C2E200F7DEC3 /* Sources */,
 				5134E0BF22C4C2E200F7DEC3 /* Frameworks */,
 				5134E0C022C4C2E200F7DEC3 /* Resources */,
+				B200B3867C8CD74558C4FDFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4558A1A9B69DB547913991F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaTeXMathematics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B200B3867C8CD74558C4FDFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaTeXMathematics/Pods-LaTeXMathematics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaTeXMathematics/Pods-LaTeXMathematics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaTeXMathematics/Pods-LaTeXMathematics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5134E0BE22C4C2E200F7DEC3 /* Sources */ = {
@@ -274,6 +343,7 @@
 		};
 		5134E0D322C4C2E200F7DEC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D41746C5438F3E03E624E11 /* Pods-LaTeXMathematics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LaTeXMathematics/LaTeXMathematics.entitlements;
@@ -292,6 +362,7 @@
 		};
 		5134E0D422C4C2E200F7DEC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A27CC76E1F96E3BEF57332 /* Pods-LaTeXMathematics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LaTeXMathematics/LaTeXMathematics.entitlements;
