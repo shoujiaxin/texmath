@@ -1,1 +1,3 @@
-# latex_mathematics
+# LaTeX Mathematics
+
+A LaTeX mathematics helper and editor for macOS.
