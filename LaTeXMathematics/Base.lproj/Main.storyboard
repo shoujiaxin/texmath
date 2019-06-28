@@ -11,9 +11,9 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="LaTeXMathematics" id="1Xt-HY-uBw">
+                            <menuItem title="LaTeX Mathematics" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="LaTeXMathematics" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="LaTeX Mathematics" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
                                         <menuItem title="About LaTeXMathematics" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -684,34 +684,276 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
+                    <window key="window" title="LaTeX Mathematics" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="640" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="320" height="270"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="aXa-hE-Gzs" kind="relationship" relationship="window.shadowedContentViewController" id="qAg-Hz-8ow"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Split View Controller-->
+        <scene sceneID="2G6-nN-6fE">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="LaTeXMathematics" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <splitViewController id="aXa-hE-Gzs" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="ova-Rc-YGG"/>
+                        <splitViewItem id="kjv-9x-pOd"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" id="quO-Y3-SDD">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="aXa-hE-Gzs" id="XMw-9j-m0D"/>
+                        </connections>
+                    </splitView>
+                    <connections>
+                        <outlet property="splitView" destination="quO-Y3-SDD" id="oRy-kg-rYa"/>
+                        <segue destination="b4P-oZ-pju" kind="relationship" relationship="splitItems" id="V9o-6w-xeW"/>
+                        <segue destination="lhP-ZI-uo0" kind="relationship" relationship="splitItems" id="qo7-jE-58f"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="59X-ry-F66" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="701"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="EqF-LT-2LE">
+            <objects>
+                <tabViewController tabStyle="toolbar" id="b4P-oZ-pju" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem image="FractionIcon" id="OIV-DN-1r1"/>
+                        <tabViewItem image="ScriptIcon" id="f4C-4V-Vhm"/>
+                        <tabViewItem image="RadicalIcon" id="dW2-pk-emp"/>
+                        <tabViewItem image="IntegralIcon" id="7qV-mV-t24"/>
+                        <tabViewItem image="LargeOperatorIcon" id="efp-t3-OKg"/>
+                        <tabViewItem image="BracketIcon" id="As4-ua-Gpx"/>
+                        <tabViewItem image="FunctionIcon" id="CK2-o0-6wa"/>
+                        <tabViewItem image="AccentIcon" id="l9q-Af-CsF"/>
+                        <tabViewItem image="Limit&amp;LogIcon" id="kFX-Ib-gIe"/>
+                        <tabViewItem image="OperatorIcon" id="HY1-kS-Nx6"/>
+                        <tabViewItem image="MatrixIcon" id="2hT-eq-bma"/>
+                        <tabViewItem image="SymbolIcon" id="ePL-4d-HxK"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="7yC-j1-vww">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="b4P-oZ-pju" id="lxI-1W-5qD"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="7yC-j1-vww" id="umL-Ph-ev0"/>
+                        <segue destination="iZh-cF-Ee3" kind="relationship" relationship="tabItems" id="fLG-tX-GYo"/>
+                        <segue destination="a4H-hE-ute" kind="relationship" relationship="tabItems" id="bQl-mV-7yQ"/>
+                        <segue destination="6ff-Vq-HJE" kind="relationship" relationship="tabItems" id="nYw-da-dcT"/>
+                        <segue destination="nIM-s9-ugs" kind="relationship" relationship="tabItems" id="iHY-Ht-scV"/>
+                        <segue destination="oiI-f6-zpf" kind="relationship" relationship="tabItems" id="4rD-AD-sAQ"/>
+                        <segue destination="6T8-Mv-5NS" kind="relationship" relationship="tabItems" id="Wlq-qd-jzv"/>
+                        <segue destination="H5d-fl-VtO" kind="relationship" relationship="tabItems" id="ACo-3k-dKL"/>
+                        <segue destination="kLO-wr-mMV" kind="relationship" relationship="tabItems" id="sON-jA-BZG"/>
+                        <segue destination="VRy-5d-4jN" kind="relationship" relationship="tabItems" id="TKZ-OG-Pm6"/>
+                        <segue destination="SZ1-ai-N5f" kind="relationship" relationship="tabItems" id="DBu-su-nj5"/>
+                        <segue destination="Sf4-yD-Baq" kind="relationship" relationship="tabItems" id="bPq-cj-c7A"/>
+                        <segue destination="QWm-6C-Xvt" kind="relationship" relationship="tabItems" id="8em-nW-gWs"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="d15-o3-GDw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="701"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b0a-8h-5EX">
+            <objects>
+                <viewController id="lhP-ZI-uo0" sceneMemberID="viewController">
+                    <view key="view" id="gSu-Nd-xhz">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="k9j-3U-8UM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="1106"/>
+        </scene>
+        <!--Fraction-->
+        <scene sceneID="DYw-8s-Tm6">
+            <objects>
+                <viewController title="Fraction" id="iZh-cF-Ee3" sceneMemberID="viewController">
+                    <view key="view" id="i3o-7H-oqV">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="xsJ-Za-4wV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-633"/>
+        </scene>
+        <!--Script-->
+        <scene sceneID="QSs-fo-kjm">
+            <objects>
+                <viewController title="Script" id="a4H-hE-ute" sceneMemberID="viewController">
+                    <view key="view" id="aLp-4h-753">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="APR-X6-XS3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-367"/>
+        </scene>
+        <!--Radical-->
+        <scene sceneID="bp5-B4-gro">
+            <objects>
+                <viewController title="Radical" id="6ff-Vq-HJE" sceneMemberID="viewController">
+                    <view key="view" id="dLf-hh-p05">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="j4J-X3-TP0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-102"/>
+        </scene>
+        <!--Integral-->
+        <scene sceneID="ZI7-fQ-erE">
+            <objects>
+                <viewController title="Integral" id="nIM-s9-ugs" sceneMemberID="viewController">
+                    <view key="view" id="SGU-IP-tcY">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="9db-uY-vOY" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="164"/>
+        </scene>
+        <!--Large Operator-->
+        <scene sceneID="ide-no-eM9">
+            <objects>
+                <viewController title="Large Operator" id="oiI-f6-zpf" sceneMemberID="viewController">
+                    <view key="view" id="G5S-PT-10t">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="Z2R-g8-usf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="435"/>
+        </scene>
+        <!--Bracket-->
+        <scene sceneID="QYk-Qu-AKu">
+            <objects>
+                <viewController title="Bracket" id="6T8-Mv-5NS" sceneMemberID="viewController">
+                    <view key="view" id="5Dw-W2-Q3M">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="Jjm-Ie-m1I" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="701"/>
+        </scene>
+        <!--Function-->
+        <scene sceneID="1rl-HL-7HC">
+            <objects>
+                <viewController title="Function" id="H5d-fl-VtO" sceneMemberID="viewController">
+                    <view key="view" id="Hln-ex-J10">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="d2k-wE-G7h" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="969"/>
+        </scene>
+        <!--Accent-->
+        <scene sceneID="1qj-Fe-knD">
+            <objects>
+                <viewController title="Accent" id="kLO-wr-mMV" sceneMemberID="viewController">
+                    <view key="view" id="wpq-qR-4T1">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="bUZ-Zu-3Bi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="1241"/>
+        </scene>
+        <!--Limit & Log-->
+        <scene sceneID="yQa-w3-196">
+            <objects>
+                <viewController title="Limit &amp; Log" id="VRy-5d-4jN" sceneMemberID="viewController">
+                    <view key="view" id="RLs-ZJ-n1F">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="Z0N-OU-8gH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="1514"/>
+        </scene>
+        <!--Operator-->
+        <scene sceneID="Yi8-W0-wgc">
+            <objects>
+                <viewController title="Operator" id="SZ1-ai-N5f" sceneMemberID="viewController">
+                    <view key="view" id="Fhs-HE-ixe">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="f9P-rD-GtP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="1786"/>
+        </scene>
+        <!--Matrix-->
+        <scene sceneID="Ec9-Hg-IuG">
+            <objects>
+                <viewController title="Matrix" id="Sf4-yD-Baq" sceneMemberID="viewController">
+                    <view key="view" id="xlG-v0-5cp">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="9X4-ED-eCz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="2058"/>
+        </scene>
+        <!--Symbol-->
+        <scene sceneID="ZFX-US-qqF">
+            <objects>
+                <viewController title="Symbol" id="QWm-6C-Xvt" sceneMemberID="viewController">
+                    <view key="view" id="z6i-1X-bdW">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="Jwp-7H-ptM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="2332"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AccentIcon" width="128" height="128"/>
+        <image name="BracketIcon" width="128" height="128"/>
+        <image name="FractionIcon" width="128" height="128"/>
+        <image name="FunctionIcon" width="128" height="128"/>
+        <image name="IntegralIcon" width="128" height="128"/>
+        <image name="LargeOperatorIcon" width="128" height="128"/>
+        <image name="Limit&amp;LogIcon" width="128" height="128"/>
+        <image name="MatrixIcon" width="128" height="128"/>
+        <image name="OperatorIcon" width="128" height="128"/>
+        <image name="RadicalIcon" width="128" height="128"/>
+        <image name="ScriptIcon" width="128" height="128"/>
+        <image name="SymbolIcon" width="128" height="128"/>
+    </resources>
 </document>
