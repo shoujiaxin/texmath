@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_LaTeXMathematicsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_LaTeXMathematicsVersionString[];
+FOUNDATION_EXPORT double Pods_LaTeX_MathematicsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_LaTeX_MathematicsVersionString[];
 
