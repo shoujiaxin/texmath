@@ -726,10 +726,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="701"/>
         </scene>
-        <!--Tab View Controller-->
+        <!--Equation Tab View Controller-->
         <scene sceneID="EqF-LT-2LE">
             <objects>
-                <tabViewController tabStyle="toolbar" id="b4P-oZ-pju" sceneMemberID="viewController">
+                <tabViewController tabStyle="toolbar" id="b4P-oZ-pju" customClass="EquationTabViewController" customModule="LaTeX_Mathematics" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem image="FractionTabIcon" id="OIV-DN-1r1"/>
                         <tabViewItem image="ScriptTabIcon" id="f4C-4V-Vhm"/>

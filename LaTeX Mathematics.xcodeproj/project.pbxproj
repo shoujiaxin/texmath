@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511B1A3822D0C98600D7AAB5 /* EquationTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511B1A3722D0C98600D7AAB5 /* EquationTabViewController.swift */; };
+		511B1A3E22D0D41F00D7AAB5 /* EquationItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511B1A3D22D0D41F00D7AAB5 /* EquationItemButton.swift */; };
 		5134E0C622C4C2E200F7DEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134E0C522C4C2E200F7DEC3 /* AppDelegate.swift */; };
-		5134E0C822C4C2E200F7DEC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134E0C722C4C2E200F7DEC3 /* ViewController.swift */; };
 		5134E0CA22C4C2E200F7DEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5134E0C922C4C2E200F7DEC3 /* Assets.xcassets */; };
 		5134E0CD22C4C2E200F7DEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5134E0CB22C4C2E200F7DEC3 /* Main.storyboard */; };
 		DBEEB333082EE5D4B608DDAB /* Pods_LaTeX_Mathematics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE59D124062A5381ABD03BD6 /* Pods_LaTeX_Mathematics.framework */; };
@@ -17,9 +18,10 @@
 /* Begin PBXFileReference section */
 		37A27CC76E1F96E3BEF57332 /* Pods-LaTeXMathematics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeXMathematics.release.xcconfig"; path = "Target Support Files/Pods-LaTeXMathematics/Pods-LaTeXMathematics.release.xcconfig"; sourceTree = "<group>"; };
 		4EDDC520DD8BC5E82F5109B8 /* Pods-LaTeX Mathematics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX Mathematics.release.xcconfig"; path = "Target Support Files/Pods-LaTeX Mathematics/Pods-LaTeX Mathematics.release.xcconfig"; sourceTree = "<group>"; };
+		511B1A3722D0C98600D7AAB5 /* EquationTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationTabViewController.swift; sourceTree = "<group>"; };
+		511B1A3D22D0D41F00D7AAB5 /* EquationItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemButton.swift; sourceTree = "<group>"; };
 		5134E0C222C4C2E200F7DEC3 /* LaTeX Mathematics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LaTeX Mathematics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5134E0C522C4C2E200F7DEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5134E0C722C4C2E200F7DEC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5134E0C922C4C2E200F7DEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5134E0CC22C4C2E200F7DEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5134E0CE22C4C2E200F7DEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,11 +76,12 @@
 			isa = PBXGroup;
 			children = (
 				5134E0C522C4C2E200F7DEC3 /* AppDelegate.swift */,
-				5134E0C722C4C2E200F7DEC3 /* ViewController.swift */,
 				5134E0C922C4C2E200F7DEC3 /* Assets.xcassets */,
 				5134E0CB22C4C2E200F7DEC3 /* Main.storyboard */,
 				5134E0CE22C4C2E200F7DEC3 /* Info.plist */,
 				5134E0CF22C4C2E200F7DEC3 /* LaTeX Mathematics.entitlements */,
+				511B1A3D22D0D41F00D7AAB5 /* EquationItemButton.swift */,
+				511B1A3722D0C98600D7AAB5 /* EquationTabViewController.swift */,
 			);
 			path = "LaTeX Mathematics";
 			sourceTree = "<group>";
@@ -210,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5134E0C822C4C2E200F7DEC3 /* ViewController.swift in Sources */,
+				511B1A3E22D0D41F00D7AAB5 /* EquationItemButton.swift in Sources */,
+				511B1A3822D0C98600D7AAB5 /* EquationTabViewController.swift in Sources */,
 				5134E0C622C4C2E200F7DEC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
