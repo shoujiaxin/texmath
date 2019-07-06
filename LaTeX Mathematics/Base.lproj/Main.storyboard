@@ -674,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="LaTeXMathematics" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="LaTeX_Mathematics" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -731,19 +731,20 @@
             <objects>
                 <tabViewController tabStyle="toolbar" id="b4P-oZ-pju" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem image="FractionIcon" id="OIV-DN-1r1"/>
-                        <tabViewItem image="ScriptIcon" id="f4C-4V-Vhm"/>
-                        <tabViewItem image="RadicalIcon" id="dW2-pk-emp"/>
-                        <tabViewItem image="IntegralIcon" id="7qV-mV-t24"/>
-                        <tabViewItem image="LargeOperatorIcon" id="efp-t3-OKg"/>
-                        <tabViewItem image="BracketIcon" id="As4-ua-Gpx"/>
-                        <tabViewItem image="FunctionIcon" id="CK2-o0-6wa"/>
-                        <tabViewItem image="AccentIcon" id="l9q-Af-CsF"/>
-                        <tabViewItem image="Limit&amp;LogIcon" id="kFX-Ib-gIe"/>
-                        <tabViewItem image="OperatorIcon" id="HY1-kS-Nx6"/>
-                        <tabViewItem image="MatrixIcon" id="2hT-eq-bma"/>
-                        <tabViewItem image="SymbolIcon" id="ePL-4d-HxK"/>
+                        <tabViewItem image="FractionTabIcon" id="OIV-DN-1r1"/>
+                        <tabViewItem image="ScriptTabIcon" id="f4C-4V-Vhm"/>
+                        <tabViewItem image="RadicalTabIcon" id="dW2-pk-emp"/>
+                        <tabViewItem image="IntegralTabIcon" id="7qV-mV-t24"/>
+                        <tabViewItem image="LargeOperatorTabIcon" id="efp-t3-OKg"/>
+                        <tabViewItem image="BracketTabIcon" id="As4-ua-Gpx"/>
+                        <tabViewItem image="FunctionTabIcon" id="CK2-o0-6wa"/>
+                        <tabViewItem image="AccentTabIcon" id="l9q-Af-CsF"/>
+                        <tabViewItem image="Limit&amp;LogTabIcon" id="kFX-Ib-gIe"/>
+                        <tabViewItem image="OperatorTabIcon" id="HY1-kS-Nx6"/>
+                        <tabViewItem image="MatrixTabIcon" id="2hT-eq-bma"/>
+                        <tabViewItem image="SymbolTabIcon" id="ePL-4d-HxK"/>
                     </tabViewItems>
+                    <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
                     <tabView key="tabView" type="noTabsNoBorder" id="7yC-j1-vww">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -943,17 +944,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AccentIcon" width="128" height="128"/>
-        <image name="BracketIcon" width="128" height="128"/>
-        <image name="FractionIcon" width="128" height="128"/>
-        <image name="FunctionIcon" width="128" height="128"/>
-        <image name="IntegralIcon" width="128" height="128"/>
-        <image name="LargeOperatorIcon" width="128" height="128"/>
-        <image name="Limit&amp;LogIcon" width="128" height="128"/>
-        <image name="MatrixIcon" width="128" height="128"/>
-        <image name="OperatorIcon" width="128" height="128"/>
-        <image name="RadicalIcon" width="128" height="128"/>
-        <image name="ScriptIcon" width="128" height="128"/>
-        <image name="SymbolIcon" width="128" height="128"/>
+        <image name="AccentTabIcon" width="128" height="128"/>
+        <image name="BracketTabIcon" width="128" height="128"/>
+        <image name="FractionTabIcon" width="128" height="128"/>
+        <image name="FunctionTabIcon" width="128" height="128"/>
+        <image name="IntegralTabIcon" width="128" height="128"/>
+        <image name="LargeOperatorTabIcon" width="128" height="128"/>
+        <image name="Limit&amp;LogTabIcon" width="128" height="128"/>
+        <image name="MatrixTabIcon" width="128" height="128"/>
+        <image name="OperatorTabIcon" width="128" height="128"/>
+        <image name="RadicalTabIcon" width="128" height="128"/>
+        <image name="ScriptTabIcon" width="128" height="128"/>
+        <image name="SymbolTabIcon" width="128" height="128"/>
     </resources>
 </document>
