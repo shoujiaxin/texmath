@@ -864,10 +864,64 @@
         <!--Fraction-->
         <scene sceneID="DYw-8s-Tm6">
             <objects>
-                <viewController title="Fraction" storyboardIdentifier="Fraction" id="iZh-cF-Ee3" sceneMemberID="viewController">
+                <viewController title="Fraction" storyboardIdentifier="Fraction" id="iZh-cF-Ee3" customClass="FractionViewController" customModule="LaTeX_Mathematics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="i3o-7H-oqV">
-                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="5" columnSpacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-NX-y3I">
+                                <rect key="frame" x="0.0" y="0.0" width="133" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="CcS-9e-e3h"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow yPlacement="top" id="osA-JO-y9f"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="ktS-Nr-8Ez"/>
+                                    <gridColumn id="kMI-LV-ARd"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="osA-JO-y9f" column="ktS-Nr-8Ez" id="wsS-3L-Lhd">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="yDz-UW-GRT" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="iZi-4t-u5n"/>
+                                                <constraint firstAttribute="width" constant="64" id="vMc-1v-3Np"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="StackedFractionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="DBr-QH-eEX">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="stackedFractionButtonClicked:" target="iZh-cF-Ee3" id="H6t-hv-ywo"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="osA-JO-y9f" column="kMI-LV-ARd" id="wqS-1m-jF5">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-eR-FQb" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="69" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="AZb-z5-yD9"/>
+                                                <constraint firstAttribute="height" constant="64" id="I8t-Az-8Ml"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LinearFractionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dyJ-mc-ZON">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="linearFractionButtonClicked:" target="iZh-cF-Ee3" id="bPc-mB-27X"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="HRa-NX-y3I" firstAttribute="top" secondItem="i3o-7H-oqV" secondAttribute="top" id="52B-jp-L96"/>
+                            <constraint firstAttribute="bottom" secondItem="HRa-NX-y3I" secondAttribute="bottom" id="KPQ-Ea-66S"/>
+                            <constraint firstItem="HRa-NX-y3I" firstAttribute="leading" secondItem="i3o-7H-oqV" secondAttribute="leading" id="LVj-rZ-FXK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="xsJ-Za-4wV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -1026,10 +1080,12 @@
         <image name="IntegralTabIcon" width="128" height="128"/>
         <image name="LargeOperatorTabIcon" width="128" height="128"/>
         <image name="Limit&amp;LogTabIcon" width="128" height="128"/>
+        <image name="LinearFractionButtonIcon" width="128" height="128"/>
         <image name="MatrixTabIcon" width="128" height="128"/>
         <image name="OperatorTabIcon" width="128" height="128"/>
         <image name="RadicalTabIcon" width="128" height="128"/>
         <image name="ScriptTabIcon" width="128" height="128"/>
+        <image name="StackedFractionButtonIcon" width="128" height="128"/>
         <image name="SymbolTabIcon" width="128" height="128"/>
     </resources>
 </document>

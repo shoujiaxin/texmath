@@ -12,6 +12,8 @@
 		5134E0C622C4C2E200F7DEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134E0C522C4C2E200F7DEC3 /* AppDelegate.swift */; };
 		5134E0CA22C4C2E200F7DEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5134E0C922C4C2E200F7DEC3 /* Assets.xcassets */; };
 		5134E0CD22C4C2E200F7DEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5134E0CB22C4C2E200F7DEC3 /* Main.storyboard */; };
+		51757CF522D1FCB100EC30BF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51757CF422D1FCB100EC30BF /* Utils.swift */; };
+		51CEBBD422D1E87E00F0044E /* FractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEBBD322D1E87E00F0044E /* FractionViewController.swift */; };
 		51EF739E22D1CDDF0055266B /* EquationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EF739D22D1CDDF0055266B /* EquationPreviewView.swift */; };
 		DBEEB333082EE5D4B608DDAB /* Pods_LaTeX_Mathematics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE59D124062A5381ABD03BD6 /* Pods_LaTeX_Mathematics.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +29,8 @@
 		5134E0CC22C4C2E200F7DEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5134E0CE22C4C2E200F7DEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5134E0CF22C4C2E200F7DEC3 /* LaTeX Mathematics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LaTeX Mathematics.entitlements"; sourceTree = "<group>"; };
+		51757CF422D1FCB100EC30BF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		51CEBBD322D1E87E00F0044E /* FractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionViewController.swift; sourceTree = "<group>"; };
 		51EF739D22D1CDDF0055266B /* EquationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationPreviewView.swift; sourceTree = "<group>"; };
 		7D41746C5438F3E03E624E11 /* Pods-LaTeXMathematics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeXMathematics.debug.xcconfig"; path = "Target Support Files/Pods-LaTeXMathematics/Pods-LaTeXMathematics.debug.xcconfig"; sourceTree = "<group>"; };
 		AE59D124062A5381ABD03BD6 /* Pods_LaTeX_Mathematics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaTeX_Mathematics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,9 +86,11 @@
 				5134E0CB22C4C2E200F7DEC3 /* Main.storyboard */,
 				5134E0CE22C4C2E200F7DEC3 /* Info.plist */,
 				5134E0CF22C4C2E200F7DEC3 /* LaTeX Mathematics.entitlements */,
+				51757CF422D1FCB100EC30BF /* Utils.swift */,
 				511B1A3D22D0D41F00D7AAB5 /* EquationItemButton.swift */,
 				51EF739D22D1CDDF0055266B /* EquationPreviewView.swift */,
 				512B591522D19A7B00B96C09 /* PreviewViewController.swift */,
+				51CEBBD322D1E87E00F0044E /* FractionViewController.swift */,
 			);
 			path = "LaTeX Mathematics";
 			sourceTree = "<group>";
@@ -220,6 +226,8 @@
 				5134E0C622C4C2E200F7DEC3 /* AppDelegate.swift in Sources */,
 				512B591622D19A7B00B96C09 /* PreviewViewController.swift in Sources */,
 				51EF739E22D1CDDF0055266B /* EquationPreviewView.swift in Sources */,
+				51CEBBD422D1E87E00F0044E /* FractionViewController.swift in Sources */,
+				51757CF522D1FCB100EC30BF /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,30 +9,35 @@
 import Cocoa
 import iosMath
 
+var latexPreviewLabel: MTMathUILabel!
+var editorTextView: NSTextView!
+
 class PreviewViewController: NSViewController {
     @IBOutlet var previewView: NSView!
     @IBOutlet var latexTextView: NSTextView!
-
-    let latexPreviewLabel = MTMathUILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         previewView.autoresizingMask = [.width, .height]
         previewView.autoresizesSubviews = true
-        previewView.addSubview(latexPreviewLabel)
 
+        latexPreviewLabel = MTMathUILabel()
         latexPreviewLabel.fontSize = 16
         latexPreviewLabel.textAlignment = MTTextAlignment.center
         latexPreviewLabel.textColor = NSColor.textColor
+        previewView.addSubview(latexPreviewLabel!)
 
         latexTextView.delegate = self
         latexTextView.font = NSFont(name: "Menlo", size: 14)
+
+        editorTextView = latexTextView
     }
 
     @IBAction func clearButtonClicked(_: NSButton) {
         latexPreviewLabel.latex = ""
-        latexTextView.string = ""
+        latexTextView.selectAll(nil)
+        latexTextView.insertText("", replacementRange: latexTextView.selectedRange())
     }
 
     @IBAction func copyButtonClicked(_: NSButton) {
@@ -54,11 +59,27 @@ extension PreviewViewController: NSTextViewDelegate {
     func textView(_: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
         if commandSelector == #selector(insertNewline(_:)) {
             // Insert "\\ " at current cursor position
-            let cursorPosition = latexTextView.selectedRange.location
-            latexTextView.string.insert(contentsOf: "\\\\ ", at: latexTextView.string.index(latexTextView.string.startIndex, offsetBy: cursorPosition))
+            latexTextView.insertText("\\\\ ", replacementRange: latexTextView.selectedRange())
+
+            // Update preview label
             latexPreviewLabel.latex = latexTextView.string
-            latexTextView.setSelectedRange(NSRange(location: cursorPosition + 3, length: 0))
-            return true // Return true to ignore system default behavior
+
+            // Return true to ignore system default behavior
+            return true
+        } else if commandSelector == #selector(insertTab(_:)) {
+            // Get sub string from current cursor position to the end
+            let cursorPosition = latexTextView.selectedRange.location
+            let subStr = latexTextView.string[latexTextView.string.index(latexTextView.string.startIndex, offsetBy: cursorPosition)...]
+
+            // Find the firet "{}" in the sub string
+            if let firstIndex = subStr.range(of: "{}") {
+                let offset = subStr.distance(from: subStr.startIndex, to: firstIndex.lowerBound) + 1
+                latexTextView.setSelectedRange(NSRange(location: cursorPosition + offset, length: 0))
+            } else {
+                latexTextView.moveToEndOfDocument(nil)
+            }
+
+            return true
         }
 
         return false
