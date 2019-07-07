@@ -926,28 +926,204 @@
                 </viewController>
                 <customObject id="xsJ-Za-4wV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1521" y="-633"/>
+            <point key="canvasLocation" x="1521" y="-522"/>
         </scene>
         <!--Script-->
         <scene sceneID="QSs-fo-kjm">
             <objects>
-                <viewController title="Script" storyboardIdentifier="Script" id="a4H-hE-ute" sceneMemberID="viewController">
+                <viewController title="Script" storyboardIdentifier="Script" id="a4H-hE-ute" customClass="ScriptViewController" customModule="LaTeX_Mathematics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="aLp-4h-753">
-                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="5" columnSpacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WEz-db-myp">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="hKb-tq-9cF"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow yPlacement="top" id="mbJ-2z-jWh"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="eDp-Hp-KUD"/>
+                                    <gridColumn id="Oev-Zr-aSt"/>
+                                    <gridColumn id="HiL-hd-phP"/>
+                                    <gridColumn id="P5h-Ok-cDN"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="mbJ-2z-jWh" column="eDp-Hp-KUD" id="gnH-5x-1X4">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="xJ0-aA-qha" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="SRr-70-8YB"/>
+                                                <constraint firstAttribute="height" constant="64" id="VdD-zi-x6F"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SuperscriptButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ofC-v1-koy">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="superscriptButtonClicked:" target="a4H-hE-ute" id="0x6-I2-8xe"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mbJ-2z-jWh" column="Oev-Zr-aSt" id="gsH-nT-7xE">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="m7P-R0-01f" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="69" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="ed8-Hh-pk3"/>
+                                                <constraint firstAttribute="width" constant="64" id="nqg-kf-snN"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SubscriptButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Xac-LO-UqQ">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="subscriptButtonClicked:" target="a4H-hE-ute" id="mSk-LD-Meu"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mbJ-2z-jWh" column="HiL-hd-phP" id="r3v-KW-otM">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-U8-Rjr" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="138" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="OcY-sh-I7q"/>
+                                                <constraint firstAttribute="width" constant="64" id="ffI-oM-vxD"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Sub-superscriptButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hkg-18-hE1">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="subsuperscriptButtonClicked:" target="a4H-hE-ute" id="Nkk-UZ-DRZ"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mbJ-2z-jWh" column="P5h-Ok-cDN" id="UQ8-Pl-srt">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="x9D-D1-6RY" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="207" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="fW1-On-Pqu"/>
+                                                <constraint firstAttribute="width" constant="64" id="vwV-Km-I8q"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LeftSub-superscriptButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="iMo-u3-TDV">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="leftSubsuperscriptButtonClicked:" target="a4H-hE-ute" id="gfQ-7p-Tcr"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WEz-db-myp" secondAttribute="bottom" id="VJt-bB-fdL"/>
+                            <constraint firstItem="WEz-db-myp" firstAttribute="top" secondItem="aLp-4h-753" secondAttribute="top" id="m8q-PJ-Ln2"/>
+                            <constraint firstItem="WEz-db-myp" firstAttribute="leading" secondItem="aLp-4h-753" secondAttribute="leading" id="oXG-JS-qBX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="APR-X6-XS3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1521" y="-367"/>
+            <point key="canvasLocation" x="1521" y="-329"/>
         </scene>
         <!--Radical-->
         <scene sceneID="bp5-B4-gro">
             <objects>
-                <viewController title="Radical" storyboardIdentifier="Radical" id="6ff-Vq-HJE" sceneMemberID="viewController">
+                <viewController title="Radical" storyboardIdentifier="Radical" id="6ff-Vq-HJE" customClass="RadicalViewController" customModule="LaTeX_Mathematics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="dLf-hh-p05">
-                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="5" columnSpacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yVd-zm-TMa">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="SJl-Of-bpK"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow yPlacement="top" id="sVd-p6-Akb"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="Q5a-XR-Lyi"/>
+                                    <gridColumn id="QcR-0d-vD6"/>
+                                    <gridColumn id="DPI-vK-E8T"/>
+                                    <gridColumn id="dmm-Nt-68l"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="sVd-p6-Akb" column="Q5a-XR-Lyi" id="3FP-13-MyZ">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="lfy-2g-SKZ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="3RP-v5-uNh"/>
+                                                <constraint firstAttribute="height" constant="64" id="Vdb-79-odp"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SquareRootButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fH1-z0-g43">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="squareRootButtonClicked:" target="6ff-Vq-HJE" id="rxa-Tl-a7O"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="sVd-p6-Akb" column="QcR-0d-vD6" id="8LJ-y3-3bs">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-oi-Gt6" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="69" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="ZlH-fB-rnt"/>
+                                                <constraint firstAttribute="width" constant="64" id="l1d-oU-Ecf"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="RadicalWithDegreeButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Q5D-c1-Erl">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="radicalWithDegreeButtonClicked:" target="6ff-Vq-HJE" id="GxA-aK-ivB"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="sVd-p6-Akb" column="DPI-vK-E8T" id="yMv-KZ-0SB">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="p3h-lJ-oWX" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="138" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="ld2-u8-rGh"/>
+                                                <constraint firstAttribute="width" constant="64" id="y1G-o8-qXE"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SquareRootWithDegreeButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="pbD-mN-Cuz">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="squareRootWithDegreeButtonClicked:" target="6ff-Vq-HJE" id="xjO-K4-OvE"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="sVd-p6-Akb" column="dmm-Nt-68l" id="q0S-rq-m5U">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="1SB-pd-tCb" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="207" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="oTh-62-tfg"/>
+                                                <constraint firstAttribute="width" constant="64" id="rgy-B1-iAt"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="CubicRootButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jUt-1m-1gb">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="cubicRootButtonClicked:" target="6ff-Vq-HJE" id="0Xp-p5-aJK"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yVd-zm-TMa" firstAttribute="leading" secondItem="dLf-hh-p05" secondAttribute="leading" id="Fq3-m8-5oG"/>
+                            <constraint firstAttribute="bottom" secondItem="yVd-zm-TMa" secondAttribute="bottom" id="OSJ-h8-Wd7"/>
+                            <constraint firstItem="yVd-zm-TMa" firstAttribute="top" secondItem="dLf-hh-p05" secondAttribute="top" id="smb-Ue-OXv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="j4J-X3-TP0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -1075,17 +1251,25 @@
     <resources>
         <image name="AccentTabIcon" width="128" height="128"/>
         <image name="BracketTabIcon" width="128" height="128"/>
+        <image name="CubicRootButtonIcon" width="128" height="128"/>
         <image name="FractionTabIcon" width="128" height="128"/>
         <image name="FunctionTabIcon" width="128" height="128"/>
         <image name="IntegralTabIcon" width="128" height="128"/>
         <image name="LargeOperatorTabIcon" width="128" height="128"/>
+        <image name="LeftSub-superscriptButtonIcon" width="128" height="128"/>
         <image name="Limit&amp;LogTabIcon" width="128" height="128"/>
         <image name="LinearFractionButtonIcon" width="128" height="128"/>
         <image name="MatrixTabIcon" width="128" height="128"/>
         <image name="OperatorTabIcon" width="128" height="128"/>
         <image name="RadicalTabIcon" width="128" height="128"/>
+        <image name="RadicalWithDegreeButtonIcon" width="128" height="128"/>
         <image name="ScriptTabIcon" width="128" height="128"/>
+        <image name="SquareRootButtonIcon" width="128" height="128"/>
+        <image name="SquareRootWithDegreeButtonIcon" width="128" height="128"/>
         <image name="StackedFractionButtonIcon" width="128" height="128"/>
+        <image name="Sub-superscriptButtonIcon" width="128" height="128"/>
+        <image name="SubscriptButtonIcon" width="128" height="128"/>
+        <image name="SuperscriptButtonIcon" width="128" height="128"/>
         <image name="SymbolTabIcon" width="128" height="128"/>
     </resources>
 </document>
