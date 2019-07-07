@@ -726,27 +726,27 @@
             </objects>
             <point key="canvasLocation" x="75" y="701"/>
         </scene>
-        <!--Equation Tab View Controller-->
+        <!--Tab View Controller-->
         <scene sceneID="EqF-LT-2LE">
             <objects>
-                <tabViewController tabStyle="toolbar" id="b4P-oZ-pju" customClass="EquationTabViewController" customModule="LaTeX_Mathematics" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController tabStyle="toolbar" id="b4P-oZ-pju" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem image="FractionTabIcon" id="OIV-DN-1r1"/>
-                        <tabViewItem image="ScriptTabIcon" id="f4C-4V-Vhm"/>
-                        <tabViewItem image="RadicalTabIcon" id="dW2-pk-emp"/>
-                        <tabViewItem image="IntegralTabIcon" id="7qV-mV-t24"/>
-                        <tabViewItem image="LargeOperatorTabIcon" id="efp-t3-OKg"/>
-                        <tabViewItem image="BracketTabIcon" id="As4-ua-Gpx"/>
-                        <tabViewItem image="FunctionTabIcon" id="CK2-o0-6wa"/>
-                        <tabViewItem image="AccentTabIcon" id="l9q-Af-CsF"/>
-                        <tabViewItem image="Limit&amp;LogTabIcon" id="kFX-Ib-gIe"/>
-                        <tabViewItem image="OperatorTabIcon" id="HY1-kS-Nx6"/>
-                        <tabViewItem image="MatrixTabIcon" id="2hT-eq-bma"/>
-                        <tabViewItem image="SymbolTabIcon" id="ePL-4d-HxK"/>
+                        <tabViewItem identifier="Fraction" image="FractionTabIcon" id="OIV-DN-1r1"/>
+                        <tabViewItem identifier="Script" image="ScriptTabIcon" id="f4C-4V-Vhm"/>
+                        <tabViewItem identifier="Radical" image="RadicalTabIcon" id="dW2-pk-emp"/>
+                        <tabViewItem identifier="Integral" image="IntegralTabIcon" id="7qV-mV-t24"/>
+                        <tabViewItem identifier="Large Operator" image="LargeOperatorTabIcon" id="efp-t3-OKg"/>
+                        <tabViewItem identifier="Bracket" image="BracketTabIcon" id="As4-ua-Gpx"/>
+                        <tabViewItem identifier="Function" image="FunctionTabIcon" id="CK2-o0-6wa"/>
+                        <tabViewItem identifier="Accent" image="AccentTabIcon" id="l9q-Af-CsF"/>
+                        <tabViewItem identifier="Limit &amp; Log" image="Limit&amp;LogTabIcon" id="kFX-Ib-gIe"/>
+                        <tabViewItem identifier="Operator" image="OperatorTabIcon" id="HY1-kS-Nx6"/>
+                        <tabViewItem identifier="Matrix" image="MatrixTabIcon" id="2hT-eq-bma"/>
+                        <tabViewItem identifier="Symbol" image="SymbolTabIcon" id="ePL-4d-HxK"/>
                     </tabViewItems>
                     <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
                     <tabView key="tabView" type="noTabsNoBorder" id="7yC-j1-vww">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
                         <connections>
@@ -773,23 +773,98 @@
             </objects>
             <point key="canvasLocation" x="713" y="701"/>
         </scene>
-        <!--View Controller-->
+        <!--Preview View Controller-->
         <scene sceneID="b0a-8h-5EX">
             <objects>
-                <viewController id="lhP-ZI-uo0" sceneMemberID="viewController">
+                <viewController id="lhP-ZI-uo0" customClass="PreviewViewController" customModule="LaTeX_Mathematics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="gSu-Nd-xhz">
-                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="261"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZIH-q0-uMy" customClass="EquationPreviewView" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="151" width="640" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="OmQ-nE-rEo"/>
+                                </constraints>
+                            </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VWv-lg-UUg">
+                                <rect key="frame" x="4" y="3" width="72" height="32"/>
+                                <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="95G-j6-P6f">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clearButtonClicked:" target="lhP-ZI-uo0" id="hNM-gO-ng4"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RZv-dv-ZWN">
+                                <rect key="frame" x="564" y="3" width="72" height="32"/>
+                                <buttonCell key="cell" type="push" title="Copy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1IN-FU-UsK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="copyButtonClicked:" target="lhP-ZI-uo0" id="Vwd-w4-ZDc"/>
+                                </connections>
+                            </button>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj1-cY-B82">
+                                <rect key="frame" x="0.0" y="41" width="640" height="100"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="63l-QT-xoY">
+                                    <rect key="frame" x="0.0" y="0.0" width="640" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" smartInsertDelete="YES" id="vIS-Lt-dhP">
+                                            <rect key="frame" x="0.0" y="0.0" width="640" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="640" height="100"/>
+                                            <size key="maxSize" width="640" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BqD-3q-Tfc"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Tap-Xo-tan">
+                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="MH7-6K-PjO">
+                                    <rect key="frame" x="625" y="0.0" width="15" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jj1-cY-B82" secondAttribute="trailing" id="21M-Cw-ahq"/>
+                            <constraint firstAttribute="bottom" secondItem="VWv-lg-UUg" secondAttribute="bottom" constant="10" id="820-MD-bM4"/>
+                            <constraint firstAttribute="bottom" secondItem="RZv-dv-ZWN" secondAttribute="bottom" constant="10" id="8bn-d8-C4Y"/>
+                            <constraint firstItem="RZv-dv-ZWN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VWv-lg-UUg" secondAttribute="trailing" constant="12" symbolic="YES" id="Cg5-yN-e6e"/>
+                            <constraint firstItem="VWv-lg-UUg" firstAttribute="leading" secondItem="gSu-Nd-xhz" secondAttribute="leading" constant="10" id="DoG-Lg-Guc"/>
+                            <constraint firstItem="ZIH-q0-uMy" firstAttribute="leading" secondItem="gSu-Nd-xhz" secondAttribute="leading" id="LW2-KI-KN8"/>
+                            <constraint firstItem="ZIH-q0-uMy" firstAttribute="top" secondItem="gSu-Nd-xhz" secondAttribute="top" constant="10" id="VTU-7F-P7c"/>
+                            <constraint firstItem="Jj1-cY-B82" firstAttribute="leading" secondItem="gSu-Nd-xhz" secondAttribute="leading" id="g7O-29-qa1"/>
+                            <constraint firstItem="Jj1-cY-B82" firstAttribute="top" secondItem="ZIH-q0-uMy" secondAttribute="bottom" constant="10" id="oh3-Ug-84C"/>
+                            <constraint firstAttribute="trailing" secondItem="RZv-dv-ZWN" secondAttribute="trailing" constant="10" id="oqX-a7-XIv"/>
+                            <constraint firstItem="VWv-lg-UUg" firstAttribute="top" secondItem="Jj1-cY-B82" secondAttribute="bottom" constant="10" id="uIe-jP-Nsx"/>
+                            <constraint firstAttribute="trailing" secondItem="ZIH-q0-uMy" secondAttribute="trailing" id="xGg-hX-DZF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="latexTextView" destination="vIS-Lt-dhP" id="Ib4-Fw-BcS"/>
+                        <outlet property="previewView" destination="ZIH-q0-uMy" id="arX-Rk-aBy"/>
+                    </connections>
                 </viewController>
                 <customObject id="k9j-3U-8UM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="1106"/>
+            <point key="canvasLocation" x="75" y="1105.5"/>
         </scene>
         <!--Fraction-->
         <scene sceneID="DYw-8s-Tm6">
             <objects>
-                <viewController title="Fraction" id="iZh-cF-Ee3" sceneMemberID="viewController">
+                <viewController title="Fraction" storyboardIdentifier="Fraction" id="iZh-cF-Ee3" sceneMemberID="viewController">
                     <view key="view" id="i3o-7H-oqV">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -802,7 +877,7 @@
         <!--Script-->
         <scene sceneID="QSs-fo-kjm">
             <objects>
-                <viewController title="Script" id="a4H-hE-ute" sceneMemberID="viewController">
+                <viewController title="Script" storyboardIdentifier="Script" id="a4H-hE-ute" sceneMemberID="viewController">
                     <view key="view" id="aLp-4h-753">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -815,7 +890,7 @@
         <!--Radical-->
         <scene sceneID="bp5-B4-gro">
             <objects>
-                <viewController title="Radical" id="6ff-Vq-HJE" sceneMemberID="viewController">
+                <viewController title="Radical" storyboardIdentifier="Radical" id="6ff-Vq-HJE" sceneMemberID="viewController">
                     <view key="view" id="dLf-hh-p05">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -828,7 +903,7 @@
         <!--Integral-->
         <scene sceneID="ZI7-fQ-erE">
             <objects>
-                <viewController title="Integral" id="nIM-s9-ugs" sceneMemberID="viewController">
+                <viewController title="Integral" storyboardIdentifier="Integral" id="nIM-s9-ugs" sceneMemberID="viewController">
                     <view key="view" id="SGU-IP-tcY">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -841,7 +916,7 @@
         <!--Large Operator-->
         <scene sceneID="ide-no-eM9">
             <objects>
-                <viewController title="Large Operator" id="oiI-f6-zpf" sceneMemberID="viewController">
+                <viewController title="Large Operator" storyboardIdentifier="Large Operator" id="oiI-f6-zpf" sceneMemberID="viewController">
                     <view key="view" id="G5S-PT-10t">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -854,7 +929,7 @@
         <!--Bracket-->
         <scene sceneID="QYk-Qu-AKu">
             <objects>
-                <viewController title="Bracket" id="6T8-Mv-5NS" sceneMemberID="viewController">
+                <viewController title="Bracket" storyboardIdentifier="Bracket" id="6T8-Mv-5NS" sceneMemberID="viewController">
                     <view key="view" id="5Dw-W2-Q3M">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -867,7 +942,7 @@
         <!--Function-->
         <scene sceneID="1rl-HL-7HC">
             <objects>
-                <viewController title="Function" id="H5d-fl-VtO" sceneMemberID="viewController">
+                <viewController title="Function" storyboardIdentifier="Function" id="H5d-fl-VtO" sceneMemberID="viewController">
                     <view key="view" id="Hln-ex-J10">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -880,7 +955,7 @@
         <!--Accent-->
         <scene sceneID="1qj-Fe-knD">
             <objects>
-                <viewController title="Accent" id="kLO-wr-mMV" sceneMemberID="viewController">
+                <viewController title="Accent" storyboardIdentifier="Accent" id="kLO-wr-mMV" sceneMemberID="viewController">
                     <view key="view" id="wpq-qR-4T1">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -893,7 +968,7 @@
         <!--Limit & Log-->
         <scene sceneID="yQa-w3-196">
             <objects>
-                <viewController title="Limit &amp; Log" id="VRy-5d-4jN" sceneMemberID="viewController">
+                <viewController title="Limit &amp; Log" storyboardIdentifier="Limit &amp; Log" id="VRy-5d-4jN" sceneMemberID="viewController">
                     <view key="view" id="RLs-ZJ-n1F">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -906,7 +981,7 @@
         <!--Operator-->
         <scene sceneID="Yi8-W0-wgc">
             <objects>
-                <viewController title="Operator" id="SZ1-ai-N5f" sceneMemberID="viewController">
+                <viewController title="Operator" storyboardIdentifier="Operator" id="SZ1-ai-N5f" sceneMemberID="viewController">
                     <view key="view" id="Fhs-HE-ixe">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -919,7 +994,7 @@
         <!--Matrix-->
         <scene sceneID="Ec9-Hg-IuG">
             <objects>
-                <viewController title="Matrix" id="Sf4-yD-Baq" sceneMemberID="viewController">
+                <viewController title="Matrix" storyboardIdentifier="Matrix" id="Sf4-yD-Baq" sceneMemberID="viewController">
                     <view key="view" id="xlG-v0-5cp">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -932,7 +1007,7 @@
         <!--Symbol-->
         <scene sceneID="ZFX-US-qqF">
             <objects>
-                <viewController title="Symbol" id="QWm-6C-Xvt" sceneMemberID="viewController">
+                <viewController title="Symbol" storyboardIdentifier="Symbol" id="QWm-6C-Xvt" sceneMemberID="viewController">
                     <view key="view" id="z6i-1X-bdW">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
