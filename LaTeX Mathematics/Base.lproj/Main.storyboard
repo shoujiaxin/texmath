@@ -827,11 +827,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="BqD-3q-Tfc"/>
                                 </constraints>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Tap-Xo-tan">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Tap-Xo-tan">
                                     <rect key="frame" x="-100" y="-100" width="225" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="MH7-6K-PjO">
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="MH7-6K-PjO">
                                     <rect key="frame" x="625" y="0.0" width="15" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1133,7 +1133,7 @@
         <!--Integral-->
         <scene sceneID="ZI7-fQ-erE">
             <objects>
-                <viewController title="Integral" storyboardIdentifier="Integral" id="nIM-s9-ugs" sceneMemberID="viewController">
+                <viewController title="Integral" storyboardIdentifier="Integral" id="nIM-s9-ugs" customClass="IntegralViewController" customModule="LaTeX_Mathematics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="SGU-IP-tcY">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1169,7 +1169,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="squareRootButtonClicked:" target="6ff-Vq-HJE" id="iRm-Ab-8JH"/>
+                                                <action selector="integralButtonClicked:" target="nIM-s9-ugs" id="OKv-nx-eM0"/>
                                             </connections>
                                         </button>
                                     </gridCell>
@@ -1185,7 +1185,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="radicalWithDegreeButtonClicked:" target="6ff-Vq-HJE" id="uY8-kW-CWE"/>
+                                                <action selector="integralWithLimitsButtonClicked:" target="nIM-s9-ugs" id="nNt-eC-hMX"/>
                                             </connections>
                                         </button>
                                     </gridCell>
@@ -1201,7 +1201,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="squareRootWithDegreeButtonClicked:" target="6ff-Vq-HJE" id="wR3-cp-2lk"/>
+                                                <action selector="doubleIntegralButtonClicked:" target="nIM-s9-ugs" id="5Kz-oW-S72"/>
                                             </connections>
                                         </button>
                                     </gridCell>
@@ -1217,7 +1217,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="cubicRootButtonClicked:" target="6ff-Vq-HJE" id="s02-9d-ipW"/>
+                                                <action selector="doubleIntegralWithLimitsButtonClicked:" target="nIM-s9-ugs" id="lZ0-Of-RvF"/>
                                             </connections>
                                         </button>
                                     </gridCell>
@@ -1233,7 +1233,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="cubicRootButtonClicked:" target="6ff-Vq-HJE" id="U0N-jM-WoM"/>
+                                                <action selector="tripleIntegralButtonClicked:" target="nIM-s9-ugs" id="MJY-E5-gWX"/>
                                             </connections>
                                         </button>
                                     </gridCell>
@@ -1249,7 +1249,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="cubicRootButtonClicked:" target="6ff-Vq-HJE" id="dcn-wY-mdJ"/>
+                                                <action selector="tripleIntegralWithLimitsButtonClicked:" target="nIM-s9-ugs" id="gV1-3q-5Zd"/>
                                             </connections>
                                         </button>
                                     </gridCell>
@@ -1265,7 +1265,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="cubicRootButtonClicked:" target="6ff-Vq-HJE" id="Jyj-dk-xfL"/>
+                                                <action selector="contourIntegralButtonClicked:" target="nIM-s9-ugs" id="9sZ-Uo-Oal"/>
                                             </connections>
                                         </button>
                                     </gridCell>
@@ -1281,7 +1281,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="cubicRootButtonClicked:" target="6ff-Vq-HJE" id="WRL-PG-xWB"/>
+                                                <action selector="contourIntegralWithLimitsButtonClicked:" target="nIM-s9-ugs" id="Mls-vp-6oC"/>
                                             </connections>
                                         </button>
                                     </gridCell>
