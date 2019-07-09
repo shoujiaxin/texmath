@@ -2,7 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "SquareRootWithDegreeButtonIcon.png"
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "SquareRootWithDegreeButtonIcon.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

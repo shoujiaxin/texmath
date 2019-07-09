@@ -2,7 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "IntegralButtonIcon.png"
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "IntegralButtonIcon.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
