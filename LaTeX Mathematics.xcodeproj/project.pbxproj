@@ -11,6 +11,7 @@
 		510BCA4222D7838C00A0E365 /* BracketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BCA4122D7838C00A0E365 /* BracketViewController.swift */; };
 		511B1A3E22D0D41F00D7AAB5 /* EquationItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511B1A3D22D0D41F00D7AAB5 /* EquationItemButton.swift */; };
 		511CCB4222D9AE9D004A14EB /* LimitLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CCB4122D9AE9D004A14EB /* LimitLogViewController.swift */; };
+		511CCB4422DA09FD004A14EB /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CCB4322DA09FD004A14EB /* OperatorViewController.swift */; };
 		512B591622D19A7B00B96C09 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512B591522D19A7B00B96C09 /* PreviewViewController.swift */; };
 		5134E0C622C4C2E200F7DEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134E0C522C4C2E200F7DEC3 /* AppDelegate.swift */; };
 		5134E0CA22C4C2E200F7DEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5134E0C922C4C2E200F7DEC3 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		510BCA4122D7838C00A0E365 /* BracketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketViewController.swift; sourceTree = "<group>"; };
 		511B1A3D22D0D41F00D7AAB5 /* EquationItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemButton.swift; sourceTree = "<group>"; };
 		511CCB4122D9AE9D004A14EB /* LimitLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitLogViewController.swift; sourceTree = "<group>"; };
+		511CCB4322DA09FD004A14EB /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
 		512B591522D19A7B00B96C09 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		5134E0C222C4C2E200F7DEC3 /* LaTeX Mathematics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LaTeX Mathematics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5134E0C522C4C2E200F7DEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				51A8486122D4F10200A99313 /* LargeOperatorViewController.swift */,
 				510BCA4122D7838C00A0E365 /* BracketViewController.swift */,
 				511CCB4122D9AE9D004A14EB /* LimitLogViewController.swift */,
+				511CCB4322DA09FD004A14EB /* OperatorViewController.swift */,
 			);
 			path = "LaTeX Mathematics";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				5134E0C622C4C2E200F7DEC3 /* AppDelegate.swift in Sources */,
 				512B591622D19A7B00B96C09 /* PreviewViewController.swift in Sources */,
 				511CCB4222D9AE9D004A14EB /* LimitLogViewController.swift in Sources */,
+				511CCB4422DA09FD004A14EB /* OperatorViewController.swift in Sources */,
 				51EF739E22D1CDDF0055266B /* EquationPreviewView.swift in Sources */,
 				51757CF722D20F6B00EC30BF /* ScriptViewController.swift in Sources */,
 				510BCA4222D7838C00A0E365 /* BracketViewController.swift in Sources */,

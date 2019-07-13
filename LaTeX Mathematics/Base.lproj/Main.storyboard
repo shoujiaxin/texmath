@@ -883,7 +883,7 @@
                                 </columns>
                                 <gridCells>
                                     <gridCell row="osA-JO-y9f" column="ktS-Nr-8Ez" id="wsS-3L-Lhd">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="yDz-UW-GRT" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Stacked Fraction" translatesAutoresizingMaskIntoConstraints="NO" id="yDz-UW-GRT" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="iZi-4t-u5n"/>
@@ -899,7 +899,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="osA-JO-y9f" column="kMI-LV-ARd" id="wqS-1m-jF5">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-eR-FQb" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Linear Fraction" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-eR-FQb" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="AZb-z5-yD9"/>
@@ -952,7 +952,7 @@
                                 </columns>
                                 <gridCells>
                                     <gridCell row="mbJ-2z-jWh" column="eDp-Hp-KUD" id="gnH-5x-1X4">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="xJ0-aA-qha" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Superscript" translatesAutoresizingMaskIntoConstraints="NO" id="xJ0-aA-qha" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="SRr-70-8YB"/>
@@ -968,7 +968,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="mbJ-2z-jWh" column="Oev-Zr-aSt" id="gsH-nT-7xE">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="m7P-R0-01f" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Subscript" translatesAutoresizingMaskIntoConstraints="NO" id="m7P-R0-01f" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="ed8-Hh-pk3"/>
@@ -984,7 +984,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="mbJ-2z-jWh" column="HiL-hd-phP" id="r3v-KW-otM">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-U8-Rjr" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Subscript-Superscript" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-U8-Rjr" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="OcY-sh-I7q"/>
@@ -1000,7 +1000,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="mbJ-2z-jWh" column="P5h-Ok-cDN" id="UQ8-Pl-srt">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="x9D-D1-6RY" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Left Subscript-Superscript" translatesAutoresizingMaskIntoConstraints="NO" id="x9D-D1-6RY" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="fW1-On-Pqu"/>
@@ -1053,7 +1053,7 @@
                                 </columns>
                                 <gridCells>
                                     <gridCell row="sVd-p6-Akb" column="Q5a-XR-Lyi" id="3FP-13-MyZ">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="lfy-2g-SKZ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Square Root" translatesAutoresizingMaskIntoConstraints="NO" id="lfy-2g-SKZ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="3RP-v5-uNh"/>
@@ -1069,7 +1069,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="sVd-p6-Akb" column="QcR-0d-vD6" id="8LJ-y3-3bs">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-oi-Gt6" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Radical With Degree" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-oi-Gt6" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="ZlH-fB-rnt"/>
@@ -1085,7 +1085,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="sVd-p6-Akb" column="DPI-vK-E8T" id="yMv-KZ-0SB">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="p3h-lJ-oWX" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Square Root With Degree" translatesAutoresizingMaskIntoConstraints="NO" id="p3h-lJ-oWX" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="ld2-u8-rGh"/>
@@ -1101,7 +1101,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="sVd-p6-Akb" column="dmm-Nt-68l" id="q0S-rq-m5U">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="1SB-pd-tCb" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Cubic Root" translatesAutoresizingMaskIntoConstraints="NO" id="1SB-pd-tCb" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="oTh-62-tfg"/>
@@ -1158,7 +1158,7 @@
                                 </columns>
                                 <gridCells>
                                     <gridCell row="Irh-xt-6sP" column="J8a-ct-s4f" id="XuG-e6-nNc">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="FLt-6z-9Q0" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Integral" translatesAutoresizingMaskIntoConstraints="NO" id="FLt-6z-9Q0" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="Ppe-6L-78A"/>
@@ -1174,7 +1174,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Irh-xt-6sP" column="QyE-Pf-j1C" id="6WK-Ci-fG1">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="llw-FZ-UG9" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Integral With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="llw-FZ-UG9" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="DZt-K8-Wo6"/>
@@ -1190,7 +1190,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Irh-xt-6sP" column="g0e-f7-EJk" id="F0T-78-nwB">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-0g-BTa" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Double Integral" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-0g-BTa" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="MuU-Bo-RMQ"/>
@@ -1206,7 +1206,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Irh-xt-6sP" column="YaT-8f-G3e" id="2Uo-jE-IOI">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="ocu-Op-jfy" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Double Integral With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="ocu-Op-jfy" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="4cF-D1-bLA"/>
@@ -1222,7 +1222,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Irh-xt-6sP" column="fjP-ba-ooE" id="SCq-MA-OYX">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="qT4-py-cWz" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Triple Integral" translatesAutoresizingMaskIntoConstraints="NO" id="qT4-py-cWz" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="256" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="CNV-Iu-3Lc"/>
@@ -1238,7 +1238,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Irh-xt-6sP" column="iS4-5O-qwg" id="rtv-Hu-Xpm">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="J25-DO-8vK" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Triple Integral With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="J25-DO-8vK" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="320" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="eES-Sl-7Tm"/>
@@ -1254,7 +1254,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Irh-xt-6sP" column="ywT-Va-Im2" id="Ntr-qS-qH5">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="qxs-UT-HrE" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Contour Integral" translatesAutoresizingMaskIntoConstraints="NO" id="qxs-UT-HrE" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="384" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="3TZ-cE-h8N"/>
@@ -1270,7 +1270,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Irh-xt-6sP" column="hhz-3v-T1L" id="aUg-6T-6eA">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="Jo4-00-8se" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Contour Integral With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="Jo4-00-8se" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="448" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="HQO-kl-NRj"/>
@@ -1330,7 +1330,7 @@
                                 </columns>
                                 <gridCells>
                                     <gridCell row="bPU-02-FbR" column="Huk-8x-Qbs" id="J69-Ze-pzI">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="2tw-GQ-QaE" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Summation" translatesAutoresizingMaskIntoConstraints="NO" id="2tw-GQ-QaE" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="hnA-VQ-6qM"/>
@@ -1346,7 +1346,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="bPU-02-FbR" column="MJp-VB-6gc" id="yuj-OL-mRk">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="J05-w7-j7M" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Summation With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="J05-w7-j7M" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="64" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="A3z-kX-Hxw"/>
@@ -1362,7 +1362,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="bPU-02-FbR" column="Vo8-Mr-ew1" id="bn4-gF-tOc">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="2S5-q4-E9P" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Product" translatesAutoresizingMaskIntoConstraints="NO" id="2S5-q4-E9P" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="128" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="M95-1E-ppd"/>
@@ -1378,7 +1378,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="bPU-02-FbR" column="9LS-UX-Qhp" id="e49-oo-EMl">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="Dpl-wz-99K" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Product With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="Dpl-wz-99K" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="192" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="Dh1-9u-WIM"/>
@@ -1394,7 +1394,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="bPU-02-FbR" column="weH-4l-Jms" id="23U-ga-GUS">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="UUj-U3-Bvb" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="CoProduct" translatesAutoresizingMaskIntoConstraints="NO" id="UUj-U3-Bvb" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="256" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="nSL-8Q-5oK"/>
@@ -1410,7 +1410,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="bPU-02-FbR" column="Adx-lQ-nCi" id="psA-LK-IzN">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="R7h-5Q-TiV" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="CoProduct With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="R7h-5Q-TiV" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="320" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="2Xq-91-J8T"/>
@@ -1426,7 +1426,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="bPU-02-FbR" column="u5n-ga-2ul" id="oqf-oq-Yad">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="heR-eC-Ofc" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Union" translatesAutoresizingMaskIntoConstraints="NO" id="heR-eC-Ofc" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="384" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="io9-tN-dNo"/>
@@ -1442,7 +1442,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="bPU-02-FbR" column="xsV-gM-0TJ" id="S0r-Tp-04o">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-gn-ztd" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Union With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-gn-ztd" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="448" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="hQv-XJ-7lL"/>
@@ -1458,7 +1458,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="bPU-02-FbR" column="oBD-WH-p1r" id="mJG-b5-nvl">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="RbM-FR-iky" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Intersection" translatesAutoresizingMaskIntoConstraints="NO" id="RbM-FR-iky" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="512" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="COG-UR-BA5"/>
@@ -1474,7 +1474,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="bPU-02-FbR" column="ua7-cQ-2EV" id="CME-7o-lzk">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="lUY-Xf-3JY" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Intersection With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="lUY-Xf-3JY" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="576" y="64" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="X78-Ud-cFr"/>
@@ -1490,7 +1490,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Kfn-Vu-enx" column="Huk-8x-Qbs" id="JHq-DN-94l">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="abO-zw-CdJ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Logical Or" translatesAutoresizingMaskIntoConstraints="NO" id="abO-zw-CdJ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="ViD-0W-DOM"/>
@@ -1506,7 +1506,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Kfn-Vu-enx" column="MJp-VB-6gc" id="jG9-jt-QZD">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="EvT-ox-T3g" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Logical Or With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="EvT-ox-T3g" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="06i-4G-Bwn"/>
@@ -1522,7 +1522,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Kfn-Vu-enx" column="Vo8-Mr-ew1" id="I8H-LP-zn6">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="aLw-HZ-lAu" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Logical And" translatesAutoresizingMaskIntoConstraints="NO" id="aLw-HZ-lAu" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="LDP-7V-2Qp"/>
@@ -1538,7 +1538,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="Kfn-Vu-enx" column="9LS-UX-Qhp" id="5lB-ys-U9x">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="4MM-bx-g8G" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Logical And With Limits" translatesAutoresizingMaskIntoConstraints="NO" id="4MM-bx-g8G" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="SK2-mP-Mj1"/>
@@ -1598,7 +1598,7 @@
                                                     <rows>
                                                         <gridRow yPlacement="center" id="NIA-JV-skk"/>
                                                         <gridRow yPlacement="center" id="pLJ-pk-wR1"/>
-                                                        <gridRow id="CvN-DL-ic5"/>
+                                                        <gridRow yPlacement="center" id="CvN-DL-ic5"/>
                                                     </rows>
                                                     <columns>
                                                         <gridColumn id="NJv-1b-cKO"/>
@@ -1614,7 +1614,7 @@
                                                     </columns>
                                                     <gridCells>
                                                         <gridCell row="NIA-JV-skk" column="NJv-1b-cKO" id="LDm-7p-Qwt">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="89g-5q-nfZ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Parentheses" translatesAutoresizingMaskIntoConstraints="NO" id="89g-5q-nfZ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="64" id="wZF-YX-qSk"/>
@@ -1630,7 +1630,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="NIA-JV-skk" column="Zco-Fu-t6Y" id="5Cl-jv-hpl">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="rBM-rb-SIi" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Square Brackets" translatesAutoresizingMaskIntoConstraints="NO" id="rBM-rb-SIi" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="qdb-zk-Cns"/>
@@ -1646,7 +1646,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="NIA-JV-skk" column="nJq-7d-PE2" id="Ed8-It-aSr">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="yWD-zk-mff" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Curly Braces" translatesAutoresizingMaskIntoConstraints="NO" id="yWD-zk-mff" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="3NX-qJ-93T"/>
@@ -1662,7 +1662,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="NIA-JV-skk" column="gdk-9A-8kt" id="vSH-ib-Its">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="upG-wu-Pak" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Angle Brackets" translatesAutoresizingMaskIntoConstraints="NO" id="upG-wu-Pak" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="G1A-dm-CyM"/>
@@ -1678,7 +1678,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="NIA-JV-skk" column="Ufn-R4-oYh" id="g9r-6j-4Ax">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="idg-E5-1lE" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Floor Brackets" translatesAutoresizingMaskIntoConstraints="NO" id="idg-E5-1lE" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="SBW-6P-Be5"/>
@@ -1694,7 +1694,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="NIA-JV-skk" column="LUj-Rw-GGb" id="aH7-Wp-LTV">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-c7-Pkr" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Ceiling Brackets" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-c7-Pkr" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="aIq-mD-jOk"/>
@@ -1710,7 +1710,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="NIA-JV-skk" column="5RF-gv-2uX" id="sv8-3g-Qc1">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-bk-QTH" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Vertical Bars" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-bk-QTH" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="j8L-uE-wrM"/>
@@ -1726,7 +1726,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="NIA-JV-skk" column="zuk-v9-jb0" id="wXd-vU-cYM">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="J7O-ri-2Rw" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Double Vertical Bars" translatesAutoresizingMaskIntoConstraints="NO" id="J7O-ri-2Rw" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="Ktr-1D-lOy"/>
@@ -1742,7 +1742,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="NIA-JV-skk" column="Nly-fG-VBQ" id="9r4-b2-blr">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="U8s-pi-vyi" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Parentheses With Separator" translatesAutoresizingMaskIntoConstraints="NO" id="U8s-pi-vyi" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="512" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="afE-wx-C21"/>
@@ -1758,7 +1758,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="NIA-JV-skk" column="JoN-gq-80C" id="Vmt-dI-XZQ">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="9Ib-lH-A15" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Braces With Separator" translatesAutoresizingMaskIntoConstraints="NO" id="9Ib-lH-A15" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="576" y="128" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="DGr-yw-uDB"/>
@@ -1774,7 +1774,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="NJv-1b-cKO" id="EEu-n8-Sw8">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-1W-33Q" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Angle Brackets With Separator" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-1W-33Q" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="WKq-Sa-9Wc"/>
@@ -1790,7 +1790,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="Zco-Fu-t6Y" id="2ti-f1-Tfl">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="pDp-e3-WD3" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Angle Brackets With Two Separators" translatesAutoresizingMaskIntoConstraints="NO" id="pDp-e3-WD3" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="0dA-ic-pnz"/>
@@ -1806,7 +1806,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="nJq-7d-PE2" id="RpJ-MT-Bl8">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="aQi-sn-CqN" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Left Parenthesis" translatesAutoresizingMaskIntoConstraints="NO" id="aQi-sn-CqN" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="Goh-Ix-sAC"/>
@@ -1822,7 +1822,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="gdk-9A-8kt" id="eVL-s2-lrg">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="JdC-uN-EoO" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Right Parenthesis" translatesAutoresizingMaskIntoConstraints="NO" id="JdC-uN-EoO" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="PpK-je-cqw"/>
@@ -1838,7 +1838,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="Ufn-R4-oYh" id="CZo-JQ-VxY">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="OPz-pb-r7T" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Left Bracket" translatesAutoresizingMaskIntoConstraints="NO" id="OPz-pb-r7T" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="64" id="S5f-6K-1Dm"/>
@@ -1854,7 +1854,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="LUj-Rw-GGb" id="jLO-pC-sjc">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="h1v-AY-xZx" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Right Bracket" translatesAutoresizingMaskIntoConstraints="NO" id="h1v-AY-xZx" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="8Zj-G6-52O"/>
@@ -1870,7 +1870,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="5RF-gv-2uX" id="xwi-sZ-t9U">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="9qg-E9-mk7" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Left Brace" translatesAutoresizingMaskIntoConstraints="NO" id="9qg-E9-mk7" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="6Lh-YW-cp0"/>
@@ -1886,7 +1886,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="zuk-v9-jb0" id="Uwm-TT-eNg">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="Rqr-qn-7SI" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Right Brace" translatesAutoresizingMaskIntoConstraints="NO" id="Rqr-qn-7SI" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="64" id="t1s-zJ-8wV"/>
@@ -1902,7 +1902,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="Nly-fG-VBQ" id="lwK-e8-aWN">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="RRx-bY-qBJ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Left Angle Bracket" translatesAutoresizingMaskIntoConstraints="NO" id="RRx-bY-qBJ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="512" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="64" id="FcN-gY-Bds"/>
@@ -1918,7 +1918,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="pLJ-pk-wR1" column="JoN-gq-80C" id="TOG-1Z-74t">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="rB5-el-BZJ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Right Angle Bracket" translatesAutoresizingMaskIntoConstraints="NO" id="rB5-el-BZJ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="576" y="64" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="64" id="bRI-g4-zzS"/>
@@ -1934,7 +1934,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="CvN-DL-ic5" column="NJv-1b-cKO" id="Hha-ow-Ob7">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="Faq-jE-QX8" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Left Floor Bracket" translatesAutoresizingMaskIntoConstraints="NO" id="Faq-jE-QX8" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="3jN-pm-AXp"/>
@@ -1950,7 +1950,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="CvN-DL-ic5" column="Zco-Fu-t6Y" id="c4T-Dg-Uak">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="qhP-Zf-yQM" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Right Floor Bracket" translatesAutoresizingMaskIntoConstraints="NO" id="qhP-Zf-yQM" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="4el-1z-hkD"/>
@@ -1966,7 +1966,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="CvN-DL-ic5" column="nJq-7d-PE2" id="6uY-Gs-f94">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="fqg-td-KHJ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Left Ceiling Bracket" translatesAutoresizingMaskIntoConstraints="NO" id="fqg-td-KHJ" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="Fbn-I3-ffz"/>
@@ -1982,7 +1982,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="CvN-DL-ic5" column="gdk-9A-8kt" id="Dmd-0H-GWt">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="cPI-IG-5tR" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Right Ceiling Bracket" translatesAutoresizingMaskIntoConstraints="NO" id="cPI-IG-5tR" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="64" id="ofC-H2-xgN"/>
@@ -1998,7 +1998,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="CvN-DL-ic5" column="Ufn-R4-oYh" id="pxD-RW-XSx">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="gu1-vj-pG8" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Left Vertical Bar" translatesAutoresizingMaskIntoConstraints="NO" id="gu1-vj-pG8" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="0.0" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="64" id="8d6-x6-cyt"/>
@@ -2014,7 +2014,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="CvN-DL-ic5" column="LUj-Rw-GGb" id="28Q-Vq-NyU">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="wT9-iP-oSC" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Right Vertical Bar" translatesAutoresizingMaskIntoConstraints="NO" id="wT9-iP-oSC" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="0.0" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="64" id="CsS-bO-NSO"/>
@@ -2030,7 +2030,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="CvN-DL-ic5" column="5RF-gv-2uX" id="lgB-xB-r6r">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="Wn5-Jo-JjM" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Left Double Vertical Bar" translatesAutoresizingMaskIntoConstraints="NO" id="Wn5-Jo-JjM" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="0.0" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="64" id="3yw-IP-3Nh"/>
@@ -2046,7 +2046,7 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="CvN-DL-ic5" column="zuk-v9-jb0" id="23R-08-bqL">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="9AK-Yl-B2P" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Right Double Vertical Bar" translatesAutoresizingMaskIntoConstraints="NO" id="9AK-Yl-B2P" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="0.0" width="64" height="64"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="64" id="K3D-qs-KIf"/>
@@ -2158,7 +2158,7 @@
                                 </columns>
                                 <gridCells>
                                     <gridCell row="UUi-ns-1yC" column="KFr-rG-gCF" id="WRs-34-8QH">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="kj2-bo-9Jz" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Logarithm With Base" translatesAutoresizingMaskIntoConstraints="NO" id="kj2-bo-9Jz" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="14H-Y1-toT"/>
@@ -2174,7 +2174,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="UUi-ns-1yC" column="KYG-ks-dej" id="cgd-jO-XO2">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="mYe-rR-A6h" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Logarithm" translatesAutoresizingMaskIntoConstraints="NO" id="mYe-rR-A6h" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="vZz-Ri-8ys"/>
@@ -2190,7 +2190,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="UUi-ns-1yC" column="g92-Wy-GBo" id="JgG-P3-TIF">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="KZ0-yR-dYs" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Natural Logarithm" translatesAutoresizingMaskIntoConstraints="NO" id="KZ0-yR-dYs" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="RTu-ye-NEo"/>
@@ -2206,7 +2206,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="UUi-ns-1yC" column="Pco-E7-Zgg" id="gUt-Dr-agQ">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="PzW-CR-Y6G" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Limit" translatesAutoresizingMaskIntoConstraints="NO" id="PzW-CR-Y6G" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="REf-Oi-xyT"/>
@@ -2222,7 +2222,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="UUi-ns-1yC" column="vWN-Rb-VWa" id="ZiC-tJ-0I4">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="lcX-7m-nN7" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Maximum" translatesAutoresizingMaskIntoConstraints="NO" id="lcX-7m-nN7" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="256" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="G38-M5-lbk"/>
@@ -2238,7 +2238,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="UUi-ns-1yC" column="MXR-vj-Nxu" id="DQb-HI-sXb">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="NJZ-Uh-8jh" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Maximum With Base" translatesAutoresizingMaskIntoConstraints="NO" id="NJZ-Uh-8jh" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="320" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="SnD-pk-s7k"/>
@@ -2254,7 +2254,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="UUi-ns-1yC" column="iDy-vA-cEI" id="rvW-Sz-58z">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="WnE-Ut-Ocm" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Minimun" translatesAutoresizingMaskIntoConstraints="NO" id="WnE-Ut-Ocm" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="384" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="AVa-7T-U0i"/>
@@ -2270,7 +2270,7 @@
                                         </button>
                                     </gridCell>
                                     <gridCell row="UUi-ns-1yC" column="Yrs-3H-sIa" id="fh3-GZ-GNA">
-                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="2rU-h6-xL9" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                        <button key="contentView" toolTip="Minimum With Base" translatesAutoresizingMaskIntoConstraints="NO" id="2rU-h6-xL9" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
                                             <rect key="frame" x="448" y="0.0" width="64" height="64"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="64" id="8qD-gP-yRE"/>
@@ -2302,10 +2302,183 @@
         <!--Operator-->
         <scene sceneID="Yi8-W0-wgc">
             <objects>
-                <viewController title="Operator" storyboardIdentifier="Operator" id="SZ1-ai-N5f" sceneMemberID="viewController">
+                <viewController title="Operator" storyboardIdentifier="Operator" id="SZ1-ai-N5f" customClass="OperatorViewController" customModule="LaTeX_Mathematics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Fhs-HE-ixe">
-                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="Y7W-nJ-F1b">
+                                <rect key="frame" x="0.0" y="64" width="576" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="eJE-oZ-fKN"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow yPlacement="center" id="hfC-Aa-2uZ"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="7d4-FC-JjM"/>
+                                    <gridColumn id="wUJ-R2-gCB"/>
+                                    <gridColumn id="d89-DK-deV"/>
+                                    <gridColumn id="8zc-8B-j6V"/>
+                                    <gridColumn id="pCD-v1-rwy"/>
+                                    <gridColumn id="ZKF-69-VAc"/>
+                                    <gridColumn id="2Ei-dn-4bt"/>
+                                    <gridColumn id="hwj-97-ut1"/>
+                                    <gridColumn id="Y6y-wg-m7Q"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="hfC-Aa-2uZ" column="7d4-FC-JjM" id="jeb-KW-lzA">
+                                        <button key="contentView" toolTip="Colon Equal" translatesAutoresizingMaskIntoConstraints="NO" id="04L-xk-pbg" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="Ydd-yB-peh"/>
+                                                <constraint firstAttribute="height" constant="64" id="iNi-V5-alB"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ColonEqualButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="IOi-JE-PPd">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="colonEqualButtonClicked:" target="SZ1-ai-N5f" id="XqC-YA-S0v"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="hfC-Aa-2uZ" column="wUJ-R2-gCB" id="FXA-B7-Vwe">
+                                        <button key="contentView" toolTip="Equal Equal" translatesAutoresizingMaskIntoConstraints="NO" id="HmP-Xz-Lch" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="64" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="WtR-VQ-Ddb"/>
+                                                <constraint firstAttribute="height" constant="64" id="hRC-W0-5CK"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="EqualEqualButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2Nr-Gn-ix4">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="equalEqualButtonClicked:" target="SZ1-ai-N5f" id="f7l-b5-dmX"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="hfC-Aa-2uZ" column="d89-DK-deV" id="at8-Zk-hVP">
+                                        <button key="contentView" toolTip="Plus Equal" translatesAutoresizingMaskIntoConstraints="NO" id="fIQ-aq-rc2" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="128" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="H34-nj-7GK"/>
+                                                <constraint firstAttribute="width" constant="64" id="k8K-OJ-00q"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="PlusEqualButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="5Vs-vv-Yq3">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="plusEqualButtonClicked:" target="SZ1-ai-N5f" id="8Au-rv-OMP"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="hfC-Aa-2uZ" column="8zc-8B-j6V" id="hdU-8Y-4TO">
+                                        <button key="contentView" toolTip="Minus Equal" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-AS-o4U" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="192" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="F6b-j7-LYc"/>
+                                                <constraint firstAttribute="width" constant="64" id="wkB-qF-6jY"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="MinusEqualButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="oBc-df-rJ0">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="minusEqualButtonClicked:" target="SZ1-ai-N5f" id="wow-1G-ETP"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="hfC-Aa-2uZ" column="pCD-v1-rwy" id="Vai-jW-HpN">
+                                        <button key="contentView" toolTip="Delta Equat To" translatesAutoresizingMaskIntoConstraints="NO" id="qWr-35-xCa" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="256" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="MAm-lf-UYb"/>
+                                                <constraint firstAttribute="height" constant="64" id="cPO-Qn-hRo"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="DeltaEquatToButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="PCi-tS-b4S">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="deltaEqualToButtonClicked:" target="SZ1-ai-N5f" id="EzZ-gY-55i"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="hfC-Aa-2uZ" column="ZKF-69-VAc" id="ooK-Gt-8b6">
+                                        <button key="contentView" toolTip="Leftwards Arrow Below" translatesAutoresizingMaskIntoConstraints="NO" id="6Ww-JS-ifc" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="320" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="faa-0Y-Vf9"/>
+                                                <constraint firstAttribute="height" constant="64" id="pQt-xF-YdI"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LeftwardsArrowBelowButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="WlJ-ga-g6X">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="leftwardsArrowBelowButtonClicked:" target="SZ1-ai-N5f" id="1nW-yi-DwM"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="hfC-Aa-2uZ" column="2Ei-dn-4bt" id="G0Q-0I-vbL">
+                                        <button key="contentView" toolTip="Leftwards Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="8Qh-jP-Eio" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="384" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="9v1-n1-zLY"/>
+                                                <constraint firstAttribute="height" constant="64" id="H0q-Z0-BV3"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LeftwardsArrowButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="D10-8Q-BhB">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="leftwardsArrowButtonClicked:" target="SZ1-ai-N5f" id="R0K-WX-Rh4"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="hfC-Aa-2uZ" column="hwj-97-ut1" id="nzi-37-NuR">
+                                        <button key="contentView" toolTip="Rightwards Arrow Below" translatesAutoresizingMaskIntoConstraints="NO" id="B79-dT-SDd" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="448" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="kZl-5p-kaD"/>
+                                                <constraint firstAttribute="height" constant="64" id="yqv-BQ-EVM"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="RightwardsArrowBelowButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="WWV-Jd-FZf">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="rightwardsArrowBelowButtonClicked:" target="SZ1-ai-N5f" id="5Xv-fc-avU"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="hfC-Aa-2uZ" column="Y6y-wg-m7Q" id="msa-YR-gjk">
+                                        <button key="contentView" toolTip="Rightwards Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="jyA-K5-SCf" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="512" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="W3g-H2-TLy"/>
+                                                <constraint firstAttribute="height" constant="64" id="n5H-si-7df"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="RightwardsArrowButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ibm-nK-yRC">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="rightwardsArrowButtonClicked:" target="SZ1-ai-N5f" id="EvD-zL-2kJ"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Y7W-nJ-F1b" firstAttribute="top" secondItem="Fhs-HE-ixe" secondAttribute="top" id="DYt-ZN-1dY"/>
+                            <constraint firstAttribute="bottom" secondItem="Y7W-nJ-F1b" secondAttribute="bottom" constant="64" id="EqC-3v-vSq"/>
+                            <constraint firstItem="Y7W-nJ-F1b" firstAttribute="leading" secondItem="Fhs-HE-ixe" secondAttribute="leading" id="VJE-rG-Ank"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="f9P-rD-GtP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -2348,15 +2521,18 @@
         <image name="BracketTabIcon" width="128" height="128"/>
         <image name="BracketsWithSeparatorsButtonIcon" width="64" height="64"/>
         <image name="CeilingBracketsButtonIcon" width="64" height="64"/>
+        <image name="ColonEqualButtonIcon" width="64" height="64"/>
         <image name="ContourIntegralButtonIcon" width="64" height="64"/>
         <image name="ContourIntegralWithLimitsButtonIcon" width="64" height="64"/>
         <image name="CoproductButtonIcon" width="64" height="64"/>
         <image name="CoproductWithLimitsButtonIcon" width="64" height="64"/>
         <image name="CubicRootButtonIcon" width="64" height="64"/>
         <image name="CurlyBracesButtonIcon" width="64" height="64"/>
+        <image name="DeltaEquatToButtonIcon" width="64" height="64"/>
         <image name="DoubleIntegralButtonIcon" width="64" height="64"/>
         <image name="DoubleIntegralWithLimitsButtonIcon" width="64" height="64"/>
         <image name="DoubleVerticalBarsButtonIcon" width="64" height="64"/>
+        <image name="EqualEqualButtonIcon" width="64" height="64"/>
         <image name="FloorBracketsButtonIcon" width="64" height="64"/>
         <image name="FractionTabIcon" width="128" height="128"/>
         <image name="FunctionTabIcon" width="128" height="128"/>
@@ -2375,6 +2551,8 @@
         <image name="LeftParenthesisButtonIcon" width="64" height="64"/>
         <image name="LeftSub-superscriptButtonIcon" width="64" height="64"/>
         <image name="LeftVerticalBarButtonIcon" width="64" height="64"/>
+        <image name="LeftwardsArrowBelowButtonIcon" width="64" height="64"/>
+        <image name="LeftwardsArrowButtonIcon" width="64" height="64"/>
         <image name="Limit&amp;LogTabIcon" width="128" height="128"/>
         <image name="LimitButtonIcon" width="64" height="64"/>
         <image name="LinearFractionButtonIcon" width="64" height="64"/>
@@ -2389,9 +2567,11 @@
         <image name="MaximumWithBaseButtonIcon" width="64" height="64"/>
         <image name="MinimumButtonIcon" width="64" height="64"/>
         <image name="MinimumWithBaseButtonIcon" width="64" height="64"/>
+        <image name="MinusEqualButtonIcon" width="64" height="64"/>
         <image name="NaturalLogarithmButtonIcon" width="64" height="64"/>
         <image name="OperatorTabIcon" width="128" height="128"/>
         <image name="ParenthesesButtonIcon" width="64" height="64"/>
+        <image name="PlusEqualButtonIcon" width="64" height="64"/>
         <image name="ProductButtonIcon" width="64" height="64"/>
         <image name="ProductWithLimitsButtonIcon" width="64" height="64"/>
         <image name="RadicalTabIcon" width="128" height="128"/>
@@ -2401,9 +2581,11 @@
         <image name="RightBracketButtonIcon" width="64" height="64"/>
         <image name="RightCeilingBracketButtonIcon" width="64" height="64"/>
         <image name="RightDoubleVerticalBarButtonIcon" width="64" height="64"/>
-        <image name="RightFloorBracketButtonIcon" width="64.5" height="64.5"/>
+        <image name="RightFloorBracketButtonIcon" width="64" height="64"/>
         <image name="RightParenthesisButtonIcon" width="64" height="64"/>
         <image name="RightVerticalBarButtonIcon" width="64" height="64"/>
+        <image name="RightwardsArrowBelowButtonIcon" width="64" height="64"/>
+        <image name="RightwardsArrowButtonIcon" width="64" height="64"/>
         <image name="ScriptTabIcon" width="128" height="128"/>
         <image name="SquareBracketsButtonIcon" width="64" height="64"/>
         <image name="SquareRootButtonIcon" width="64" height="64"/>
