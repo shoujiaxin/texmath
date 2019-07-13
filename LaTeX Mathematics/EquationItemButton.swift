@@ -11,7 +11,7 @@ import Cocoa
 class EquationItemButton: NSButton {
     override func viewWillDraw() {
         imageScaling = NSImageScaling.scaleNone
-        image?.size = NSSize(width: frame.width / 2, height: frame.height / 2)
+        image?.size = NSSize(width: frame.width * 0.7, height: frame.height * 0.7)
 
         layer?.cornerRadius = 6
         layer?.borderWidth = 0 // Hide border by default

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5104E3BA22D3834700E63A39 /* IntegralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5104E3B922D3834700E63A39 /* IntegralViewController.swift */; };
+		510BCA4222D7838C00A0E365 /* BracketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BCA4122D7838C00A0E365 /* BracketViewController.swift */; };
 		511B1A3E22D0D41F00D7AAB5 /* EquationItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511B1A3D22D0D41F00D7AAB5 /* EquationItemButton.swift */; };
 		512B591622D19A7B00B96C09 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512B591522D19A7B00B96C09 /* PreviewViewController.swift */; };
 		5134E0C622C4C2E200F7DEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134E0C522C4C2E200F7DEC3 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		37A27CC76E1F96E3BEF57332 /* Pods-LaTeXMathematics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeXMathematics.release.xcconfig"; path = "Target Support Files/Pods-LaTeXMathematics/Pods-LaTeXMathematics.release.xcconfig"; sourceTree = "<group>"; };
 		4EDDC520DD8BC5E82F5109B8 /* Pods-LaTeX Mathematics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX Mathematics.release.xcconfig"; path = "Target Support Files/Pods-LaTeX Mathematics/Pods-LaTeX Mathematics.release.xcconfig"; sourceTree = "<group>"; };
 		5104E3B922D3834700E63A39 /* IntegralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralViewController.swift; sourceTree = "<group>"; };
+		510BCA4122D7838C00A0E365 /* BracketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketViewController.swift; sourceTree = "<group>"; };
 		511B1A3D22D0D41F00D7AAB5 /* EquationItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemButton.swift; sourceTree = "<group>"; };
 		512B591522D19A7B00B96C09 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		5134E0C222C4C2E200F7DEC3 /* LaTeX Mathematics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LaTeX Mathematics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				51757CF822D2179000EC30BF /* RadicalViewController.swift */,
 				5104E3B922D3834700E63A39 /* IntegralViewController.swift */,
 				51A8486122D4F10200A99313 /* LargeOperatorViewController.swift */,
+				510BCA4122D7838C00A0E365 /* BracketViewController.swift */,
 			);
 			path = "LaTeX Mathematics";
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				512B591622D19A7B00B96C09 /* PreviewViewController.swift in Sources */,
 				51EF739E22D1CDDF0055266B /* EquationPreviewView.swift in Sources */,
 				51757CF722D20F6B00EC30BF /* ScriptViewController.swift in Sources */,
+				510BCA4222D7838C00A0E365 /* BracketViewController.swift in Sources */,
 				51757CF922D2179000EC30BF /* RadicalViewController.swift in Sources */,
 				5104E3BA22D3834700E63A39 /* IntegralViewController.swift in Sources */,
 				51CEBBD422D1E87E00F0044E /* FractionViewController.swift in Sources */,

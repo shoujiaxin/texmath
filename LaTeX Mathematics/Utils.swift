@@ -17,8 +17,8 @@ class Utils {
         // Update preview label
         latexPreviewLabel.latex = editorTextView.string
 
-        // Move cursor to middle of first "{}"
-        if let firstIndex = code.range(of: "{}") {
+        // Move cursor to middle of first "{}" or "  "
+        if let firstIndex = (code.range(of: "{}") != nil) ? code.range(of: "{}") : code.range(of: "  ") {
             let offset = code.distance(from: code.startIndex, to: firstIndex.lowerBound) + 1
             editorTextView.setSelectedRange(NSRange(location: cursorPosition + offset, length: 0))
         }
