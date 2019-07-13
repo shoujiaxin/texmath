@@ -2133,10 +2133,166 @@
         <!--Limit & Log-->
         <scene sceneID="yQa-w3-196">
             <objects>
-                <viewController title="Limit &amp; Log" storyboardIdentifier="Limit &amp; Log" id="VRy-5d-4jN" sceneMemberID="viewController">
+                <viewController title="Limit &amp; Log" storyboardIdentifier="Limit &amp; Log" id="VRy-5d-4jN" customClass="LimitLogViewController" customModule="LaTeX_Mathematics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="RLs-ZJ-n1F">
-                        <rect key="frame" x="0.0" y="0.0" width="640" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="2W6-ar-d0P">
+                                <rect key="frame" x="0.0" y="64" width="512" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Efc-AG-I8G"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow yPlacement="center" id="UUi-ns-1yC"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="KFr-rG-gCF"/>
+                                    <gridColumn id="KYG-ks-dej"/>
+                                    <gridColumn id="g92-Wy-GBo"/>
+                                    <gridColumn id="Pco-E7-Zgg"/>
+                                    <gridColumn id="vWN-Rb-VWa"/>
+                                    <gridColumn id="MXR-vj-Nxu"/>
+                                    <gridColumn id="iDy-vA-cEI"/>
+                                    <gridColumn id="Yrs-3H-sIa"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="UUi-ns-1yC" column="KFr-rG-gCF" id="WRs-34-8QH">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="kj2-bo-9Jz" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="14H-Y1-toT"/>
+                                                <constraint firstAttribute="height" constant="64" id="KRb-O7-8d8"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LogarithmWithBaseButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="xJy-jc-Exp">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="logarithmWithBaseButtonClicked:" target="VRy-5d-4jN" id="Itg-t6-jTd"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="UUi-ns-1yC" column="KYG-ks-dej" id="cgd-jO-XO2">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="mYe-rR-A6h" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="64" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="vZz-Ri-8ys"/>
+                                                <constraint firstAttribute="width" constant="64" id="zzz-N3-gUD"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LogarithmButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="WeB-60-Qt4">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="logarithmButtonClicked:" target="VRy-5d-4jN" id="biO-PA-wzB"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="UUi-ns-1yC" column="g92-Wy-GBo" id="JgG-P3-TIF">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="KZ0-yR-dYs" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="128" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="RTu-ye-NEo"/>
+                                                <constraint firstAttribute="height" constant="64" id="uHA-DG-mfr"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NaturalLogarithmButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uDu-iB-cdn">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="naturalLogarithmButtonClicked:" target="VRy-5d-4jN" id="B5O-xi-g8L"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="UUi-ns-1yC" column="Pco-E7-Zgg" id="gUt-Dr-agQ">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="PzW-CR-Y6G" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="192" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="REf-Oi-xyT"/>
+                                                <constraint firstAttribute="height" constant="64" id="hJ1-kl-xfl"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LimitButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="inR-4M-Fcv">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="limitButtonClicked:" target="VRy-5d-4jN" id="HvV-hl-aG7"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="UUi-ns-1yC" column="vWN-Rb-VWa" id="ZiC-tJ-0I4">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="lcX-7m-nN7" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="256" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="G38-M5-lbk"/>
+                                                <constraint firstAttribute="height" constant="64" id="z3n-Ok-VrH"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="MaximumButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8oM-KM-kYc">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="maximumButtonClicked:" target="VRy-5d-4jN" id="IQA-j6-ARw"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="UUi-ns-1yC" column="MXR-vj-Nxu" id="DQb-HI-sXb">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="NJZ-Uh-8jh" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="320" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="SnD-pk-s7k"/>
+                                                <constraint firstAttribute="height" constant="64" id="bf5-LB-Sib"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="MaximumWithBaseButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="D5j-vu-QbG">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="maximumWithBaseButtonClicked:" target="VRy-5d-4jN" id="Xep-Zw-wie"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="UUi-ns-1yC" column="iDy-vA-cEI" id="rvW-Sz-58z">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="WnE-Ut-Ocm" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="384" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="AVa-7T-U0i"/>
+                                                <constraint firstAttribute="width" constant="64" id="uAH-kR-B6P"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="MinimumButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Bzi-oi-dmB">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="minimumButtonClicked:" target="VRy-5d-4jN" id="Kp7-eb-V3c"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="UUi-ns-1yC" column="Yrs-3H-sIa" id="fh3-GZ-GNA">
+                                        <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="2rU-h6-xL9" customClass="EquationItemButton" customModule="LaTeX_Mathematics" customModuleProvider="target">
+                                            <rect key="frame" x="448" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="8qD-gP-yRE"/>
+                                                <constraint firstAttribute="height" constant="64" id="Tft-NO-AJn"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="MinimumWithBaseButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jdD-dy-555">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="minimumWithBaseButtonClicked:" target="VRy-5d-4jN" id="xoh-34-710"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="2W6-ar-d0P" firstAttribute="leading" secondItem="RLs-ZJ-n1F" secondAttribute="leading" id="Gej-Lk-Kni"/>
+                            <constraint firstAttribute="bottom" secondItem="2W6-ar-d0P" secondAttribute="bottom" constant="64" id="Ml0-fo-K3f"/>
+                            <constraint firstItem="2W6-ar-d0P" firstAttribute="top" secondItem="RLs-ZJ-n1F" secondAttribute="top" id="vf1-x4-hpD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="Z0N-OU-8gH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -2220,12 +2376,20 @@
         <image name="LeftSub-superscriptButtonIcon" width="64" height="64"/>
         <image name="LeftVerticalBarButtonIcon" width="64" height="64"/>
         <image name="Limit&amp;LogTabIcon" width="128" height="128"/>
+        <image name="LimitButtonIcon" width="64" height="64"/>
         <image name="LinearFractionButtonIcon" width="64" height="64"/>
+        <image name="LogarithmButtonIcon" width="64" height="64"/>
+        <image name="LogarithmWithBaseButtonIcon" width="64" height="64"/>
         <image name="LogicalAndButtonIcon" width="64" height="64"/>
         <image name="LogicalAndWithLimitsButtonIcon" width="64" height="64"/>
         <image name="LogicalOrButtonIcon" width="64" height="64"/>
         <image name="LogicalOrWithLimitsButtonIcon" width="64" height="64"/>
         <image name="MatrixTabIcon" width="128" height="128"/>
+        <image name="MaximumButtonIcon" width="64" height="64"/>
+        <image name="MaximumWithBaseButtonIcon" width="64" height="64"/>
+        <image name="MinimumButtonIcon" width="64" height="64"/>
+        <image name="MinimumWithBaseButtonIcon" width="64" height="64"/>
+        <image name="NaturalLogarithmButtonIcon" width="64" height="64"/>
         <image name="OperatorTabIcon" width="128" height="128"/>
         <image name="ParenthesesButtonIcon" width="64" height="64"/>
         <image name="ProductButtonIcon" width="64" height="64"/>
