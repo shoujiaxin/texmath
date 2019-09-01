@@ -19,6 +19,7 @@
 		51757CF522D1FCB100EC30BF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51757CF422D1FCB100EC30BF /* Utils.swift */; };
 		51757CF722D20F6B00EC30BF /* ScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51757CF622D20F6B00EC30BF /* ScriptViewController.swift */; };
 		51757CF922D2179000EC30BF /* RadicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51757CF822D2179000EC30BF /* RadicalViewController.swift */; };
+		517C451E231BCF2E00539A67 /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517C451D231BCF2E00539A67 /* MatrixViewController.swift */; };
 		51A8486222D4F10200A99313 /* LargeOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8486122D4F10200A99313 /* LargeOperatorViewController.swift */; };
 		51CEBBD422D1E87E00F0044E /* FractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEBBD322D1E87E00F0044E /* FractionViewController.swift */; };
 		51EF739E22D1CDDF0055266B /* EquationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EF739D22D1CDDF0055266B /* EquationPreviewView.swift */; };
@@ -43,6 +44,7 @@
 		51757CF422D1FCB100EC30BF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		51757CF622D20F6B00EC30BF /* ScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptViewController.swift; sourceTree = "<group>"; };
 		51757CF822D2179000EC30BF /* RadicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadicalViewController.swift; sourceTree = "<group>"; };
+		517C451D231BCF2E00539A67 /* MatrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
 		51A8486122D4F10200A99313 /* LargeOperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeOperatorViewController.swift; sourceTree = "<group>"; };
 		51CEBBD322D1E87E00F0044E /* FractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionViewController.swift; sourceTree = "<group>"; };
 		51EF739D22D1CDDF0055266B /* EquationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationPreviewView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				510BCA4122D7838C00A0E365 /* BracketViewController.swift */,
 				511CCB4122D9AE9D004A14EB /* LimitLogViewController.swift */,
 				511CCB4322DA09FD004A14EB /* OperatorViewController.swift */,
+				517C451D231BCF2E00539A67 /* MatrixViewController.swift */,
 			);
 			path = "LaTeX Mathematics";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				51CEBBD422D1E87E00F0044E /* FractionViewController.swift in Sources */,
 				51A8486222D4F10200A99313 /* LargeOperatorViewController.swift in Sources */,
 				51757CF522D1FCB100EC30BF /* Utils.swift in Sources */,
+				517C451E231BCF2E00539A67 /* MatrixViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
