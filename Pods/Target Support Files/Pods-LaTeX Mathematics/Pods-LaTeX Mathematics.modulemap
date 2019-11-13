@@ -1,6 +1,0 @@
-framework module Pods_LaTeX_Mathematics {
-  umbrella header "Pods-LaTeX Mathematics-umbrella.h"
-
-  export *
-  module * { export * }
-}
