@@ -11,6 +11,7 @@
 		19F5D343237BF6CC004CDF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5D342237BF6CC004CDF73 /* ViewController.swift */; };
 		19F5D345237BF6D0004CDF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D344237BF6D0004CDF73 /* Assets.xcassets */; };
 		19F5D348237BF6D0004CDF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D346237BF6D0004CDF73 /* Main.storyboard */; };
+		E0B88F3E413CDD579AD22C78 /* Pods_TeXMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E14020D126A164B57198458 /* Pods_TeXMath.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,9 @@
 		19F5D347237BF6D0004CDF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19F5D349237BF6D0004CDF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19F5D34A237BF6D0004CDF73 /* TeXMath.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TeXMath.entitlements; sourceTree = "<group>"; };
+		1E14020D126A164B57198458 /* Pods_TeXMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeXMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDBA32025D074389895C3B2 /* Pods-TeXMath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeXMath.debug.xcconfig"; path = "Target Support Files/Pods-TeXMath/Pods-TeXMath.debug.xcconfig"; sourceTree = "<group>"; };
+		BC1FF4E8A2F06A3B55AEB26D /* Pods-TeXMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeXMath.release.xcconfig"; path = "Target Support Files/Pods-TeXMath/Pods-TeXMath.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B88F3E413CDD579AD22C78 /* Pods_TeXMath.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +44,8 @@
 			children = (
 				19F5D33F237BF6CC004CDF73 /* TeXMath */,
 				19F5D33E237BF6CC004CDF73 /* Products */,
+				1C3104C91D16FFB38114DBA5 /* Pods */,
+				D873428BE8C0B7D525FFC7AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +70,24 @@
 			path = TeXMath;
 			sourceTree = "<group>";
 		};
+		1C3104C91D16FFB38114DBA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DDBA32025D074389895C3B2 /* Pods-TeXMath.debug.xcconfig */,
+				BC1FF4E8A2F06A3B55AEB26D /* Pods-TeXMath.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D873428BE8C0B7D525FFC7AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E14020D126A164B57198458 /* Pods_TeXMath.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19F5D34D237BF6D0004CDF73 /* Build configuration list for PBXNativeTarget "TeXMath" */;
 			buildPhases = (
+				959E239436793C30551E8A0F /* [CP] Check Pods Manifest.lock */,
 				19F5D339237BF6CC004CDF73 /* Sources */,
 				19F5D33A237BF6CC004CDF73 /* Frameworks */,
 				19F5D33B237BF6CC004CDF73 /* Resources */,
+				43F2AA6DFCA3CF5EE5206A58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43F2AA6DFCA3CF5EE5206A58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeXMath/Pods-TeXMath-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeXMath/Pods-TeXMath-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeXMath/Pods-TeXMath-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959E239436793C30551E8A0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeXMath-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19F5D339237BF6CC004CDF73 /* Sources */ = {
@@ -267,6 +336,7 @@
 		};
 		19F5D34E237BF6D0004CDF73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DDBA32025D074389895C3B2 /* Pods-TeXMath.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TeXMath/TeXMath.entitlements;
@@ -288,6 +358,7 @@
 		};
 		19F5D34F237BF6D0004CDF73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC1FF4E8A2F06A3B55AEB26D /* Pods-TeXMath.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TeXMath/TeXMath.entitlements;
