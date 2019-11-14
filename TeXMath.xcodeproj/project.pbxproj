@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5D340237BF6CC004CDF73 /* AppDelegate.swift */; };
-		19F5D343237BF6CC004CDF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5D342237BF6CC004CDF73 /* ViewController.swift */; };
 		19F5D345237BF6D0004CDF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D344237BF6D0004CDF73 /* Assets.xcassets */; };
 		19F5D348237BF6D0004CDF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D346237BF6D0004CDF73 /* Main.storyboard */; };
 		E0B88F3E413CDD579AD22C78 /* Pods_TeXMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E14020D126A164B57198458 /* Pods_TeXMath.framework */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		19F5D33D237BF6CC004CDF73 /* TeXMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeXMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F5D340237BF6CC004CDF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19F5D342237BF6CC004CDF73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19F5D344237BF6D0004CDF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19F5D347237BF6D0004CDF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19F5D349237BF6D0004CDF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
-				19F5D342237BF6CC004CDF73 /* ViewController.swift */,
 				19F5D344237BF6D0004CDF73 /* Assets.xcassets */,
 				19F5D346237BF6D0004CDF73 /* Main.storyboard */,
 				19F5D349237BF6D0004CDF73 /* Info.plist */,
@@ -76,7 +73,6 @@
 				2DDBA32025D074389895C3B2 /* Pods-TeXMath.debug.xcconfig */,
 				BC1FF4E8A2F06A3B55AEB26D /* Pods-TeXMath.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -202,7 +198,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F5D343237BF6CC004CDF73 /* ViewController.swift in Sources */,
 				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +337,7 @@
 				CODE_SIGN_ENTITLEMENTS = TeXMath/TeXMath.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
@@ -349,7 +345,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.TeXMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -364,6 +360,7 @@
 				CODE_SIGN_ENTITLEMENTS = TeXMath/TeXMath.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
@@ -371,7 +368,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.TeXMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
