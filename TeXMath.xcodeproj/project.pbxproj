@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C342E237D8B3700955DF5 /* PreviewView.swift */; };
 		19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5D340237BF6CC004CDF73 /* AppDelegate.swift */; };
 		19F5D345237BF6D0004CDF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D344237BF6D0004CDF73 /* Assets.xcassets */; };
 		19F5D348237BF6D0004CDF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D346237BF6D0004CDF73 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		194C342E237D8B3700955DF5 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		19F5D33D237BF6CC004CDF73 /* TeXMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeXMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F5D340237BF6CC004CDF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F5D344237BF6D0004CDF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		194C3430237D8B5200955DF5 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				194C342E237D8B3700955DF5 /* PreviewView.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
 		19F5D334237BF6CC004CDF73 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
 				19F5D344237BF6D0004CDF73 /* Assets.xcassets */,
 				19F5D346237BF6D0004CDF73 /* Main.storyboard */,
+				194C3430237D8B5200955DF5 /* Editor */,
 				19F5D349237BF6D0004CDF73 /* Info.plist */,
 				19F5D34A237BF6D0004CDF73 /* TeXMath.entitlements */,
 			);
@@ -199,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
+				194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

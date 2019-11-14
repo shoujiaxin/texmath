@@ -821,7 +821,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="bv0-98-DnQ">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="bv0-98-DnQ" customClass="PreviewView" customModule="TeXMath" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="151" width="450" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="dRo-Hu-FvB"/>
