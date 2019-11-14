@@ -777,10 +777,10 @@
             </objects>
             <point key="canvasLocation" x="1332" y="971"/>
         </scene>
-        <!--View Controller-->
+        <!--Editor View Controller-->
         <scene sceneID="vpO-NF-cx6">
             <objects>
-                <viewController id="T2G-gq-yQ3" sceneMemberID="viewController">
+                <viewController id="T2G-gq-yQ3" customClass="EditorViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="zsf-XJ-2Tb">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="261"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -791,6 +791,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="clearButtonClicked:" target="T2G-gq-yQ3" id="VxF-5t-PDW"/>
+                                </connections>
                             </button>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKI-ib-oXB">
                                 <rect key="frame" x="0.0" y="41" width="450" height="100"/>
@@ -798,7 +801,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="EE5-Gp-vPY">
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" smartInsertDelete="YES" id="EE5-Gp-vPY">
                                             <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -833,6 +836,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="copyButtonClicked:" target="T2G-gq-yQ3" id="Dd6-dT-hoX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -850,6 +856,10 @@
                             <constraint firstItem="KcY-bw-QWU" firstAttribute="top" secondItem="aKI-ib-oXB" secondAttribute="bottom" constant="10" id="z7S-by-7xc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="codeTextView" destination="EE5-Gp-vPY" id="eeo-B4-V5b"/>
+                        <outlet property="previewView" destination="bv0-98-DnQ" id="Id3-Xb-Hny"/>
+                    </connections>
                 </viewController>
                 <customObject id="cnw-np-eU0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
