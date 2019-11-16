@@ -725,10 +725,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="712"/>
         </scene>
-        <!--Tab View Controller-->
+        <!--Equation Item Tab View Controller-->
         <scene sceneID="x30-rl-Mce">
             <objects>
-                <tabViewController tabStyle="toolbar" id="zZS-hc-zjK" sceneMemberID="viewController">
+                <tabViewController tabStyle="toolbar" id="zZS-hc-zjK" customClass="EquationItemTabViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" image="FractionTabIcon" id="MQy-0O-fzn"/>
                         <tabViewItem identifier="" image="ScriptTabIcon" id="28E-cG-sOT"/>

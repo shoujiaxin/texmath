@@ -10,7 +10,7 @@ import Cocoa
 import iosMath
 
 class PreviewView: NSView {
-    private let formulaLabel = MTMathUILabel()
+    private let equationLabel = MTMathUILabel()
 
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
@@ -20,15 +20,15 @@ class PreviewView: NSView {
         autoresizesSubviews = true
         autoresizingMask = [NSView.AutoresizingMask.width, NSView.AutoresizingMask.height]
 
-        formulaLabel.fontSize = 16
-        formulaLabel.frame = NSRect(x: 0, y: 0, width: frame.width, height: frame.height)
-        formulaLabel.textAlignment = MTTextAlignment.center
-        formulaLabel.textColor = NSColor.textColor
+        equationLabel.fontSize = 16
+        equationLabel.frame = NSRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        equationLabel.textAlignment = MTTextAlignment.center
+        equationLabel.textColor = NSColor.textColor
 
-        addSubview(formulaLabel)
+        addSubview(equationLabel)
     }
 
     func show(latex: String) {
-        formulaLabel.latex = latex
+        equationLabel.latex = latex
     }
 }
