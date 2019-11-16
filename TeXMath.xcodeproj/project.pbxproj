@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1906A15D237FD3EA00772D46 /* EquationItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906A15C237FD3EA00772D46 /* EquationItemButton.swift */; };
 		194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C342E237D8B3700955DF5 /* PreviewView.swift */; };
 		19CC7208237D927400929A15 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC7207237D927400929A15 /* EditorViewController.swift */; };
 		19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1906A15C237FD3EA00772D46 /* EquationItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemButton.swift; sourceTree = "<group>"; };
 		194C342E237D8B3700955DF5 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		19CC7207237D927400929A15 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
 		19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemTabViewController.swift; sourceTree = "<group>"; };
@@ -43,13 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		194C3430237D8B5200955DF5 /* Editor */ = {
+		194C3430237D8B5200955DF5 /* EditorView */ = {
 			isa = PBXGroup;
 			children = (
 				194C342E237D8B3700955DF5 /* PreviewView.swift */,
 				19CC7207237D927400929A15 /* EditorViewController.swift */,
 			);
-			path = Editor;
+			path = EditorView;
+			sourceTree = "<group>";
+		};
+		19F2AD48237FD2F8000E5003 /* EquationItemTabView */ = {
+			isa = PBXGroup;
+			children = (
+				1906A15C237FD3EA00772D46 /* EquationItemButton.swift */,
+				19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */,
+			);
+			path = EquationItemTabView;
 			sourceTree = "<group>";
 		};
 		19F5D334237BF6CC004CDF73 = {
@@ -76,8 +87,8 @@
 				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
 				19F5D344237BF6D0004CDF73 /* Assets.xcassets */,
 				19F5D346237BF6D0004CDF73 /* Main.storyboard */,
-				19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */,
-				194C3430237D8B5200955DF5 /* Editor */,
+				19F2AD48237FD2F8000E5003 /* EquationItemTabView */,
+				194C3430237D8B5200955DF5 /* EditorView */,
 				19F5D349237BF6D0004CDF73 /* Info.plist */,
 				19F5D34A237BF6D0004CDF73 /* TeXMath.entitlements */,
 			);
@@ -218,6 +229,7 @@
 				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
 				19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */,
 				19CC7208237D927400929A15 /* EditorViewController.swift in Sources */,
+				1906A15D237FD3EA00772D46 /* EquationItemButton.swift in Sources */,
 				194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

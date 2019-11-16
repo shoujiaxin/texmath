@@ -801,8 +801,8 @@
         <scene sceneID="vpO-NF-cx6">
             <objects>
                 <viewController id="T2G-gq-yQ3" customClass="EditorViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="zsf-XJ-2Tb">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="261"/>
+                    <view key="view" misplaced="YES" id="zsf-XJ-2Tb">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="281"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fLO-YE-qwN">
@@ -845,9 +845,9 @@
                                 </scroller>
                             </scrollView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="bv0-98-DnQ" customClass="PreviewView" customModule="TeXMath" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="151" width="450" height="100"/>
+                                <rect key="frame" x="0.0" y="151" width="450" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="dRo-Hu-FvB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="dRo-Hu-FvB"/>
                                 </constraints>
                             </customView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KcY-bw-QWU">

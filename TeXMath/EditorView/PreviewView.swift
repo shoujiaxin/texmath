@@ -20,7 +20,7 @@ class PreviewView: NSView {
         autoresizesSubviews = true
         autoresizingMask = [NSView.AutoresizingMask.width, NSView.AutoresizingMask.height]
 
-        equationLabel.fontSize = 16
+        equationLabel.fontSize = 20
         equationLabel.frame = NSRect(x: 0, y: 0, width: frame.width, height: frame.height)
         equationLabel.textAlignment = MTTextAlignment.center
         equationLabel.textColor = NSColor.textColor

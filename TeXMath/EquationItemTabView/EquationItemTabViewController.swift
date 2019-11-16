@@ -16,19 +16,13 @@ class EquationItemTabViewController: NSTabViewController {
     override func updateViewConstraints() {
         super.updateViewConstraints()
 
-        var iconColor = NSColor.black
-        if let appearance = UserDefaults.standard.string(forKey: "AppleInterfaceStyle") {
-            if appearance == "Dark" {
-                iconColor = NSColor.white
-            }
-        }
         for tabViewItem in tabViewItems {
-            tabViewItem.image?.tint(withColor: iconColor)
+            tabViewItem.image?.tint(withColor: NSColor(named: NSColor.Name("IconColor"))!)
         }
     }
 }
 
-private extension NSImage {
+extension NSImage {
     func tint(withColor color: NSColor) {
         lockFocus()
 
