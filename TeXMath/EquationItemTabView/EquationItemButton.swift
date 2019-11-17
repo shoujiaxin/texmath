@@ -12,15 +12,18 @@ class EquationItemButton: NSButton {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
-        image?.size = NSSize(width: frame.width * 0.8, height: frame.height * 0.8)
-        image?.tint(withColor: NSColor(named: NSColor.Name("IconColor"))!)
-
         layer?.borderColor = NSColor.controlAccentColor.cgColor
         layer?.borderWidth = 0
         layer?.cornerRadius = 6
 
         let trackingArea = NSTrackingArea(rect: bounds, options: [.mouseEnteredAndExited, .activeAlways], owner: self, userInfo: nil)
         addTrackingArea(trackingArea)
+    }
+
+    override func layout() {
+        imageScaling = NSImageScaling.scaleNone
+        image?.size = NSSize(width: 48, height: 48)
+        image?.tint(withColor: NSColor(named: NSColor.Name("IconColor"))!)
     }
 
     override func mouseEntered(with _: NSEvent) {
