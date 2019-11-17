@@ -13,8 +13,14 @@ class Utils {
 
     static func insertLatex(latexCode: String) {
         if let codeTextView = Utils.codeTextView {
-            let cursorPosition = codeTextView.selectedRange().location
+            var cursorPosition = codeTextView.selectedRange().location
+            let strIndex = codeTextView.string.index(codeTextView.string.startIndex, offsetBy: cursorPosition)
 
+            // Insert a spcae before the code
+            if cursorPosition != 0, strIndex != codeTextView.string.endIndex, codeTextView.string[codeTextView.string.index(before: strIndex)] != " " {
+                codeTextView.insertText(" ", replacementRange: codeTextView.selectedRange())
+                cursorPosition += 1
+            }
             // Insert code to current cursor position
             codeTextView.insertText(latexCode, replacementRange: codeTextView.selectedRange())
 

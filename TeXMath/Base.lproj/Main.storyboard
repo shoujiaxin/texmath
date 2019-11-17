@@ -684,7 +684,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="TeXMath" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
+                    <window key="window" title="TeXMath" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="800" height="300"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -842,15 +842,103 @@
         <!--Script-->
         <scene sceneID="Ho6-KV-Qf9">
             <objects>
-                <viewController title="Script" id="YFS-UG-S2f" sceneMemberID="viewController">
+                <viewController title="Script" id="YFS-UG-S2f" customClass="ScriptViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="kXy-q1-dBH">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="center" yPlacement="center" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="2HH-ON-aca">
+                                <rect key="frame" x="0.0" y="64" width="256" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Bi8-dH-eMz"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow id="7mi-9T-6pi"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="dg5-RZ-dJm"/>
+                                    <gridColumn id="z7Y-It-Olf"/>
+                                    <gridColumn id="1oh-rA-5c2"/>
+                                    <gridColumn id="Z6M-Xh-4cM"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="7mi-9T-6pi" column="dg5-RZ-dJm" id="klN-MR-rdJ">
+                                        <button key="contentView" toolTip="Superscript" translatesAutoresizingMaskIntoConstraints="NO" id="zqD-sy-ZD3" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="8vO-vM-1iF"/>
+                                                <constraint firstAttribute="height" constant="64" id="B01-T8-lS9"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SuperscriptButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="5kd-P1-6Fn">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="superscriptButtonClicked:" target="YFS-UG-S2f" id="NEZ-1b-XNP"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="7mi-9T-6pi" column="z7Y-It-Olf" id="Lfd-ur-IJ1">
+                                        <button key="contentView" toolTip="Subscript" translatesAutoresizingMaskIntoConstraints="NO" id="ICA-5m-dpH" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="64" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="FfO-bB-PdT"/>
+                                                <constraint firstAttribute="height" constant="64" id="rtD-hk-ekQ"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SubscriptButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="sNc-LX-xH4">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="subscriptButtonClicked:" target="YFS-UG-S2f" id="lor-Jx-NYh"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="7mi-9T-6pi" column="1oh-rA-5c2" id="9VA-Wj-SvO">
+                                        <button key="contentView" toolTip="Subscript-Superscript" translatesAutoresizingMaskIntoConstraints="NO" id="ubB-6V-1x2" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="128" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="Nkf-Qr-B8I"/>
+                                                <constraint firstAttribute="height" constant="64" id="YiD-xE-eta"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SubscriptSuperscriptButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="MLK-Rz-aw8">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="subscriptSuperscriptButtonClicked:" target="YFS-UG-S2f" id="NA2-YS-mia"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="7mi-9T-6pi" column="Z6M-Xh-4cM" id="zTs-aZ-tAl">
+                                        <button key="contentView" toolTip="Left Subscript-Superscript" translatesAutoresizingMaskIntoConstraints="NO" id="2XH-rQ-RdB" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="192" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="2GH-ps-hUL"/>
+                                                <constraint firstAttribute="height" constant="64" id="gmY-Uu-pSW"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LeftSubscriptSuperscriptButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="PNx-ls-CFu">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="leftSubscriptSuperscriptButtonClicked:" target="YFS-UG-S2f" id="2Qk-6h-SgG"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="2HH-ON-aca" firstAttribute="leading" secondItem="kXy-q1-dBH" secondAttribute="leading" id="3Zc-E0-txT"/>
+                            <constraint firstAttribute="bottom" secondItem="2HH-ON-aca" secondAttribute="bottom" constant="64" id="DvM-BA-avD"/>
+                            <constraint firstItem="2HH-ON-aca" firstAttribute="top" secondItem="kXy-q1-dBH" secondAttribute="top" id="cwY-rT-MV3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="7kZ-bq-IW1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="576"/>
+            <point key="canvasLocation" x="1507" y="382"/>
         </scene>
         <!--Editor View Controller-->
         <scene sceneID="vpO-NF-cx6">
@@ -1078,6 +1166,7 @@
         <image name="FunctionTabIcon" width="32" height="32"/>
         <image name="IntegralTabIcon" width="32" height="32"/>
         <image name="LargeOperatorTabIcon" width="32" height="32"/>
+        <image name="LeftSubscriptSuperscriptButtonIcon" width="48" height="48"/>
         <image name="LimitAndLogTabIcon" width="32" height="32"/>
         <image name="LinearFractionButtonIcon" width="48" height="48"/>
         <image name="MatrixTabIcon" width="32" height="32"/>
@@ -1085,6 +1174,9 @@
         <image name="RadicalTabIcon" width="32" height="32"/>
         <image name="ScriptTabIcon" width="32" height="32"/>
         <image name="StackedFractionButtonIcon" width="48" height="48"/>
+        <image name="SubscriptButtonIcon" width="48" height="48"/>
+        <image name="SubscriptSuperscriptButtonIcon" width="48" height="48"/>
+        <image name="SuperscriptButtonIcon" width="48" height="48"/>
         <image name="SymbolTabIcon" width="32" height="32"/>
     </resources>
 </document>
