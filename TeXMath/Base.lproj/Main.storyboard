@@ -1031,15 +1031,103 @@
         <!--Radical-->
         <scene sceneID="nG7-jq-KeU">
             <objects>
-                <viewController title="Radical" id="Bic-n5-pNm" sceneMemberID="viewController">
+                <viewController title="Radical" id="Bic-n5-pNm" customClass="RadicalViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="mlP-vm-DOz">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="center" yPlacement="center" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="he0-Jm-17L">
+                                <rect key="frame" x="0.0" y="64" width="256" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="LYn-xi-Qbt"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow id="rXU-vn-iXn"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="qFr-rC-Brn"/>
+                                    <gridColumn id="gaK-RH-OTl"/>
+                                    <gridColumn id="aZd-KE-KLM"/>
+                                    <gridColumn id="Zgk-We-fkd"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="rXU-vn-iXn" column="qFr-rC-Brn" id="ypl-GK-jNl">
+                                        <button key="contentView" toolTip="Square Root" translatesAutoresizingMaskIntoConstraints="NO" id="gTU-02-dJk" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="OvR-G3-tXs"/>
+                                                <constraint firstAttribute="width" constant="64" id="xAe-AS-XlR"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SquareRootButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JOh-9T-ybh">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="squareRootButtonClicked:" target="Bic-n5-pNm" id="WBw-VN-u23"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="rXU-vn-iXn" column="gaK-RH-OTl" id="V0N-bA-TGD">
+                                        <button key="contentView" toolTip="Radical with Degree" translatesAutoresizingMaskIntoConstraints="NO" id="UlP-BF-tXb" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="64" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="7Wl-nU-BoA"/>
+                                                <constraint firstAttribute="height" constant="64" id="ulJ-6a-h98"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="RadicalWithDegreeButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="PcH-SZ-1dW">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="radicalWithDegreeButtonClicked:" target="Bic-n5-pNm" id="maR-Aa-FNl"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="rXU-vn-iXn" column="aZd-KE-KLM" id="XBZ-l5-ejc">
+                                        <button key="contentView" toolTip="Square Root with Degree" translatesAutoresizingMaskIntoConstraints="NO" id="psD-VS-2J2" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="128" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="DYT-1Z-7fW"/>
+                                                <constraint firstAttribute="width" constant="64" id="PlS-Vt-tyZ"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SquareRootWithDegreeButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="5bU-ng-1kc">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="squareRootWithDegreeButtonClicked:" target="Bic-n5-pNm" id="zp7-6O-6yl"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="rXU-vn-iXn" column="Zgk-We-fkd" id="DDs-AJ-3qO">
+                                        <button key="contentView" toolTip="Cubic Root" translatesAutoresizingMaskIntoConstraints="NO" id="WYb-ik-Lrl" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="192" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="1xI-Nd-9Wd"/>
+                                                <constraint firstAttribute="height" constant="64" id="UtI-TC-PbS"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="CubicRootButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JN3-mz-2az">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="cubicRootButtonClicked:" target="Bic-n5-pNm" id="3so-N9-h2D"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="he0-Jm-17L" secondAttribute="bottom" constant="64" id="Sim-ES-PdA"/>
+                            <constraint firstItem="he0-Jm-17L" firstAttribute="leading" secondItem="mlP-vm-DOz" secondAttribute="leading" id="aiV-mV-pKD"/>
+                            <constraint firstItem="he0-Jm-17L" firstAttribute="top" secondItem="mlP-vm-DOz" secondAttribute="top" id="e7Q-pJ-PFw"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="u1g-VA-uQ4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="761"/>
+            <point key="canvasLocation" x="1507" y="584"/>
         </scene>
         <!--Integral-->
         <scene sceneID="ZgT-Ni-O7U">
@@ -1162,6 +1250,7 @@
     <resources>
         <image name="AccentTabIcon" width="32" height="32"/>
         <image name="BracketTabIcon" width="32" height="32"/>
+        <image name="CubicRootButtonIcon" width="48" height="48"/>
         <image name="FractionTabIcon" width="32" height="32"/>
         <image name="FunctionTabIcon" width="32" height="32"/>
         <image name="IntegralTabIcon" width="32" height="32"/>
@@ -1172,7 +1261,10 @@
         <image name="MatrixTabIcon" width="32" height="32"/>
         <image name="OperatorTabIcon" width="32" height="32"/>
         <image name="RadicalTabIcon" width="32" height="32"/>
+        <image name="RadicalWithDegreeButtonIcon" width="48" height="48"/>
         <image name="ScriptTabIcon" width="32" height="32"/>
+        <image name="SquareRootButtonIcon" width="48" height="48"/>
+        <image name="SquareRootWithDegreeButtonIcon" width="48" height="48"/>
         <image name="StackedFractionButtonIcon" width="48" height="48"/>
         <image name="SubscriptButtonIcon" width="48" height="48"/>
         <image name="SubscriptSuperscriptButtonIcon" width="48" height="48"/>

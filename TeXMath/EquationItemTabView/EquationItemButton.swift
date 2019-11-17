@@ -27,7 +27,7 @@ class EquationItemButton: NSButton {
     }
 
     override func mouseEntered(with _: NSEvent) {
-        layer?.borderWidth = 4
+        layer?.borderWidth = 3
     }
 
     override func mouseExited(with _: NSEvent) {

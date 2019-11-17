@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1906A15D237FD3EA00772D46 /* EquationItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906A15C237FD3EA00772D46 /* EquationItemButton.swift */; };
 		1948FDAC238162E60019E3F0 /* ScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948FDAB238162E60019E3F0 /* ScriptViewController.swift */; };
+		1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948FDAD238176D90019E3F0 /* RadicalViewController.swift */; };
 		194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C342E237D8B3700955DF5 /* PreviewView.swift */; };
 		19CC7208237D927400929A15 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC7207237D927400929A15 /* EditorViewController.swift */; };
 		19F21ECE2380FCCC003A1CC1 /* FractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		1906A15C237FD3EA00772D46 /* EquationItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemButton.swift; sourceTree = "<group>"; };
 		1948FDAB238162E60019E3F0 /* ScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptViewController.swift; sourceTree = "<group>"; };
+		1948FDAD238176D90019E3F0 /* RadicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadicalViewController.swift; sourceTree = "<group>"; };
 		194C342E237D8B3700955DF5 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		19CC7207237D927400929A15 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
 		19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */,
 				19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */,
 				1948FDAB238162E60019E3F0 /* ScriptViewController.swift */,
+				1948FDAD238176D90019E3F0 /* RadicalViewController.swift */,
 			);
 			path = EquationItemTabView;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				19F21ECE2380FCCC003A1CC1 /* FractionViewController.swift in Sources */,
 				1948FDAC238162E60019E3F0 /* ScriptViewController.swift in Sources */,
+				1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */,
 				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
 				19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */,
 				19F21ED0238108AD003A1CC1 /* Utils.swift in Sources */,
