@@ -13,7 +13,11 @@ class FractionViewController: NSViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func stackedFractionButtonClicked(_: Any) {}
+    @IBAction func stackedFractionButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\frac{}{} ")
+    }
 
-    @IBAction func linearFractionButtonClicked(_: Any) {}
+    @IBAction func linearFractionButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "{}/{} ")
+    }
 }

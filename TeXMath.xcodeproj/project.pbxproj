@@ -11,6 +11,7 @@
 		194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C342E237D8B3700955DF5 /* PreviewView.swift */; };
 		19CC7208237D927400929A15 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC7207237D927400929A15 /* EditorViewController.swift */; };
 		19F21ECE2380FCCC003A1CC1 /* FractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */; };
+		19F21ED0238108AD003A1CC1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F21ECF238108AD003A1CC1 /* Utils.swift */; };
 		19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */; };
 		19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5D340237BF6CC004CDF73 /* AppDelegate.swift */; };
 		19F5D345237BF6D0004CDF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D344237BF6D0004CDF73 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		194C342E237D8B3700955DF5 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		19CC7207237D927400929A15 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
 		19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionViewController.swift; sourceTree = "<group>"; };
+		19F21ECF238108AD003A1CC1 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemTabViewController.swift; sourceTree = "<group>"; };
 		19F5D33D237BF6CC004CDF73 /* TeXMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeXMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F5D340237BF6CC004CDF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
+				19F21ECF238108AD003A1CC1 /* Utils.swift */,
 				19F5D344237BF6D0004CDF73 /* Assets.xcassets */,
 				19F5D346237BF6D0004CDF73 /* Main.storyboard */,
 				19F2AD48237FD2F8000E5003 /* EquationItemTabView */,
@@ -232,6 +235,7 @@
 				19F21ECE2380FCCC003A1CC1 /* FractionViewController.swift in Sources */,
 				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
 				19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */,
+				19F21ED0238108AD003A1CC1 /* Utils.swift in Sources */,
 				19CC7208237D927400929A15 /* EditorViewController.swift in Sources */,
 				1906A15D237FD3EA00772D46 /* EquationItemButton.swift in Sources */,
 				194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */,
