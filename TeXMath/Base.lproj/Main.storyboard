@@ -1132,15 +1132,171 @@
         <!--Integral-->
         <scene sceneID="ZgT-Ni-O7U">
             <objects>
-                <viewController title="Integral" id="01T-bZ-pOp" sceneMemberID="viewController">
+                <viewController title="Integral" id="01T-bZ-pOp" customClass="IntegralViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Q5W-Q9-7LN">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="center" yPlacement="center" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="NGe-SM-xz8">
+                                <rect key="frame" x="0.0" y="64" width="512" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="fJk-XN-KIx"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow id="mpc-xy-v0V"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="hyz-gh-Rpl"/>
+                                    <gridColumn id="Ioz-XN-Jv0"/>
+                                    <gridColumn id="Rb9-9H-bYd"/>
+                                    <gridColumn id="gzq-QD-vtQ"/>
+                                    <gridColumn id="11J-d3-a2y"/>
+                                    <gridColumn id="RU0-1P-Nry"/>
+                                    <gridColumn id="EXS-vj-RTk"/>
+                                    <gridColumn id="91J-A0-Fl9"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="mpc-xy-v0V" column="hyz-gh-Rpl" id="vob-J9-wV1">
+                                        <button key="contentView" toolTip="Integral" translatesAutoresizingMaskIntoConstraints="NO" id="Y17-d6-ICe" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="56D-4b-XoO"/>
+                                                <constraint firstAttribute="width" constant="64" id="fe5-lL-Hif"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="IntegralButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="zGl-rv-dyV">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="integralButtonClicked:" target="01T-bZ-pOp" id="AbI-Re-y6J"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mpc-xy-v0V" column="Ioz-XN-Jv0" id="59A-PP-oZW">
+                                        <button key="contentView" toolTip="Integral with Limits" translatesAutoresizingMaskIntoConstraints="NO" id="Cq3-I2-ICW" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="64" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="8e3-bj-KUN"/>
+                                                <constraint firstAttribute="width" constant="64" id="vaH-oX-3rC"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="IntegralWithLimitsButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="u6E-ts-mEE">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="integralWithLimitsButtonClicked:" target="01T-bZ-pOp" id="smI-PS-8J9"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mpc-xy-v0V" column="Rb9-9H-bYd" id="dhV-zG-Hgk">
+                                        <button key="contentView" toolTip="Double Integral" translatesAutoresizingMaskIntoConstraints="NO" id="QBx-UI-mHf" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="128" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="U8R-e5-BBS"/>
+                                                <constraint firstAttribute="width" constant="64" id="rax-Np-tkw"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="DoubleIntegralButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="FAL-zu-8Du">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="doubleIntegralButtonClicked:" target="01T-bZ-pOp" id="E0p-QP-6FT"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mpc-xy-v0V" column="gzq-QD-vtQ" id="rn9-4W-Hvj">
+                                        <button key="contentView" toolTip="Double Integral with Limits" translatesAutoresizingMaskIntoConstraints="NO" id="S4i-CY-9Md" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="192" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="UqN-bS-TQW"/>
+                                                <constraint firstAttribute="width" constant="64" id="qUa-vh-uEv"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="DoubleIntegralWithLimitsButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="o1M-Wo-7zf">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="doubleIntegralWithLimitsButtonClicked:" target="01T-bZ-pOp" id="9MR-xq-XcR"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mpc-xy-v0V" column="11J-d3-a2y" id="p1o-DE-7Ms">
+                                        <button key="contentView" toolTip="Triple Integral" translatesAutoresizingMaskIntoConstraints="NO" id="Irn-Y4-hZq" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="256" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="RQH-n5-mYr"/>
+                                                <constraint firstAttribute="width" constant="64" id="a48-Vq-7sh"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TripleIntegralButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="pQ4-xW-rzc">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="tripleIntegralButtonClicked:" target="01T-bZ-pOp" id="d4d-un-2mE"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mpc-xy-v0V" column="RU0-1P-Nry" id="HIe-pn-e5e">
+                                        <button key="contentView" toolTip="Triple Integral with Limits" translatesAutoresizingMaskIntoConstraints="NO" id="pGN-58-U4T" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="320" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="gWd-UB-vvZ"/>
+                                                <constraint firstAttribute="width" constant="64" id="qzO-84-Zob"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TripleIntegralWithLimitsButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="iC3-7t-WX3">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="tripleIntegralWithLimitsButtonClicked:" target="01T-bZ-pOp" id="8HU-cS-HaL"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mpc-xy-v0V" column="EXS-vj-RTk" id="rDK-71-n6l">
+                                        <button key="contentView" toolTip="Contour Integral" translatesAutoresizingMaskIntoConstraints="NO" id="tPd-sU-rkc" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="384" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="Xy3-jW-jWS"/>
+                                                <constraint firstAttribute="width" constant="64" id="yUd-l7-RQk"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ContourIntegralButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="HVS-0h-CKj">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="contourIntegralButtonClicked:" target="01T-bZ-pOp" id="vdR-h9-qUG"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="mpc-xy-v0V" column="91J-A0-Fl9" id="SIg-yi-0JS">
+                                        <button key="contentView" toolTip="Contour Integral with Limits" translatesAutoresizingMaskIntoConstraints="NO" id="ja4-jz-kFj" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="448" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="Xec-P1-ZWb"/>
+                                                <constraint firstAttribute="width" constant="64" id="zNr-cL-fhT"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ContourIntegralWithLimitsButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="AP3-Bt-1Ug">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="contourIntegralWithLimitsButtonClicked:" target="01T-bZ-pOp" id="deq-S4-bYQ"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NGe-SM-xz8" secondAttribute="bottom" constant="64" id="5yd-md-ISe"/>
+                            <constraint firstItem="NGe-SM-xz8" firstAttribute="top" secondItem="Q5W-Q9-7LN" secondAttribute="top" id="Acd-Gh-BJI"/>
+                            <constraint firstItem="NGe-SM-xz8" firstAttribute="leading" secondItem="Q5W-Q9-7LN" secondAttribute="leading" id="ULv-Ka-Iwp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="2OD-f9-UFZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="954"/>
+            <point key="canvasLocation" x="1507" y="778"/>
         </scene>
         <!--Large Operator-->
         <scene sceneID="ppv-o6-VOI">
@@ -1250,10 +1406,16 @@
     <resources>
         <image name="AccentTabIcon" width="32" height="32"/>
         <image name="BracketTabIcon" width="32" height="32"/>
+        <image name="ContourIntegralButtonIcon" width="48" height="48"/>
+        <image name="ContourIntegralWithLimitsButtonIcon" width="48" height="48"/>
         <image name="CubicRootButtonIcon" width="48" height="48"/>
+        <image name="DoubleIntegralButtonIcon" width="48" height="48"/>
+        <image name="DoubleIntegralWithLimitsButtonIcon" width="48" height="48"/>
         <image name="FractionTabIcon" width="32" height="32"/>
         <image name="FunctionTabIcon" width="32" height="32"/>
+        <image name="IntegralButtonIcon" width="48" height="48"/>
         <image name="IntegralTabIcon" width="32" height="32"/>
+        <image name="IntegralWithLimitsButtonIcon" width="48" height="48"/>
         <image name="LargeOperatorTabIcon" width="32" height="32"/>
         <image name="LeftSubscriptSuperscriptButtonIcon" width="48" height="48"/>
         <image name="LimitAndLogTabIcon" width="32" height="32"/>
@@ -1270,5 +1432,7 @@
         <image name="SubscriptSuperscriptButtonIcon" width="48" height="48"/>
         <image name="SuperscriptButtonIcon" width="48" height="48"/>
         <image name="SymbolTabIcon" width="32" height="32"/>
+        <image name="TripleIntegralButtonIcon" width="48" height="48"/>
+        <image name="TripleIntegralWithLimitsButtonIcon" width="48" height="48"/>
     </resources>
 </document>
