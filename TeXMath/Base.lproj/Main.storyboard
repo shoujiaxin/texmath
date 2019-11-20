@@ -1594,15 +1594,357 @@
         <!--Function-->
         <scene sceneID="acE-tR-8MU">
             <objects>
-                <viewController title="Function" id="J9o-hL-TYX" sceneMemberID="viewController">
+                <viewController title="Function" id="J9o-hL-TYX" customClass="FunctionViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="DNi-0G-Vmq">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="center" yPlacement="center" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="czn-YO-wip">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="knm-tq-urq"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow id="N1W-BX-Wqw"/>
+                                    <gridRow id="Nvx-uR-wnb"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="T13-KA-8XS"/>
+                                    <gridColumn id="8uR-rC-mg7"/>
+                                    <gridColumn id="5pn-F2-iz3"/>
+                                    <gridColumn id="WYI-TC-WGf"/>
+                                    <gridColumn id="Sby-ho-4w8"/>
+                                    <gridColumn id="lWY-Q0-Rd5"/>
+                                    <gridColumn id="39O-MY-05V"/>
+                                    <gridColumn id="QFJ-i0-eVZ"/>
+                                    <gridColumn id="E9y-5r-Vn2"/>
+                                    <gridColumn id="ysL-89-gB3"/>
+                                    <gridColumn id="em3-zT-vgB"/>
+                                    <gridColumn id="K6m-3p-Iq8"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="N1W-BX-Wqw" column="T13-KA-8XS" id="WqK-3b-PLN">
+                                        <button key="contentView" toolTip="Sine Function" translatesAutoresizingMaskIntoConstraints="NO" id="z0I-wd-tgQ" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="0Tp-dZ-RFR"/>
+                                                <constraint firstAttribute="height" constant="64" id="kic-DW-SO6"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SineFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="baN-1e-JRw">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="sineFunctionButtonClicked:" target="J9o-hL-TYX" id="1DG-Uj-9Z8"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="8uR-rC-mg7" id="bja-xE-PLb">
+                                        <button key="contentView" toolTip="Cosine Function" translatesAutoresizingMaskIntoConstraints="NO" id="z7G-rD-rkG" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="64" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="0p6-PQ-vr5"/>
+                                                <constraint firstAttribute="height" constant="64" id="dFk-nK-KHy"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="CosineFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ju7-II-7tU">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="cosineFunctionButtonClicked:" target="J9o-hL-TYX" id="PxL-pn-lZA"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="5pn-F2-iz3" id="0aF-ic-b3Y">
+                                        <button key="contentView" toolTip="Tangent Function" translatesAutoresizingMaskIntoConstraints="NO" id="gbg-LD-qXV" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="128" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="LMY-KI-1q2"/>
+                                                <constraint firstAttribute="width" constant="64" id="Ods-f6-myP"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="TangentFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uM3-XN-IHE">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="tangentFunctionButtonClicked:" target="J9o-hL-TYX" id="owf-cH-DBU"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="WYI-TC-WGf" id="f3b-JR-54E">
+                                        <button key="contentView" toolTip="Cotangent Function" translatesAutoresizingMaskIntoConstraints="NO" id="tJI-Lb-5vo" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="192" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="Z3e-3N-zTp"/>
+                                                <constraint firstAttribute="height" constant="64" id="lzD-Jb-8uD"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="CotangentFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="GNi-Gk-1pN">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="cotangentFunctionButtonClicked:" target="J9o-hL-TYX" id="QQH-m8-9ND"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="Sby-ho-4w8" id="3FV-bX-Q9P">
+                                        <button key="contentView" toolTip="Secant Function" translatesAutoresizingMaskIntoConstraints="NO" id="ley-8d-hli" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="256" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="SjF-YT-06F"/>
+                                                <constraint firstAttribute="height" constant="64" id="l4g-Dy-CR5"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="SecantFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="PiE-pd-CWC">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="secantFunctionButtonClicked:" target="J9o-hL-TYX" id="klb-Zi-TRb"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="lWY-Q0-Rd5" id="O2g-nL-AhE">
+                                        <button key="contentView" toolTip="Cosecant Function" translatesAutoresizingMaskIntoConstraints="NO" id="BPu-na-Rdb" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="320" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="4Nh-be-byn"/>
+                                                <constraint firstAttribute="width" constant="64" id="OKb-4S-qlb"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="CosecantFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="aVH-GW-o3T">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="cosecantFunctionButtonClicked:" target="J9o-hL-TYX" id="3L5-Nn-azQ"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="39O-MY-05V" id="66u-oT-92B">
+                                        <button key="contentView" toolTip="Inverse Sine Function" translatesAutoresizingMaskIntoConstraints="NO" id="CRP-fy-f9M" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="384" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="9ir-Ku-DsM"/>
+                                                <constraint firstAttribute="height" constant="64" id="h0T-lm-m5D"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="InverseSineFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dgW-SV-pzc">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="inverseSineFunctionButtonClicked:" target="J9o-hL-TYX" id="lIo-j2-0Xe"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="QFJ-i0-eVZ" id="ChZ-qm-mGM">
+                                        <button key="contentView" toolTip="Inverse Cosine Function" translatesAutoresizingMaskIntoConstraints="NO" id="Lvw-4P-wSH" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="448" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="Dvl-cG-JRY"/>
+                                                <constraint firstAttribute="height" constant="64" id="mA7-zn-oTz"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="InverseCosineFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="aXB-3v-pGh">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="inverseCosineFunctionButtonClicked:" target="J9o-hL-TYX" id="pWM-1D-sCl"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="E9y-5r-Vn2" id="66F-b2-GLh">
+                                        <button key="contentView" toolTip="Inverse Tangent Function" translatesAutoresizingMaskIntoConstraints="NO" id="iUi-fb-p5O" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="512" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="OSt-1I-UPi"/>
+                                                <constraint firstAttribute="width" constant="64" id="ffW-us-CBB"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="InverseTangentFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ne7-Of-SxM">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="inverseTangentFunctionButtonClicked:" target="J9o-hL-TYX" id="grR-ak-nlY"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="ysL-89-gB3" id="PK4-uy-juw">
+                                        <button key="contentView" toolTip="Inverse Cotangent Function" translatesAutoresizingMaskIntoConstraints="NO" id="TRC-vM-PuU" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="576" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="rAm-TQ-kUg"/>
+                                                <constraint firstAttribute="height" constant="64" id="zjo-9g-WmN"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="InverseCotangentFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="MTN-hM-0Ta">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="inverseCotangentFunctionButtonClicked:" target="J9o-hL-TYX" id="Uym-xx-f6U"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="em3-zT-vgB" id="MqU-FU-1dN">
+                                        <button key="contentView" toolTip="Inverse Secant Function" translatesAutoresizingMaskIntoConstraints="NO" id="niN-5D-3Bv" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="640" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="UBr-RE-364"/>
+                                                <constraint firstAttribute="height" constant="64" id="fCv-cf-RJQ"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="InverseSecantFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="6eP-RX-ubv">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="inverseSecantFunctionButtonClicked:" target="J9o-hL-TYX" id="XNE-td-YEV"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="N1W-BX-Wqw" column="K6m-3p-Iq8" id="5xT-Qg-lbL">
+                                        <button key="contentView" toolTip="Inverse Cosecant Function" translatesAutoresizingMaskIntoConstraints="NO" id="JSZ-sV-ibx" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="704" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="r2S-m6-b0T"/>
+                                                <constraint firstAttribute="width" constant="64" id="v2J-pL-lHW"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="InverseCosecantFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="bh4-Ls-1Fn">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="inverseCosecantFunctionButtonClicked:" target="J9o-hL-TYX" id="xlV-Ye-pIw"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Nvx-uR-wnb" column="T13-KA-8XS" id="pd4-2k-MVV">
+                                        <button key="contentView" toolTip="Hyperbolic Sine Function" translatesAutoresizingMaskIntoConstraints="NO" id="AXK-Gf-USY" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="G6a-Nh-yyc"/>
+                                                <constraint firstAttribute="width" constant="64" id="nH0-ob-GNU"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="HyperbolicSineFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="aWD-W3-ERV">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="hyperbolicSineFunctionButtonClicked:" target="J9o-hL-TYX" id="eJP-uf-hx0"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Nvx-uR-wnb" column="8uR-rC-mg7" id="Z4B-xA-fD3">
+                                        <button key="contentView" toolTip="Hyperbolic Cosine Function" translatesAutoresizingMaskIntoConstraints="NO" id="n6v-VL-1Ok" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="64" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="30D-PL-7os"/>
+                                                <constraint firstAttribute="width" constant="64" id="Ei0-qb-ECy"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="HyperbolicCosineFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="L9g-Lx-rbq">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="hyperbolicCosineFunctionButtonClicked:" target="J9o-hL-TYX" id="N3F-BS-ryI"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Nvx-uR-wnb" column="5pn-F2-iz3" id="WJ0-zp-aro">
+                                        <button key="contentView" toolTip="Hyperbolic Tangent Function" translatesAutoresizingMaskIntoConstraints="NO" id="0PL-l2-mc9" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="128" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="WMb-GO-JA7"/>
+                                                <constraint firstAttribute="height" constant="64" id="u02-PP-Kma"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="HyperbolicTangentFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="77d-og-2Be">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="hyperbolicTangentFunctionButtonClicked:" target="J9o-hL-TYX" id="M2a-Gh-xHe"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Nvx-uR-wnb" column="WYI-TC-WGf" id="Bui-dw-uXV">
+                                        <button key="contentView" toolTip="Hyperbolic Cotangent Function" translatesAutoresizingMaskIntoConstraints="NO" id="zgh-yy-sPE" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="192" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="Mno-0I-O6I"/>
+                                                <constraint firstAttribute="width" constant="64" id="gSX-Zo-fZF"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="HyperbolicCotangentFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="umE-ZD-ZG1">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="hyperbolicCotangentFunctionButtonClicked:" target="J9o-hL-TYX" id="GWU-eh-dDd"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Nvx-uR-wnb" column="Sby-ho-4w8" id="MXH-3K-b6x">
+                                        <button key="contentView" toolTip="Arcsine Function" translatesAutoresizingMaskIntoConstraints="NO" id="OOq-7e-h2r" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="256" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="jpm-Z9-xpH"/>
+                                                <constraint firstAttribute="height" constant="64" id="z5C-HI-Cof"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ArcsineFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="6gZ-rS-1ob">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="arcsineFunctionButtonClicked:" target="J9o-hL-TYX" id="MTR-Nf-6qT"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Nvx-uR-wnb" column="lWY-Q0-Rd5" id="wQC-v3-Vbe">
+                                        <button key="contentView" toolTip="Arccosine Function" translatesAutoresizingMaskIntoConstraints="NO" id="DGe-Cr-AMO" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="320" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="CJN-QW-Ms0"/>
+                                                <constraint firstAttribute="height" constant="64" id="TJf-2h-B3A"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ArccosineFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="La8-wZ-OP5">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="arccosineFunctionButtonClicked:" target="J9o-hL-TYX" id="Y8t-e4-42s"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Nvx-uR-wnb" column="39O-MY-05V" id="7Cc-cv-Vg7">
+                                        <button key="contentView" toolTip="Arctangent Function" translatesAutoresizingMaskIntoConstraints="NO" id="xsA-AF-VZJ" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="384" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="Ht8-VW-PBe"/>
+                                                <constraint firstAttribute="height" constant="64" id="rR8-9q-jRt"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ArctangentFunctionButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="v8w-7g-h8T">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="arctangentFunctionButtonClicked:" target="J9o-hL-TYX" id="p2J-Dq-EUA"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Nvx-uR-wnb" column="QFJ-i0-eVZ" id="LLG-fn-Ced"/>
+                                    <gridCell row="Nvx-uR-wnb" column="E9y-5r-Vn2" id="Nqx-oE-LyJ"/>
+                                    <gridCell row="Nvx-uR-wnb" column="ysL-89-gB3" id="9ED-sG-yug"/>
+                                    <gridCell row="Nvx-uR-wnb" column="em3-zT-vgB" id="QRt-Al-sVz"/>
+                                    <gridCell row="Nvx-uR-wnb" column="K6m-3p-Iq8" id="Odu-1X-EWa"/>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="czn-YO-wip" firstAttribute="top" secondItem="DNi-0G-Vmq" secondAttribute="top" id="7Ob-lU-uIv"/>
+                            <constraint firstItem="czn-YO-wip" firstAttribute="leading" secondItem="DNi-0G-Vmq" secondAttribute="leading" id="Gx8-IP-2Ed"/>
+                            <constraint firstAttribute="bottom" secondItem="czn-YO-wip" secondAttribute="bottom" id="Zjo-aP-5xa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="aKc-XX-emL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="1535"/>
+            <point key="canvasLocation" x="1491" y="1377"/>
         </scene>
         <!--Accent-->
         <scene sceneID="Nrr-8r-CTq">
@@ -1828,21 +2170,37 @@
     </scenes>
     <resources>
         <image name="AccentTabIcon" width="32" height="32"/>
+        <image name="ArccosineFunctionButtonIcon" width="48" height="48"/>
+        <image name="ArcsineFunctionButtonIcon" width="48" height="48"/>
+        <image name="ArctangentFunctionButtonIcon" width="48" height="48"/>
         <image name="BracketTabIcon" width="32" height="32"/>
         <image name="CoProductButtonIcon" width="48" height="48"/>
         <image name="CoProductWithLimitsButtonIcon" width="48" height="48"/>
         <image name="ContourIntegralButtonIcon" width="48" height="48"/>
         <image name="ContourIntegralWithLimitsButtonIcon" width="48" height="48"/>
+        <image name="CosecantFunctionButtonIcon" width="48" height="48"/>
+        <image name="CosineFunctionButtonIcon" width="48" height="48"/>
+        <image name="CotangentFunctionButtonIcon" width="48" height="48"/>
         <image name="CubicRootButtonIcon" width="48" height="48"/>
         <image name="DoubleIntegralButtonIcon" width="48" height="48"/>
         <image name="DoubleIntegralWithLimitsButtonIcon" width="48" height="48"/>
         <image name="FractionTabIcon" width="32" height="32"/>
         <image name="FunctionTabIcon" width="32" height="32"/>
+        <image name="HyperbolicCosineFunctionButtonIcon" width="48" height="48"/>
+        <image name="HyperbolicCotangentFunctionButtonIcon" width="48" height="48"/>
+        <image name="HyperbolicSineFunctionButtonIcon" width="48" height="48"/>
+        <image name="HyperbolicTangentFunctionButtonIcon" width="48" height="48"/>
         <image name="IntegralButtonIcon" width="48" height="48"/>
         <image name="IntegralTabIcon" width="32" height="32"/>
         <image name="IntegralWithLimitsButtonIcon" width="48" height="48"/>
         <image name="IntersectionButtonIcon" width="48" height="48"/>
         <image name="IntersectionWithLimitsButtonIcon" width="48" height="48"/>
+        <image name="InverseCosecantFunctionButtonIcon" width="48" height="48"/>
+        <image name="InverseCosineFunctionButtonIcon" width="48" height="48"/>
+        <image name="InverseCotangentFunctionButtonIcon" width="48" height="48"/>
+        <image name="InverseSecantFunctionButtonIcon" width="48" height="48"/>
+        <image name="InverseSineFunctionButtonIcon" width="48" height="48"/>
+        <image name="InverseTangentFunctionButtonIcon" width="48" height="48"/>
         <image name="LargeOperatorTabIcon" width="32" height="32"/>
         <image name="LeftSubscriptSuperscriptButtonIcon" width="48" height="48"/>
         <image name="LimitAndLogTabIcon" width="32" height="32"/>
@@ -1866,6 +2224,8 @@
         <image name="RadicalTabIcon" width="32" height="32"/>
         <image name="RadicalWithDegreeButtonIcon" width="48" height="48"/>
         <image name="ScriptTabIcon" width="32" height="32"/>
+        <image name="SecantFunctionButtonIcon" width="48" height="48"/>
+        <image name="SineFunctionButtonIcon" width="48" height="48"/>
         <image name="SquareRootButtonIcon" width="48" height="48"/>
         <image name="SquareRootWithDegreeButtonIcon" width="48" height="48"/>
         <image name="StackedFractionButtonIcon" width="48" height="48"/>
@@ -1875,6 +2235,7 @@
         <image name="SummationWithLimitsButtonIcon" width="48" height="48"/>
         <image name="SuperscriptButtonIcon" width="48" height="48"/>
         <image name="SymbolTabIcon" width="32" height="32"/>
+        <image name="TangentFunctionButtonIcon" width="48" height="48"/>
         <image name="TripleIntegralButtonIcon" width="48" height="48"/>
         <image name="TripleIntegralWithLimitsButtonIcon" width="48" height="48"/>
         <image name="UnionButtonIcon" width="48" height="48"/>
