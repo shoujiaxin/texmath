@@ -2317,15 +2317,267 @@
         <!--Matrix-->
         <scene sceneID="cK3-6C-Bhx">
             <objects>
-                <viewController title="Matrix" id="usx-5i-7DO" sceneMemberID="viewController">
+                <viewController title="Matrix" id="usx-5i-7DO" customClass="MatrixViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="7Hz-9J-r8z">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="center" yPlacement="center" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="JAv-TG-bda">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Ao6-O7-VrA"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow id="4qj-GU-xFt"/>
+                                    <gridRow id="5P6-yB-led"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="Qno-2L-lTU"/>
+                                    <gridColumn id="2ZP-hI-iiT"/>
+                                    <gridColumn id="8Ne-3k-4Jk"/>
+                                    <gridColumn id="9BR-Op-aIj"/>
+                                    <gridColumn id="awc-MS-Zdo"/>
+                                    <gridColumn id="oCK-lU-6Jp"/>
+                                    <gridColumn id="8L1-Z4-9z0"/>
+                                    <gridColumn id="r9c-Xo-CLY"/>
+                                    <gridColumn id="xbg-Jl-OYr"/>
+                                    <gridColumn id="V2l-lw-DNb"/>
+                                    <gridColumn id="cl7-9H-oV7"/>
+                                    <gridColumn id="ZhB-6R-6Ae"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="4qj-GU-xFt" column="Qno-2L-lTU" id="S7l-B0-B3Q">
+                                        <button key="contentView" toolTip="1x2 Empty Matrix" translatesAutoresizingMaskIntoConstraints="NO" id="14o-fd-gCM" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="oAe-Li-o47"/>
+                                                <constraint firstAttribute="width" constant="64" id="tWF-tY-Rm7"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="1x2EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="d0P-da-ofp">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="oneByTwoEmptyMatrixButtonClicked:" target="usx-5i-7DO" id="SHg-0a-6sO"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="2ZP-hI-iiT" id="ZKx-gi-dVl">
+                                        <button key="contentView" toolTip="2x1 Empty Matrix" translatesAutoresizingMaskIntoConstraints="NO" id="DeL-2U-d5t" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="64" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="Oz8-sm-Zmf"/>
+                                                <constraint firstAttribute="height" constant="64" id="sHJ-gF-rhr"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="2x1EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="V8k-lX-3tG">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="twoByOneEmptyMatrixButtonClicked:" target="usx-5i-7DO" id="zfE-Vk-SqE"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="8Ne-3k-4Jk" id="RKx-rj-0nO">
+                                        <button key="contentView" toolTip="1x3 Empty Matrix" translatesAutoresizingMaskIntoConstraints="NO" id="zm6-ls-K9B" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="128" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="Q9n-F5-MTM"/>
+                                                <constraint firstAttribute="width" constant="64" id="zcQ-Fq-sOT"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="1x3EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="DzP-wX-aZF">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="oneByThreeEmptyMatrixButtonClicked:" target="usx-5i-7DO" id="HFs-RK-4IF"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="9BR-Op-aIj" id="Wef-AU-yjd">
+                                        <button key="contentView" toolTip="3x1 Empty Matrix" translatesAutoresizingMaskIntoConstraints="NO" id="rLv-M0-cis" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="192" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="Ups-pj-tJN"/>
+                                                <constraint firstAttribute="height" constant="64" id="a9e-GY-F7Y"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="3x1EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Fb5-9U-xhl">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="threeByOneEmptyMatrixButtonClicked:" target="usx-5i-7DO" id="eme-kn-q5u"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="awc-MS-Zdo" id="0iX-Wv-mn6">
+                                        <button key="contentView" toolTip="2x2 Empty Matrix" translatesAutoresizingMaskIntoConstraints="NO" id="t27-Rf-JfJ" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="256" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="U2I-TW-FYU"/>
+                                                <constraint firstAttribute="height" constant="64" id="WJJ-ma-fLc"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="2x2EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Vfh-9P-8Up">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="twoByTwoEmptyMatrixButtonClicked:" target="usx-5i-7DO" id="BEe-SW-tJP"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="oCK-lU-6Jp" id="d60-ar-kHm">
+                                        <button key="contentView" toolTip="2x3 Empty Matrix" translatesAutoresizingMaskIntoConstraints="NO" id="FBW-AB-FTU" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="320" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="SMh-7q-P2j"/>
+                                                <constraint firstAttribute="height" constant="64" id="loN-gD-tWb"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="2x3EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="FBp-K1-hmp">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="twoByThreeEmptyMatrixButtonClicked:" target="usx-5i-7DO" id="HLW-Ed-tTv"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="8L1-Z4-9z0" id="aUE-7e-1JS">
+                                        <button key="contentView" toolTip="3x2 Empty Matrix" translatesAutoresizingMaskIntoConstraints="NO" id="P7E-Lo-dwg" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="384" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="b7b-ir-eK0"/>
+                                                <constraint firstAttribute="height" constant="64" id="qZX-hy-yyJ"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="3x2EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qh9-K9-1Xx">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="threeByTwoEmptyMatrixButtonClicked:" target="usx-5i-7DO" id="gqa-kB-evy"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="r9c-Xo-CLY" id="0LE-pE-oQL">
+                                        <button key="contentView" toolTip="3x3 Empty Matrix" translatesAutoresizingMaskIntoConstraints="NO" id="wP4-VX-Ij0" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="448" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="RQV-MI-L17"/>
+                                                <constraint firstAttribute="height" constant="64" id="wWj-Gj-MAs"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="3x3EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2F2-5C-qVx">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="threeByThreeEmptyMatrixButtonClicked:" target="usx-5i-7DO" id="ENU-Jo-awH"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="xbg-Jl-OYr" id="gcP-WS-vOL">
+                                        <button key="contentView" toolTip="Empty 2x2 Matrix in Parentheses" translatesAutoresizingMaskIntoConstraints="NO" id="49y-Ge-wHj" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="512" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="idZ-zj-HxO"/>
+                                                <constraint firstAttribute="width" constant="64" id="psB-yq-l7P"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Empty2x2MatrixInParenthesesButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="I3H-vj-Udz">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="empty2x2MatrixInParenthesesButtonClicked:" target="usx-5i-7DO" id="8UE-Pz-cUD"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="V2l-lw-DNb" id="g5u-Hm-KnN">
+                                        <button key="contentView" toolTip="Empty 2x2 Matrix in Brackets" translatesAutoresizingMaskIntoConstraints="NO" id="esE-J2-h1y" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="576" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="ejn-N8-IYa"/>
+                                                <constraint firstAttribute="height" constant="64" id="kv2-Uo-wLl"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Empty2x2MatrixInBracketsButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="WLx-i0-6VJ">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="empty2x2MatrixInBracketsButtonClicked:" target="usx-5i-7DO" id="vSd-bq-MIg"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="cl7-9H-oV7" id="4WW-XP-8Qs">
+                                        <button key="contentView" toolTip="Empty 2x2 Matrix in Braces" translatesAutoresizingMaskIntoConstraints="NO" id="lVf-ep-Agf" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="640" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="db0-Cj-cVg"/>
+                                                <constraint firstAttribute="width" constant="64" id="fGJ-r3-XRE"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Empty2x2MatrixInBracesButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="phG-zp-URS">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="empty2x2MatrixInBracesButtonClicked:" target="usx-5i-7DO" id="yoI-en-gWG"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="4qj-GU-xFt" column="ZhB-6R-6Ae" id="6Ii-bn-jXg">
+                                        <button key="contentView" toolTip="Empty 2x2 Matrix in Determinant" translatesAutoresizingMaskIntoConstraints="NO" id="h65-tA-7k5" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="704" y="64" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="2U7-iL-9mt"/>
+                                                <constraint firstAttribute="height" constant="64" id="kEy-1l-h9C"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Empty2x2MatrixInDeterminantButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="INE-ra-x2J">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="empty2x2MatrixInDeterminantButtonClicked:" target="usx-5i-7DO" id="qMr-pi-uk7"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="5P6-yB-led" column="Qno-2L-lTU" id="YHn-JB-dmm">
+                                        <button key="contentView" toolTip="Empty 2x2 Matrix in Double Vertical Bars" translatesAutoresizingMaskIntoConstraints="NO" id="F8E-cv-hQU" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="AyS-mn-FvL"/>
+                                                <constraint firstAttribute="height" constant="64" id="Bew-qy-IAh"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Empty2x2MatrixInDoubleVerticalBarsButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ZEw-w8-B6Y">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="empty2x2MatrixInDoubleVerticalBarsButtonClicked:" target="usx-5i-7DO" id="lBb-vb-atk"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="5P6-yB-led" column="2ZP-hI-iiT" id="S4P-a7-3UV"/>
+                                    <gridCell row="5P6-yB-led" column="8Ne-3k-4Jk" id="K9I-WC-tjb"/>
+                                    <gridCell row="5P6-yB-led" column="9BR-Op-aIj" id="UMD-Yn-gJX"/>
+                                    <gridCell row="5P6-yB-led" column="awc-MS-Zdo" id="th5-n3-lXG"/>
+                                    <gridCell row="5P6-yB-led" column="oCK-lU-6Jp" id="PRf-eL-BLg"/>
+                                    <gridCell row="5P6-yB-led" column="8L1-Z4-9z0" id="rvM-u5-DUi"/>
+                                    <gridCell row="5P6-yB-led" column="r9c-Xo-CLY" id="Ehy-8l-jRl"/>
+                                    <gridCell row="5P6-yB-led" column="xbg-Jl-OYr" id="iVy-On-VaU"/>
+                                    <gridCell row="5P6-yB-led" column="V2l-lw-DNb" id="hKi-C0-vFI"/>
+                                    <gridCell row="5P6-yB-led" column="cl7-9H-oV7" id="jaw-Xv-ikd"/>
+                                    <gridCell row="5P6-yB-led" column="ZhB-6R-6Ae" id="jWw-28-0XI"/>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JAv-TG-bda" firstAttribute="leading" secondItem="7Hz-9J-r8z" secondAttribute="leading" id="cIG-Hn-DP2"/>
+                            <constraint firstItem="JAv-TG-bda" firstAttribute="top" secondItem="7Hz-9J-r8z" secondAttribute="top" id="cYp-Eo-Lrs"/>
+                            <constraint firstAttribute="bottom" secondItem="JAv-TG-bda" secondAttribute="bottom" id="ksZ-4b-wSb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="8iT-zJ-RAs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="2359"/>
+            <point key="canvasLocation" x="1491" y="2346"/>
         </scene>
         <!--Symbol-->
         <scene sceneID="lkw-Q2-1DX">
@@ -2342,6 +2594,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1x2EmptyMatrixButtonIcon" width="48" height="48"/>
+        <image name="1x3EmptyMatrixButtonIcon" width="48" height="48"/>
+        <image name="2x1EmptyMatrixButtonIcon" width="48" height="48"/>
+        <image name="2x2EmptyMatrixButtonIcon" width="48" height="48"/>
+        <image name="2x3EmptyMatrixButtonIcon" width="48" height="48"/>
+        <image name="3x1EmptyMatrixButtonIcon" width="48" height="48"/>
+        <image name="3x2EmptyMatrixButtonIcon" width="48" height="48"/>
+        <image name="3x3EmptyMatrixButtonIcon" width="48" height="48"/>
         <image name="AccentTabIcon" width="32" height="32"/>
         <image name="ArccosineFunctionButtonIcon" width="48" height="48"/>
         <image name="ArcsineFunctionButtonIcon" width="48" height="48"/>
@@ -2359,6 +2619,11 @@
         <image name="DeltaEqualToButtonIcon" width="48" height="48"/>
         <image name="DoubleIntegralButtonIcon" width="48" height="48"/>
         <image name="DoubleIntegralWithLimitsButtonIcon" width="48" height="48"/>
+        <image name="Empty2x2MatrixInBracesButtonIcon" width="48" height="48"/>
+        <image name="Empty2x2MatrixInBracketsButtonIcon" width="48" height="48"/>
+        <image name="Empty2x2MatrixInDeterminantButtonIcon" width="48" height="48"/>
+        <image name="Empty2x2MatrixInDoubleVerticalBarsButtonIcon" width="48" height="48"/>
+        <image name="Empty2x2MatrixInParenthesesButtonIcon" width="48" height="48"/>
         <image name="EqualEqualButtonIcon" width="48" height="48"/>
         <image name="FractionTabIcon" width="32" height="32"/>
         <image name="FunctionTabIcon" width="32" height="32"/>
