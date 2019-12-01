@@ -2,20 +2,20 @@ PODS:
   - iosMath (0.9.5)
 
 DEPENDENCIES:
-  - iosMath (from `https://github.com/kostub/iosMath.git`)
+  - iosMath (from `https://github.com/kostub/iosmath.git`)
 
 EXTERNAL SOURCES:
   iosMath:
-    :git: https://github.com/kostub/iosMath.git
+    :git: https://github.com/kostub/iosmath.git
 
 CHECKOUT OPTIONS:
   iosMath:
-    :commit: 6222c7fc7a78aae145bb6fe6d5a9b964b27a95b8
-    :git: https://github.com/kostub/iosMath.git
+    :commit: be6f6ab5cca585ab35ee98a14ceae54a19a0c6f8
+    :git: https://github.com/kostub/iosmath.git
 
 SPEC CHECKSUMS:
   iosMath: 4f464433551995d8761ae0c44da88405f5e68ff8
 
-PODFILE CHECKSUM: d35ae2fde346852c6644733276a6a07e8ada15c8
+PODFILE CHECKSUM: ccb1951f73456a75adbf0a1ff7be5218e001c2d4
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.8.4

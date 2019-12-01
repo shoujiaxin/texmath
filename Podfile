@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'LaTeX Mathematics' do
+target 'TeXMath' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for LaTeX Mathematics
-  pod 'iosMath', :git => 'https://github.com/kostub/iosMath.git'
+  # Pods for TeXMath
+  pod 'iosMath', :git => 'https://github.com/kostub/iosmath.git'
 
 end

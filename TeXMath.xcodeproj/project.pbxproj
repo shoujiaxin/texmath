@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1906A15D237FD3EA00772D46 /* EquationItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906A15C237FD3EA00772D46 /* EquationItemButton.swift */; };
+		192AC4D72382CD7300893DBA /* IntegralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC4D62382CD7300893DBA /* IntegralViewController.swift */; };
+		192AC4D92383A10200893DBA /* LargeOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC4D82383A10200893DBA /* LargeOperatorViewController.swift */; };
+		192AC4DB2383C81A00893DBA /* LimitAndLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC4DA2383C81A00893DBA /* LimitAndLogViewController.swift */; };
+		1948FDAC238162E60019E3F0 /* ScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948FDAB238162E60019E3F0 /* ScriptViewController.swift */; };
+		1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948FDAD238176D90019E3F0 /* RadicalViewController.swift */; };
+		194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C342E237D8B3700955DF5 /* PreviewView.swift */; };
+		19738CC52393CD2500D518DF /* BracketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19738CC42393CD2500D518DF /* BracketViewController.swift */; };
+		199258D323900F5700295CF3 /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199258D223900F5700295CF3 /* MatrixViewController.swift */; };
+		19A8154D2384E156006D6E46 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8154C2384E156006D6E46 /* FunctionViewController.swift */; };
+		19A8154F23855617006D6E46 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8154E23855617006D6E46 /* OperatorViewController.swift */; };
+		19CC7208237D927400929A15 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC7207237D927400929A15 /* EditorViewController.swift */; };
+		19F21ECE2380FCCC003A1CC1 /* FractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */; };
+		19F21ED0238108AD003A1CC1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F21ECF238108AD003A1CC1 /* Utils.swift */; };
+		19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */; };
+		19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5D340237BF6CC004CDF73 /* AppDelegate.swift */; };
+		19F5D345237BF6D0004CDF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D344237BF6D0004CDF73 /* Assets.xcassets */; };
+		19F5D348237BF6D0004CDF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D346237BF6D0004CDF73 /* Main.storyboard */; };
+		E0B88F3E413CDD579AD22C78 /* Pods_TeXMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E14020D126A164B57198458 /* Pods_TeXMath.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1906A15C237FD3EA00772D46 /* EquationItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemButton.swift; sourceTree = "<group>"; };
+		192AC4D62382CD7300893DBA /* IntegralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralViewController.swift; sourceTree = "<group>"; };
+		192AC4D82383A10200893DBA /* LargeOperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeOperatorViewController.swift; sourceTree = "<group>"; };
+		192AC4DA2383C81A00893DBA /* LimitAndLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitAndLogViewController.swift; sourceTree = "<group>"; };
+		1948FDAB238162E60019E3F0 /* ScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptViewController.swift; sourceTree = "<group>"; };
+		1948FDAD238176D90019E3F0 /* RadicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadicalViewController.swift; sourceTree = "<group>"; };
+		194C342E237D8B3700955DF5 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		19738CC42393CD2500D518DF /* BracketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketViewController.swift; sourceTree = "<group>"; };
+		199258D223900F5700295CF3 /* MatrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
+		19A8154C2384E156006D6E46 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
+		19A8154E23855617006D6E46 /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
+		19CC7207237D927400929A15 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionViewController.swift; sourceTree = "<group>"; };
+		19F21ECF238108AD003A1CC1 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemTabViewController.swift; sourceTree = "<group>"; };
+		19F5D33D237BF6CC004CDF73 /* TeXMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeXMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F5D340237BF6CC004CDF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19F5D344237BF6D0004CDF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19F5D347237BF6D0004CDF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19F5D349237BF6D0004CDF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F5D34A237BF6D0004CDF73 /* TeXMath.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TeXMath.entitlements; sourceTree = "<group>"; };
+		1E14020D126A164B57198458 /* Pods_TeXMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeXMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDBA32025D074389895C3B2 /* Pods-TeXMath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeXMath.debug.xcconfig"; path = "Target Support Files/Pods-TeXMath/Pods-TeXMath.debug.xcconfig"; sourceTree = "<group>"; };
+		BC1FF4E8A2F06A3B55AEB26D /* Pods-TeXMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeXMath.release.xcconfig"; path = "Target Support Files/Pods-TeXMath/Pods-TeXMath.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19F5D33A237BF6CC004CDF73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B88F3E413CDD579AD22C78 /* Pods_TeXMath.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		194C3430237D8B5200955DF5 /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				194C342E237D8B3700955DF5 /* PreviewView.swift */,
+				19CC7207237D927400929A15 /* EditorViewController.swift */,
+			);
+			path = EditorView;
+			sourceTree = "<group>";
+		};
+		19F2AD48237FD2F8000E5003 /* EquationItemTabView */ = {
+			isa = PBXGroup;
+			children = (
+				1906A15C237FD3EA00772D46 /* EquationItemButton.swift */,
+				19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */,
+				19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */,
+				1948FDAB238162E60019E3F0 /* ScriptViewController.swift */,
+				1948FDAD238176D90019E3F0 /* RadicalViewController.swift */,
+				192AC4D62382CD7300893DBA /* IntegralViewController.swift */,
+				192AC4D82383A10200893DBA /* LargeOperatorViewController.swift */,
+				19738CC42393CD2500D518DF /* BracketViewController.swift */,
+				19A8154C2384E156006D6E46 /* FunctionViewController.swift */,
+				192AC4DA2383C81A00893DBA /* LimitAndLogViewController.swift */,
+				19A8154E23855617006D6E46 /* OperatorViewController.swift */,
+				199258D223900F5700295CF3 /* MatrixViewController.swift */,
+			);
+			path = EquationItemTabView;
+			sourceTree = "<group>";
+		};
+		19F5D334237BF6CC004CDF73 = {
+			isa = PBXGroup;
+			children = (
+				19F5D33F237BF6CC004CDF73 /* TeXMath */,
+				19F5D33E237BF6CC004CDF73 /* Products */,
+				1C3104C91D16FFB38114DBA5 /* Pods */,
+				D873428BE8C0B7D525FFC7AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19F5D33E237BF6CC004CDF73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19F5D33D237BF6CC004CDF73 /* TeXMath.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19F5D33F237BF6CC004CDF73 /* TeXMath */ = {
+			isa = PBXGroup;
+			children = (
+				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
+				19F21ECF238108AD003A1CC1 /* Utils.swift */,
+				19F5D344237BF6D0004CDF73 /* Assets.xcassets */,
+				19F5D346237BF6D0004CDF73 /* Main.storyboard */,
+				19F2AD48237FD2F8000E5003 /* EquationItemTabView */,
+				194C3430237D8B5200955DF5 /* EditorView */,
+				19F5D349237BF6D0004CDF73 /* Info.plist */,
+				19F5D34A237BF6D0004CDF73 /* TeXMath.entitlements */,
+			);
+			path = TeXMath;
+			sourceTree = "<group>";
+		};
+		1C3104C91D16FFB38114DBA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DDBA32025D074389895C3B2 /* Pods-TeXMath.debug.xcconfig */,
+				BC1FF4E8A2F06A3B55AEB26D /* Pods-TeXMath.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D873428BE8C0B7D525FFC7AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E14020D126A164B57198458 /* Pods_TeXMath.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19F5D33C237BF6CC004CDF73 /* TeXMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F5D34D237BF6D0004CDF73 /* Build configuration list for PBXNativeTarget "TeXMath" */;
+			buildPhases = (
+				959E239436793C30551E8A0F /* [CP] Check Pods Manifest.lock */,
+				19F5D339237BF6CC004CDF73 /* Sources */,
+				19F5D33A237BF6CC004CDF73 /* Frameworks */,
+				19F5D33B237BF6CC004CDF73 /* Resources */,
+				43F2AA6DFCA3CF5EE5206A58 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeXMath;
+			productName = TeXMath;
+			productReference = 19F5D33D237BF6CC004CDF73 /* TeXMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19F5D335237BF6CC004CDF73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Jiaxin Shou";
+				TargetAttributes = {
+					19F5D33C237BF6CC004CDF73 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 19F5D338237BF6CC004CDF73 /* Build configuration list for PBXProject "TeXMath" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19F5D334237BF6CC004CDF73;
+			productRefGroup = 19F5D33E237BF6CC004CDF73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19F5D33C237BF6CC004CDF73 /* TeXMath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19F5D33B237BF6CC004CDF73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F5D345237BF6D0004CDF73 /* Assets.xcassets in Resources */,
+				19F5D348237BF6D0004CDF73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43F2AA6DFCA3CF5EE5206A58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeXMath/Pods-TeXMath-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeXMath/Pods-TeXMath-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeXMath/Pods-TeXMath-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959E239436793C30551E8A0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeXMath-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19F5D339237BF6CC004CDF73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F21ECE2380FCCC003A1CC1 /* FractionViewController.swift in Sources */,
+				19738CC52393CD2500D518DF /* BracketViewController.swift in Sources */,
+				1948FDAC238162E60019E3F0 /* ScriptViewController.swift in Sources */,
+				192AC4D72382CD7300893DBA /* IntegralViewController.swift in Sources */,
+				1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */,
+				19A8154F23855617006D6E46 /* OperatorViewController.swift in Sources */,
+				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
+				192AC4DB2383C81A00893DBA /* LimitAndLogViewController.swift in Sources */,
+				19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */,
+				19F21ED0238108AD003A1CC1 /* Utils.swift in Sources */,
+				199258D323900F5700295CF3 /* MatrixViewController.swift in Sources */,
+				192AC4D92383A10200893DBA /* LargeOperatorViewController.swift in Sources */,
+				19CC7208237D927400929A15 /* EditorViewController.swift in Sources */,
+				19A8154D2384E156006D6E46 /* FunctionViewController.swift in Sources */,
+				1906A15D237FD3EA00772D46 /* EquationItemButton.swift in Sources */,
+				194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19F5D346237BF6D0004CDF73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19F5D347237BF6D0004CDF73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19F5D34B237BF6D0004CDF73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19F5D34C237BF6D0004CDF73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		19F5D34E237BF6D0004CDF73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DDBA32025D074389895C3B2 /* Pods-TeXMath.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TeXMath/TeXMath.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TA5C5ASM9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TeXMath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.TeXMath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		19F5D34F237BF6D0004CDF73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC1FF4E8A2F06A3B55AEB26D /* Pods-TeXMath.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TeXMath/TeXMath.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TA5C5ASM9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TeXMath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.TeXMath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19F5D338237BF6CC004CDF73 /* Build configuration list for PBXProject "TeXMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F5D34B237BF6D0004CDF73 /* Debug */,
+				19F5D34C237BF6D0004CDF73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F5D34D237BF6D0004CDF73 /* Build configuration list for PBXNativeTarget "TeXMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F5D34E237BF6D0004CDF73 /* Debug */,
+				19F5D34F237BF6D0004CDF73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19F5D335237BF6CC004CDF73 /* Project object */;
+}
