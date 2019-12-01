@@ -2082,7 +2082,22 @@
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
-                                                        <gridCell row="gmw-Hy-bJt" column="ZLd-vD-AdI" id="QpR-dZ-Fuj"/>
+                                                        <gridCell row="gmw-Hy-bJt" column="ZLd-vD-AdI" id="QpR-dZ-Fuj">
+                                                            <button key="contentView" toolTip="Cases" translatesAutoresizingMaskIntoConstraints="NO" id="HR7-Kj-dNe" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="320" y="0.0" width="64" height="64"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="64" id="62D-TO-mto"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="95O-DN-UiW"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="CasesButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="URe-G0-Lwz">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="casesButtonClicked:" target="dec-vw-hZL" id="xTQ-hf-D5p"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
                                                         <gridCell row="gmw-Hy-bJt" column="Gkk-CR-dCu" id="kxW-KD-oyh"/>
                                                         <gridCell row="gmw-Hy-bJt" column="xpT-tP-pAD" id="B6f-UF-373"/>
                                                         <gridCell row="gmw-Hy-bJt" column="EWH-R3-qCa" id="I0w-eK-X4I"/>
@@ -3146,6 +3161,7 @@
         <image name="ArcsineFunctionButtonIcon" width="48" height="48"/>
         <image name="ArctangentFunctionButtonIcon" width="48" height="48"/>
         <image name="BracketTabIcon" width="32" height="32"/>
+        <image name="CasesButtonIcon" width="48" height="48"/>
         <image name="CeilingBracketsButtonIcon" width="48" height="48"/>
         <image name="CoProductButtonIcon" width="48" height="48"/>
         <image name="CoProductWithLimitsButtonIcon" width="48" height="48"/>

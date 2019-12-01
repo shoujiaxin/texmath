@@ -134,4 +134,8 @@ class BracketViewController: NSViewController {
     @IBAction func rightDoubleVerticalBarsButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\left. {} \\right\\| ")
     }
+
+    @IBAction func casesButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\begin{cases} {} \\\\ {} \\end{cases} ")
+    }
 }
