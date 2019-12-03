@@ -16,6 +16,8 @@
 		194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C342E237D8B3700955DF5 /* PreviewView.swift */; };
 		19738CC52393CD2500D518DF /* BracketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19738CC42393CD2500D518DF /* BracketViewController.swift */; };
 		19738CC72393FACE00D518DF /* AccentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19738CC62393FACE00D518DF /* AccentViewController.swift */; };
+		1985FEE323954295002DEF65 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1985FEE223954295002DEF65 /* MainWindowController.swift */; };
+		1985FEE723960776002DEF65 /* FlippedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1985FEE623960776002DEF65 /* FlippedView.swift */; };
 		199258D323900F5700295CF3 /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199258D223900F5700295CF3 /* MatrixViewController.swift */; };
 		19A8154D2384E156006D6E46 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8154C2384E156006D6E46 /* FunctionViewController.swift */; };
 		19A8154F23855617006D6E46 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8154E23855617006D6E46 /* OperatorViewController.swift */; };
@@ -39,6 +41,8 @@
 		194C342E237D8B3700955DF5 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		19738CC42393CD2500D518DF /* BracketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketViewController.swift; sourceTree = "<group>"; };
 		19738CC62393FACE00D518DF /* AccentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentViewController.swift; sourceTree = "<group>"; };
+		1985FEE223954295002DEF65 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		1985FEE623960776002DEF65 /* FlippedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippedView.swift; sourceTree = "<group>"; };
 		199258D223900F5700295CF3 /* MatrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
 		19A8154C2384E156006D6E46 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		19A8154E23855617006D6E46 /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				1906A15C237FD3EA00772D46 /* EquationItemButton.swift */,
+				1985FEE623960776002DEF65 /* FlippedView.swift */,
 				19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */,
 				19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */,
 				1948FDAB238162E60019E3F0 /* ScriptViewController.swift */,
@@ -119,10 +124,11 @@
 		19F5D33F237BF6CC004CDF73 /* TeXMath */ = {
 			isa = PBXGroup;
 			children = (
-				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
-				19F21ECF238108AD003A1CC1 /* Utils.swift */,
 				19F5D344237BF6D0004CDF73 /* Assets.xcassets */,
 				19F5D346237BF6D0004CDF73 /* Main.storyboard */,
+				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
+				19F21ECF238108AD003A1CC1 /* Utils.swift */,
+				1985FEE223954295002DEF65 /* MainWindowController.swift */,
 				19F2AD48237FD2F8000E5003 /* EquationItemTabView */,
 				194C3430237D8B5200955DF5 /* EditorView */,
 				19F5D349237BF6D0004CDF73 /* Info.plist */,
@@ -269,7 +275,9 @@
 				192AC4D72382CD7300893DBA /* IntegralViewController.swift in Sources */,
 				1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */,
 				19A8154F23855617006D6E46 /* OperatorViewController.swift in Sources */,
+				1985FEE723960776002DEF65 /* FlippedView.swift in Sources */,
 				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
+				1985FEE323954295002DEF65 /* MainWindowController.swift in Sources */,
 				192AC4DB2383C81A00893DBA /* LimitAndLogViewController.swift in Sources */,
 				19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */,
 				19F21ED0238108AD003A1CC1 /* Utils.swift in Sources */,

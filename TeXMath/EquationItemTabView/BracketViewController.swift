@@ -13,10 +13,6 @@ class BracketViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let documentView = scrollView.documentView {
-            documentView.scroll(NSPoint(x: 0, y: documentView.bounds.size.height))
-        }
     }
 
     @IBAction func parenthesesButtonClicked(_: Any) {

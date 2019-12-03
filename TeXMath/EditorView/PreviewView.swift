@@ -17,6 +17,8 @@ class PreviewView: NSView {
     }
 
     override func viewWillDraw() {
+        super.viewWillDraw()
+
         autoresizesSubviews = true
         autoresizingMask = [NSView.AutoresizingMask.width, NSView.AutoresizingMask.height]
 

@@ -21,6 +21,8 @@ class EquationItemButton: NSButton {
     }
 
     override func layout() {
+        super.layout()
+
         imageScaling = NSImageScaling.scaleNone
         image?.size = NSSize(width: 48, height: 48)
         image?.tint(withColor: NSColor(named: NSColor.Name("IconColor"))!)

@@ -683,12 +683,12 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="TeXMath" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="768" height="300"/>
+                        <rect key="contentRect" x="196" y="240" width="768" height="461"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="768" height="300"/>
+                        <value key="minSize" type="size" width="768" height="461"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -699,7 +699,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="265"/>
+            <point key="canvasLocation" x="74" y="346"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="D4v-wB-Yn1">
@@ -724,7 +724,7 @@
                 </splitViewController>
                 <customObject id="mGY-vK-eQb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="712"/>
+            <point key="canvasLocation" x="74" y="980"/>
         </scene>
         <!--Equation Item Tab View Controller-->
         <scene sceneID="x30-rl-Mce">
@@ -770,7 +770,7 @@
                 </tabViewController>
                 <customObject id="GVt-Mu-fYI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="712.5"/>
+            <point key="canvasLocation" x="649" y="981"/>
         </scene>
         <!--Fraction-->
         <scene sceneID="IUn-4Z-bK2">
@@ -831,7 +831,7 @@
                         <constraints>
                             <constraint firstItem="34P-bb-NCG" firstAttribute="leading" secondItem="kym-hJ-i82" secondAttribute="leading" id="Qwd-BP-qJS"/>
                             <constraint firstItem="34P-bb-NCG" firstAttribute="top" secondItem="kym-hJ-i82" secondAttribute="top" id="btY-No-yGL"/>
-                            <constraint firstAttribute="bottom" secondItem="34P-bb-NCG" secondAttribute="bottom" constant="64" id="dM0-ls-LX7"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="34P-bb-NCG" secondAttribute="bottom" constant="64" id="dM0-ls-LX7"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -931,7 +931,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="2HH-ON-aca" firstAttribute="leading" secondItem="kXy-q1-dBH" secondAttribute="leading" id="3Zc-E0-txT"/>
-                            <constraint firstAttribute="bottom" secondItem="2HH-ON-aca" secondAttribute="bottom" constant="64" id="DvM-BA-avD"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2HH-ON-aca" secondAttribute="bottom" constant="64" id="DvM-BA-avD"/>
                             <constraint firstItem="2HH-ON-aca" firstAttribute="top" secondItem="kXy-q1-dBH" secondAttribute="top" id="cwY-rT-MV3"/>
                         </constraints>
                     </view>
@@ -945,7 +945,7 @@
             <objects>
                 <viewController id="T2G-gq-yQ3" customClass="EditorViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="zsf-XJ-2Tb">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="281"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="333"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fLO-YE-qwN">
@@ -958,39 +958,10 @@
                                     <action selector="clearButtonClicked:" target="T2G-gq-yQ3" id="VxF-5t-PDW"/>
                                 </connections>
                             </button>
-                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKI-ib-oXB">
-                                <rect key="frame" x="0.0" y="41" width="450" height="100"/>
-                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="HXI-4a-koP">
-                                    <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" smartInsertDelete="YES" id="EE5-Gp-vPY">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="450" height="100"/>
-                                            <size key="maxSize" width="460" height="10000000"/>
-                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </textView>
-                                    </subviews>
-                                </clipView>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="FWi-kT-Cym"/>
-                                </constraints>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="PFJ-za-RuU">
-                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="RaD-CP-nu5">
-                                    <rect key="frame" x="-100" y="-100" width="15" height="100"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                            </scrollView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="bv0-98-DnQ" customClass="PreviewView" customModule="TeXMath" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="151" width="450" height="120"/>
+                                <rect key="frame" x="0.0" y="172" width="450" height="151"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="dRo-Hu-FvB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="151" id="dRo-Hu-FvB"/>
                                 </constraints>
                             </customView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KcY-bw-QWU">
@@ -1003,9 +974,44 @@
                                     <action selector="copyButtonClicked:" target="T2G-gq-yQ3" id="Dd6-dT-hoX"/>
                                 </connections>
                             </button>
+                            <box hidden="YES" verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="kAo-T2-dDE">
+                                <rect key="frame" x="0.0" y="164" width="450" height="5"/>
+                            </box>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKI-ib-oXB">
+                                <rect key="frame" x="0.0" y="41" width="450" height="120"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="HXI-4a-koP">
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="120"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" smartInsertDelete="YES" id="EE5-Gp-vPY">
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="120"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="450" height="120"/>
+                                            <size key="maxSize" width="460" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="FWi-kT-Cym"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="PFJ-za-RuU">
+                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="RaD-CP-nu5">
+                                    <rect key="frame" x="-100" y="-100" width="15" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kAo-T2-dDE" secondAttribute="trailing" id="A30-1l-ebF"/>
                             <constraint firstItem="bv0-98-DnQ" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" id="Ami-BN-TaS"/>
+                            <constraint firstItem="kAo-T2-dDE" firstAttribute="centerY" secondItem="zsf-XJ-2Tb" secondAttribute="centerY" id="Cq5-VW-X8h"/>
+                            <constraint firstItem="aKI-ib-oXB" firstAttribute="top" secondItem="kAo-T2-dDE" secondAttribute="bottom" constant="5" id="M5q-yt-bTi"/>
                             <constraint firstAttribute="bottom" secondItem="KcY-bw-QWU" secondAttribute="bottom" constant="10" id="OLh-iB-Jaj"/>
                             <constraint firstItem="fLO-YE-qwN" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" constant="10" id="PSX-ee-XeA"/>
                             <constraint firstItem="aKI-ib-oXB" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" id="PUB-oz-Zps"/>
@@ -1014,9 +1020,10 @@
                             <constraint firstAttribute="trailing" secondItem="KcY-bw-QWU" secondAttribute="trailing" constant="10" id="Zpw-u9-F6A"/>
                             <constraint firstItem="KcY-bw-QWU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fLO-YE-qwN" secondAttribute="trailing" constant="12" symbolic="YES" id="arw-yv-Tcg"/>
                             <constraint firstAttribute="trailing" secondItem="aKI-ib-oXB" secondAttribute="trailing" id="iYN-xk-i77"/>
-                            <constraint firstItem="aKI-ib-oXB" firstAttribute="top" secondItem="bv0-98-DnQ" secondAttribute="bottom" constant="10" id="kPT-kb-6hz"/>
+                            <constraint firstItem="kAo-T2-dDE" firstAttribute="top" secondItem="bv0-98-DnQ" secondAttribute="bottom" constant="5" id="lvE-cR-qFU"/>
                             <constraint firstAttribute="trailing" secondItem="bv0-98-DnQ" secondAttribute="trailing" id="qYu-wa-Scs"/>
                             <constraint firstItem="KcY-bw-QWU" firstAttribute="top" secondItem="aKI-ib-oXB" secondAttribute="bottom" constant="10" id="z7S-by-7xc"/>
+                            <constraint firstItem="kAo-T2-dDE" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" id="zVg-3s-7hz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1026,7 +1033,7 @@
                 </viewController>
                 <customObject id="cnw-np-eU0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="1167"/>
+            <point key="canvasLocation" x="74" y="1475"/>
         </scene>
         <!--Radical-->
         <scene sceneID="nG7-jq-KeU">
@@ -1119,7 +1126,7 @@
                             </gridView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="he0-Jm-17L" secondAttribute="bottom" constant="64" id="Sim-ES-PdA"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="he0-Jm-17L" secondAttribute="bottom" constant="64" id="Sim-ES-PdA"/>
                             <constraint firstItem="he0-Jm-17L" firstAttribute="leading" secondItem="mlP-vm-DOz" secondAttribute="leading" id="aiV-mV-pKD"/>
                             <constraint firstItem="he0-Jm-17L" firstAttribute="top" secondItem="mlP-vm-DOz" secondAttribute="top" id="e7Q-pJ-PFw"/>
                         </constraints>
@@ -1288,7 +1295,7 @@
                             </gridView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="NGe-SM-xz8" secondAttribute="bottom" constant="64" id="5yd-md-ISe"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NGe-SM-xz8" secondAttribute="bottom" constant="64" id="5yd-md-ISe"/>
                             <constraint firstItem="NGe-SM-xz8" firstAttribute="top" secondItem="Q5W-Q9-7LN" secondAttribute="top" id="Acd-Gh-BJI"/>
                             <constraint firstItem="NGe-SM-xz8" firstAttribute="leading" secondItem="Q5W-Q9-7LN" secondAttribute="leading" id="ULv-Ka-Iwp"/>
                         </constraints>
@@ -1568,7 +1575,7 @@
                             </gridView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="4O5-Ce-Xtk" secondAttribute="bottom" id="TSe-x1-ghy"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4O5-Ce-Xtk" secondAttribute="bottom" id="TSe-x1-ghy"/>
                             <constraint firstItem="4O5-Ce-Xtk" firstAttribute="leading" secondItem="N8w-Y8-ggh" secondAttribute="leading" id="iEA-IB-xrP"/>
                             <constraint firstItem="4O5-Ce-Xtk" firstAttribute="top" secondItem="N8w-Y8-ggh" secondAttribute="top" id="yq7-xJ-Irq"/>
                         </constraints>
@@ -1592,12 +1599,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="128"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <view id="nRI-Mb-vFy">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="192"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <view translatesAutoresizingMaskIntoConstraints="NO" id="nRI-Mb-vFy" customClass="FlippedView" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="-64" width="768" height="192"/>
                                             <subviews>
                                                 <gridView xPlacement="center" yPlacement="center" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="tty-11-mYv">
                                                     <rect key="frame" x="0.0" y="0.0" width="768" height="192"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="192" id="7Q7-2T-Z0Z"/>
+                                                    </constraints>
                                                     <rows>
                                                         <gridRow id="Xwi-FJ-ibl"/>
                                                         <gridRow id="LNg-8U-QdP"/>
@@ -2108,14 +2117,20 @@
                                                 </gridView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="tty-11-mYv" firstAttribute="leading" secondItem="nRI-Mb-vFy" secondAttribute="leading" id="aMb-ZR-tSj"/>
-                                                <constraint firstItem="tty-11-mYv" firstAttribute="top" secondItem="nRI-Mb-vFy" secondAttribute="top" id="mOd-2a-bQK"/>
+                                                <constraint firstItem="tty-11-mYv" firstAttribute="leading" secondItem="nRI-Mb-vFy" secondAttribute="leading" id="KBc-Vl-x9k"/>
+                                                <constraint firstItem="tty-11-mYv" firstAttribute="top" secondItem="nRI-Mb-vFy" secondAttribute="top" id="Kn6-Ol-gJs"/>
+                                                <constraint firstAttribute="bottom" secondItem="tty-11-mYv" secondAttribute="bottom" id="eKB-al-eCn"/>
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nRI-Mb-vFy" firstAttribute="leading" secondItem="Rqv-m8-8Ba" secondAttribute="leading" id="0oo-e5-hTj"/>
+                                        <constraint firstItem="nRI-Mb-vFy" firstAttribute="top" secondItem="Rqv-m8-8Ba" secondAttribute="top" id="Io2-aL-ZRZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="nRI-Mb-vFy" secondAttribute="trailing" id="Lu8-87-nGe"/>
+                                    </constraints>
                                 </clipView>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="a0q-NO-EjZ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="a0q-NO-EjZ"/>
                                 </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="1xn-iJ-AfK">
                                     <rect key="frame" x="-100" y="-100" width="168" height="15"/>
@@ -2489,7 +2504,7 @@
                         <constraints>
                             <constraint firstItem="czn-YO-wip" firstAttribute="top" secondItem="DNi-0G-Vmq" secondAttribute="top" id="7Ob-lU-uIv"/>
                             <constraint firstItem="czn-YO-wip" firstAttribute="leading" secondItem="DNi-0G-Vmq" secondAttribute="leading" id="Gx8-IP-2Ed"/>
-                            <constraint firstAttribute="bottom" secondItem="czn-YO-wip" secondAttribute="bottom" id="Zjo-aP-5xa"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="czn-YO-wip" secondAttribute="bottom" id="Zjo-aP-5xa"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -2752,7 +2767,7 @@
                             </gridView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="1Cy-AV-qBl" secondAttribute="bottom" id="0q7-0a-i9l"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1Cy-AV-qBl" secondAttribute="bottom" id="0q7-0a-i9l"/>
                             <constraint firstItem="1Cy-AV-qBl" firstAttribute="top" secondItem="lGi-ho-YYx" secondAttribute="top" id="vvo-li-46f"/>
                             <constraint firstItem="1Cy-AV-qBl" firstAttribute="leading" secondItem="lGi-ho-YYx" secondAttribute="leading" id="yiN-s8-Brb"/>
                         </constraints>
@@ -2922,7 +2937,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="agj-CD-0Wo" firstAttribute="leading" secondItem="cvc-uF-GGK" secondAttribute="leading" id="4ti-3z-wjE"/>
-                            <constraint firstAttribute="bottom" secondItem="agj-CD-0Wo" secondAttribute="bottom" constant="64" id="6jz-Kg-R5X"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="agj-CD-0Wo" secondAttribute="bottom" constant="64" id="6jz-Kg-R5X"/>
                             <constraint firstItem="agj-CD-0Wo" firstAttribute="top" secondItem="cvc-uF-GGK" secondAttribute="top" id="aTp-9m-LQe"/>
                         </constraints>
                     </view>
@@ -3109,7 +3124,7 @@
                         <constraints>
                             <constraint firstItem="chO-ND-sEe" firstAttribute="top" secondItem="BJV-GF-CsM" secondAttribute="top" id="C3L-pX-5OG"/>
                             <constraint firstItem="chO-ND-sEe" firstAttribute="leading" secondItem="BJV-GF-CsM" secondAttribute="leading" id="wsr-O7-KHJ"/>
-                            <constraint firstAttribute="bottom" secondItem="chO-ND-sEe" secondAttribute="bottom" constant="64" id="z1g-mF-tfP"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="chO-ND-sEe" secondAttribute="bottom" constant="64" id="z1g-mF-tfP"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -3374,7 +3389,7 @@
                         <constraints>
                             <constraint firstItem="JAv-TG-bda" firstAttribute="leading" secondItem="7Hz-9J-r8z" secondAttribute="leading" id="cIG-Hn-DP2"/>
                             <constraint firstItem="JAv-TG-bda" firstAttribute="top" secondItem="7Hz-9J-r8z" secondAttribute="top" id="cYp-Eo-Lrs"/>
-                            <constraint firstAttribute="bottom" secondItem="JAv-TG-bda" secondAttribute="bottom" id="ksZ-4b-wSb"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JAv-TG-bda" secondAttribute="bottom" id="ksZ-4b-wSb"/>
                         </constraints>
                     </view>
                 </viewController>
