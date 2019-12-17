@@ -3400,15 +3400,630 @@
         <!--Symbol-->
         <scene sceneID="lkw-Q2-1DX">
             <objects>
-                <viewController title="Symbol" id="aXP-KB-66w" sceneMemberID="viewController">
+                <viewController title="Symbol" id="aXP-KB-66w" customClass="SymbolViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Gvn-NO-y6p">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uQ-rO-9CV">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="128"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Obp-rT-sa4">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view translatesAutoresizingMaskIntoConstraints="NO" id="Yxp-Zm-pHS" customClass="FlippedView" customModule="TeXMath" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="-172" width="768" height="300"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iTL-8e-IIx">
+                                                    <rect key="frame" x="0.0" y="282" width="768" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="VeT-cr-lva"/>
+                                                    </constraints>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="  Lowercase" drawsBackground="YES" id="pzE-nj-WLF">
+                                                        <font key="font" metaFont="menu" size="14"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <gridView xPlacement="center" yPlacement="center" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="jQU-dh-pea">
+                                                    <rect key="frame" x="0.0" y="186" width="768" height="96"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="96" id="KfK-Ts-4oP"/>
+                                                    </constraints>
+                                                    <rows>
+                                                        <gridRow id="PYr-5b-FmG"/>
+                                                        <gridRow id="M7F-ic-0z8"/>
+                                                        <gridRow id="fDz-78-Xk5"/>
+                                                    </rows>
+                                                    <columns>
+                                                        <gridColumn id="FB1-sK-gSB"/>
+                                                        <gridColumn id="6Q5-ht-285"/>
+                                                        <gridColumn id="h7h-Zl-abB"/>
+                                                        <gridColumn id="KjG-iK-eLX"/>
+                                                        <gridColumn id="qFZ-NR-9Zs"/>
+                                                        <gridColumn id="w4t-Sx-5u8"/>
+                                                        <gridColumn id="0br-Gn-G5w"/>
+                                                        <gridColumn id="y3M-Ma-doi"/>
+                                                        <gridColumn id="94P-QP-E2P"/>
+                                                        <gridColumn id="Q93-Sq-bbY"/>
+                                                        <gridColumn id="4Ux-oF-BzG"/>
+                                                        <gridColumn id="h8M-bS-EcC"/>
+                                                        <gridColumn id="4tt-Nq-K3R"/>
+                                                        <gridColumn id="BA9-Dc-hFM"/>
+                                                        <gridColumn id="K4M-9D-Eib"/>
+                                                        <gridColumn id="ygb-QP-KGq"/>
+                                                    </columns>
+                                                    <gridCells>
+                                                        <gridCell row="PYr-5b-FmG" column="FB1-sK-gSB" id="IB2-Cz-wu9">
+                                                            <button key="contentView" toolTip="Alpha" translatesAutoresizingMaskIntoConstraints="NO" id="ALS-Jd-iyA" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="K3l-yz-FeW"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="fah-Xe-uBO"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseAlphaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mCQ-vY-4f1">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseAlphaButtonClicked:" target="aXP-KB-66w" id="Qq1-ea-CIj"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="6Q5-ht-285" id="CJP-PD-Fua">
+                                                            <button key="contentView" toolTip="Beta" translatesAutoresizingMaskIntoConstraints="NO" id="0j9-OO-K4l" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="48" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="6N5-1Q-TxY"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="wSl-gN-lRn"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseBetaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Bcq-3K-vvg">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseBetaButtonClicked:" target="aXP-KB-66w" id="u3c-67-LCd"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="h7h-Zl-abB" id="6Qi-Wc-0xL">
+                                                            <button key="contentView" toolTip="Gamma" translatesAutoresizingMaskIntoConstraints="NO" id="ssL-qw-dx1" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="96" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="Oc6-dN-WTW"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="zNj-af-Lef"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseGammaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kQp-G0-N5i">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseGammaButtonClicked:" target="aXP-KB-66w" id="68j-lY-V9O"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="KjG-iK-eLX" id="3di-l0-JCB">
+                                                            <button key="contentView" toolTip="Delta" translatesAutoresizingMaskIntoConstraints="NO" id="jwU-4j-G8n" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="144" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="IXN-WF-Oyr"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="jzD-hb-vgJ"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseDeltaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="1YD-Ab-PdA">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseDeltaButtonClicked:" target="aXP-KB-66w" id="ldX-dD-3Vm"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="qFZ-NR-9Zs" id="Z9i-cl-R5l">
+                                                            <button key="contentView" toolTip="Epsilon Variant" translatesAutoresizingMaskIntoConstraints="NO" id="pcR-AD-Ulb" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="192" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="29F-j6-3D8"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="t2U-kK-G5T"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseVarepsilonButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="RrE-UN-NFO">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseVarepsilonButtonClicked:" target="aXP-KB-66w" id="yKM-cZ-Atj"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="w4t-Sx-5u8" id="G7n-GI-YmQ">
+                                                            <button key="contentView" toolTip="Epsilon" translatesAutoresizingMaskIntoConstraints="NO" id="Oj6-uy-zGR" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="240" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="6Ti-GB-MIl"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="CfU-vC-BXQ"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseEpsilonButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="3d0-8q-QAk">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseEpsilonButtonClicked:" target="aXP-KB-66w" id="lMj-uD-KZi"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="0br-Gn-G5w" id="PVX-UP-p2K">
+                                                            <button key="contentView" toolTip="Zeta" translatesAutoresizingMaskIntoConstraints="NO" id="WYe-Rk-6kD" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="288" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="SgJ-xK-XYw"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="lnw-j5-zIU"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseZetaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="1Il-Ut-x9C">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseZetaButtonClicked:" target="aXP-KB-66w" id="YDF-9Q-df6"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="y3M-Ma-doi" id="ToK-y7-OTD">
+                                                            <button key="contentView" toolTip="Eta" translatesAutoresizingMaskIntoConstraints="NO" id="Ivr-35-RNC" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="336" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="lXx-bj-fdQ"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="q3N-dF-qCb"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseEtaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="OOX-EF-SVc">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseEtaButtonClicked:" target="aXP-KB-66w" id="7T3-VP-UqY"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="94P-QP-E2P" id="eO6-wq-vfb">
+                                                            <button key="contentView" toolTip="Theta" translatesAutoresizingMaskIntoConstraints="NO" id="sAc-yq-x6Y" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="384" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="6Up-Mu-Nre"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="Pgg-6c-ITA"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseThetaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="nTt-U9-wFo">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseThetaButtonClicked:" target="aXP-KB-66w" id="QSq-OK-Yoe"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="Q93-Sq-bbY" id="PT5-S3-3AC">
+                                                            <button key="contentView" toolTip="Theta Variant" translatesAutoresizingMaskIntoConstraints="NO" id="rtE-8C-MTm" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="432" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="oP3-my-JN5"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="pv9-Ze-ORR"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseVarthetaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="B4c-3H-xKd">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseVarthetaButtonClicked:" target="aXP-KB-66w" id="2iL-fa-nDP"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="4Ux-oF-BzG" id="zQp-F0-h7x">
+                                                            <button key="contentView" toolTip="Iota" translatesAutoresizingMaskIntoConstraints="NO" id="cvE-TX-hEd" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="480" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="9YL-2l-B3R"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="saG-Qh-xhR"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseIotaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Rvk-pe-0Fc">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseIotaButtonClicked:" target="aXP-KB-66w" id="qfr-D0-Y2d"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="h8M-bS-EcC" id="Vug-TU-jF4">
+                                                            <button key="contentView" toolTip="Kappa" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-cV-ubg" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="528" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="ORf-j3-YP9"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="vZi-K5-OPS"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseKappaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="iZ1-uh-2vW">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseKappaButtonClicked:" target="aXP-KB-66w" id="pIa-bY-8CR"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="4tt-Nq-K3R" id="a71-Yp-Oib">
+                                                            <button key="contentView" toolTip="Kappa Variant" translatesAutoresizingMaskIntoConstraints="NO" id="AQB-tZ-hEm" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="576" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="NJc-ik-9pL"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="jKa-fh-lqL"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseVarkappaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="d2S-f4-9bb">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseVarkappaButtonClicked:" target="aXP-KB-66w" id="heR-ir-S9E"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="BA9-Dc-hFM" id="F5y-Fs-3sp">
+                                                            <button key="contentView" toolTip="Lambda" translatesAutoresizingMaskIntoConstraints="NO" id="3Jk-Bi-n0M" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="624" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="5ae-ev-yfQ"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="pYF-fe-DSa"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseLambdaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="lyW-Qt-aZn">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseLambdaButtonClicked:" target="aXP-KB-66w" id="aNX-I1-qER"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="K4M-9D-Eib" id="s6J-F2-tNj">
+                                                            <button key="contentView" toolTip="Mu" translatesAutoresizingMaskIntoConstraints="NO" id="Lcu-rd-80b" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="672" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="WBE-iP-fea"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="ZOS-em-mIg"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseMuButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="UfS-u3-5qb">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseMuButtonClicked:" target="aXP-KB-66w" id="hLv-Hf-bL2"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="PYr-5b-FmG" column="ygb-QP-KGq" id="Xui-tn-9Dn">
+                                                            <button key="contentView" toolTip="Nu" translatesAutoresizingMaskIntoConstraints="NO" id="33y-L2-ZUt" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="720" y="48" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="fJW-iF-dCJ"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="fTT-ed-cFH"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseNuButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="lvq-k3-OwY">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseNuButtonClicked:" target="aXP-KB-66w" id="uVP-zr-glN"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="FB1-sK-gSB" id="8AD-Ke-OwD">
+                                                            <button key="contentView" toolTip="Xi" translatesAutoresizingMaskIntoConstraints="NO" id="hte-9A-PHi" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="QYx-gU-CnF"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="rdQ-ce-WWZ"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseXiButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ozK-J5-aTq">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseXiButtonClicked:" target="aXP-KB-66w" id="FSy-0P-ezx"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="6Q5-ht-285" id="YNk-8n-6q6">
+                                                            <button key="contentView" toolTip="Omicron" translatesAutoresizingMaskIntoConstraints="NO" id="kNs-Aq-JLT" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="48" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="2Mj-za-HY3"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="HPX-yO-gOf"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseOmicronButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="zbz-P8-ENN">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="lowercaseOmicronButtonClicked:" target="aXP-KB-66w" id="1un-gD-pKw"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="h7h-Zl-abB" id="bEe-ey-XJe">
+                                                            <button key="contentView" toolTip="Pi" translatesAutoresizingMaskIntoConstraints="NO" id="VOz-gd-Yqz" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="96" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="3H7-0Y-gcn"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="O9c-C7-Obp"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercasePiButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="e2d-Qf-lDY">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercasePiButtonClicked:" target="aXP-KB-66w" id="4nU-aA-2IQ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="KjG-iK-eLX" id="r4y-Sf-EWv">
+                                                            <button key="contentView" toolTip="Pi Variant" translatesAutoresizingMaskIntoConstraints="NO" id="Sgi-Uo-GLl" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="144" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="GwX-TY-9mE"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="tRT-aI-FWp"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseVarpiButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Wmn-xU-3Cc">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseVarpiButtonClicked:" target="aXP-KB-66w" id="VX2-Nv-t1O"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="qFZ-NR-9Zs" id="gII-3Z-uGJ">
+                                                            <button key="contentView" toolTip="Rho" translatesAutoresizingMaskIntoConstraints="NO" id="azR-hT-9kN" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="192" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="YzV-Od-LNg"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="igz-Gw-gUr"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseRhoButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="D37-Cu-IvI">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseRhoButtonClicked:" target="aXP-KB-66w" id="7N7-cq-hLc"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="w4t-Sx-5u8" id="EtM-ZW-Tcp">
+                                                            <button key="contentView" toolTip="Rho Variant" translatesAutoresizingMaskIntoConstraints="NO" id="bKb-e9-gPq" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="240" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="kjs-fe-j38"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="snu-ww-fAa"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseVarrhoButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jny-eV-j1A">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseVarrhoButtonClicked:" target="aXP-KB-66w" id="kHd-Dd-vEm"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="0br-Gn-G5w" id="b90-ZD-QQh">
+                                                            <button key="contentView" toolTip="Sigma" translatesAutoresizingMaskIntoConstraints="NO" id="x0P-xz-JAQ" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="288" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="Crn-9G-2rG"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="aea-oo-OOb"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseSigmaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="o3O-Nj-Tt7">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseSigmaButtonClicked:" target="aXP-KB-66w" id="rpK-I8-dNd"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="y3M-Ma-doi" id="iMN-cD-yqb">
+                                                            <button key="contentView" toolTip="Sigma Variant" translatesAutoresizingMaskIntoConstraints="NO" id="zSM-kb-W2J" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="336" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="CbP-gp-Kui"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="EVl-Vx-ae6"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseVarsigmaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="LSv-bK-qBJ">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseVarsigmaButtonClicked:" target="aXP-KB-66w" id="qBE-Xu-ew1"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="94P-QP-E2P" id="rjh-Lq-hhc">
+                                                            <button key="contentView" toolTip="Tau" translatesAutoresizingMaskIntoConstraints="NO" id="d36-oB-ue8" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="384" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="VhE-0c-0AW"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="Ycs-gn-hYx"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseTauButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fZd-09-hMH">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseTauButtonClicked:" target="aXP-KB-66w" id="TNn-cg-A1l"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="Q93-Sq-bbY" id="Luk-k2-Jgy">
+                                                            <button key="contentView" toolTip="Upsilon" translatesAutoresizingMaskIntoConstraints="NO" id="ZCT-Hp-f4D" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="432" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="gqu-pE-S0G"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="pkB-Yb-7Ir"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseUpsilonButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="G0l-FU-1bK">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseUpsilonButtonClicked:" target="aXP-KB-66w" id="t33-9d-fnx"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="4Ux-oF-BzG" id="UAn-7Q-LEQ">
+                                                            <button key="contentView" toolTip="Phi Variant" translatesAutoresizingMaskIntoConstraints="NO" id="oZv-uT-SrS" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="480" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="s6O-FV-nob"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="tgC-9P-tte"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseVarphiButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="GPN-da-lx6">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseVarphiButtonClicked:" target="aXP-KB-66w" id="s3R-xY-UI7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="h8M-bS-EcC" id="LYf-vm-Mlq">
+                                                            <button key="contentView" toolTip="Phi" translatesAutoresizingMaskIntoConstraints="NO" id="g9t-X1-Amf" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="528" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="FYo-oU-hh2"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="cWb-e5-uXK"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercasePhiButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="gMI-4K-0mI">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercasePhiButtonClicked:" target="aXP-KB-66w" id="NTM-Am-9nO"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="4tt-Nq-K3R" id="74s-Ku-gHl">
+                                                            <button key="contentView" toolTip="Chi" translatesAutoresizingMaskIntoConstraints="NO" id="exU-q2-Cza" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="576" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="lUM-TZ-w26"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="sQd-A9-F66"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseChiButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="QhV-4o-DrV">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseChiButtonClicked:" target="aXP-KB-66w" id="7NF-Pb-JcT"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="BA9-Dc-hFM" id="PyL-yp-fL2">
+                                                            <button key="contentView" toolTip="Psi" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-1h-Qeh" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="624" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="9fS-B1-jez"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="WTp-K2-Qsv"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercasePsiButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JdK-xZ-8Ns">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercasePsiButtonClicked:" target="aXP-KB-66w" id="KUX-CX-c8F"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="K4M-9D-Eib" id="aT0-fW-kLD">
+                                                            <button key="contentView" toolTip="Omega" translatesAutoresizingMaskIntoConstraints="NO" id="p3R-2j-IKY" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="672" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="ATF-rl-6I8"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="y2V-Ow-bhu"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="LowercaseOmegaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="suP-pI-Ytx">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="LowercaseOmegaButtonClicked:" target="aXP-KB-66w" id="GjA-iY-5Ge"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="M7F-ic-0z8" column="ygb-QP-KGq" id="fcJ-1j-YMA"/>
+                                                        <gridCell row="fDz-78-Xk5" column="FB1-sK-gSB" id="dd1-xB-C7a"/>
+                                                        <gridCell row="fDz-78-Xk5" column="6Q5-ht-285" id="eaY-ac-2A2"/>
+                                                        <gridCell row="fDz-78-Xk5" column="h7h-Zl-abB" id="Z0u-AA-x1T"/>
+                                                        <gridCell row="fDz-78-Xk5" column="KjG-iK-eLX" id="Kdt-Lm-ZsN"/>
+                                                        <gridCell row="fDz-78-Xk5" column="qFZ-NR-9Zs" id="fkS-xh-zcm"/>
+                                                        <gridCell row="fDz-78-Xk5" column="w4t-Sx-5u8" id="J2K-hd-H1P"/>
+                                                        <gridCell row="fDz-78-Xk5" column="0br-Gn-G5w" id="Mif-kL-8nl"/>
+                                                        <gridCell row="fDz-78-Xk5" column="y3M-Ma-doi" id="T6u-Mf-UyD"/>
+                                                        <gridCell row="fDz-78-Xk5" column="94P-QP-E2P" id="uTG-9x-gy2"/>
+                                                        <gridCell row="fDz-78-Xk5" column="Q93-Sq-bbY" id="8nj-FL-N9L"/>
+                                                        <gridCell row="fDz-78-Xk5" column="4Ux-oF-BzG" id="iuR-se-K81"/>
+                                                        <gridCell row="fDz-78-Xk5" column="h8M-bS-EcC" id="0p9-KH-gg0"/>
+                                                        <gridCell row="fDz-78-Xk5" column="4tt-Nq-K3R" id="OFz-by-Rah"/>
+                                                        <gridCell row="fDz-78-Xk5" column="BA9-Dc-hFM" id="45d-ak-TCW"/>
+                                                        <gridCell row="fDz-78-Xk5" column="K4M-9D-Eib" id="AQD-sQ-Mrd"/>
+                                                        <gridCell row="fDz-78-Xk5" column="ygb-QP-KGq" id="l9V-AL-Mxh"/>
+                                                    </gridCells>
+                                                </gridView>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Zl-WQ-lJx">
+                                                    <rect key="frame" x="0.0" y="168" width="768" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="EkF-Ou-y57"/>
+                                                    </constraints>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="  Uppercase" drawsBackground="YES" id="ESg-p6-oTK">
+                                                        <font key="font" metaFont="menu" size="14"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="iTL-8e-IIx" secondAttribute="trailing" id="3fK-KF-r62"/>
+                                                <constraint firstItem="iTL-8e-IIx" firstAttribute="top" secondItem="Yxp-Zm-pHS" secondAttribute="top" id="HVD-Vr-UVn"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Zl-WQ-lJx" secondAttribute="trailing" id="Mk1-8q-z7N"/>
+                                                <constraint firstItem="iTL-8e-IIx" firstAttribute="leading" secondItem="Yxp-Zm-pHS" secondAttribute="leading" id="Q65-Mc-NaM"/>
+                                                <constraint firstItem="5Zl-WQ-lJx" firstAttribute="leading" secondItem="Yxp-Zm-pHS" secondAttribute="leading" id="QZv-H5-4az"/>
+                                                <constraint firstItem="jQU-dh-pea" firstAttribute="top" secondItem="iTL-8e-IIx" secondAttribute="bottom" id="Uiq-8f-LBZ"/>
+                                                <constraint firstItem="jQU-dh-pea" firstAttribute="leading" secondItem="Yxp-Zm-pHS" secondAttribute="leading" id="Xjr-hL-dEf"/>
+                                                <constraint firstItem="5Zl-WQ-lJx" firstAttribute="top" secondItem="jQU-dh-pea" secondAttribute="bottom" id="eUB-KI-9d8"/>
+                                                <constraint firstAttribute="height" constant="300" id="qtP-XY-kFP"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Yxp-Zm-pHS" firstAttribute="leading" secondItem="Obp-rT-sa4" secondAttribute="leading" id="Sec-Zo-8Yc"/>
+                                        <constraint firstAttribute="trailing" secondItem="Yxp-Zm-pHS" secondAttribute="trailing" id="gVc-nZ-iNX"/>
+                                        <constraint firstItem="Yxp-Zm-pHS" firstAttribute="top" secondItem="Obp-rT-sa4" secondAttribute="top" id="iqU-2q-21O"/>
+                                    </constraints>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="gGa-ra-LxI"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="IAQ-p1-y1L">
+                                    <rect key="frame" x="-100" y="-100" width="753" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="9RP-K4-6AT">
+                                    <rect key="frame" x="-100" y="-100" width="15" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2uQ-rO-9CV" secondAttribute="trailing" id="3gP-UD-2xm"/>
+                            <constraint firstItem="2uQ-rO-9CV" firstAttribute="leading" secondItem="Gvn-NO-y6p" secondAttribute="leading" id="TCq-4H-B51"/>
+                            <constraint firstItem="2uQ-rO-9CV" firstAttribute="top" secondItem="Gvn-NO-y6p" secondAttribute="top" id="oDk-hl-1kf"/>
+                            <constraint firstAttribute="bottom" secondItem="2uQ-rO-9CV" secondAttribute="bottom" id="wUc-HK-QhI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="S7v-M3-uLu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="2562"/>
+            <point key="canvasLocation" x="1491" y="2376"/>
         </scene>
     </scenes>
     <resources>
@@ -3498,6 +4113,37 @@
         <image name="LogicalAndWithLimitsButtonIcon" width="48" height="48"/>
         <image name="LogicalOrButtonIcon" width="48" height="48"/>
         <image name="LogicalOrWithLimitsButtonIcon" width="48" height="48"/>
+        <image name="LowercaseAlphaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseBetaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseChiButtonIcon" width="36" height="36"/>
+        <image name="LowercaseDeltaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseEpsilonButtonIcon" width="36" height="36"/>
+        <image name="LowercaseEtaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseGammaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseIotaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseKappaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseLambdaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseMuButtonIcon" width="36" height="36"/>
+        <image name="LowercaseNuButtonIcon" width="36" height="36"/>
+        <image name="LowercaseOmegaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseOmicronButtonIcon" width="36" height="36"/>
+        <image name="LowercasePhiButtonIcon" width="36" height="36"/>
+        <image name="LowercasePiButtonIcon" width="36" height="36"/>
+        <image name="LowercasePsiButtonIcon" width="36" height="36"/>
+        <image name="LowercaseRhoButtonIcon" width="36" height="36"/>
+        <image name="LowercaseSigmaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseTauButtonIcon" width="36" height="36"/>
+        <image name="LowercaseThetaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseUpsilonButtonIcon" width="36" height="36"/>
+        <image name="LowercaseVarepsilonButtonIcon" width="36" height="36"/>
+        <image name="LowercaseVarkappaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseVarphiButtonIcon" width="36" height="36"/>
+        <image name="LowercaseVarpiButtonIcon" width="36" height="36"/>
+        <image name="LowercaseVarrhoButtonIcon" width="36" height="36"/>
+        <image name="LowercaseVarsigmaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseVarthetaButtonIcon" width="36" height="36"/>
+        <image name="LowercaseXiButtonIcon" width="36" height="36"/>
+        <image name="LowercaseZetaButtonIcon" width="36" height="36"/>
         <image name="MatrixTabIcon" width="32" height="32"/>
         <image name="MaximumButtonIcon" width="48" height="48"/>
         <image name="MaximumWithBaseButtonIcon" width="48" height="48"/>

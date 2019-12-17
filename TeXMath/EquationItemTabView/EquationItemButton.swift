@@ -24,7 +24,7 @@ class EquationItemButton: NSButton {
         super.layout()
 
         imageScaling = NSImageScaling.scaleNone
-        image?.size = NSSize(width: 48, height: 48)
+        image?.size = NSSize(width: frame.width * 0.75, height: frame.height * 0.75)
         image?.tint(withColor: NSColor(named: NSColor.Name("IconColor"))!)
     }
 

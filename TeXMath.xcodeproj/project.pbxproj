@@ -16,6 +16,7 @@
 		194C342F237D8B3700955DF5 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C342E237D8B3700955DF5 /* PreviewView.swift */; };
 		19738CC52393CD2500D518DF /* BracketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19738CC42393CD2500D518DF /* BracketViewController.swift */; };
 		19738CC72393FACE00D518DF /* AccentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19738CC62393FACE00D518DF /* AccentViewController.swift */; };
+		197CB73B23A8F17800A8BC8B /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197CB73A23A8F17800A8BC8B /* SymbolViewController.swift */; };
 		1985FEE323954295002DEF65 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1985FEE223954295002DEF65 /* MainWindowController.swift */; };
 		1985FEE723960776002DEF65 /* FlippedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1985FEE623960776002DEF65 /* FlippedView.swift */; };
 		199258D323900F5700295CF3 /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199258D223900F5700295CF3 /* MatrixViewController.swift */; };
@@ -41,6 +42,7 @@
 		194C342E237D8B3700955DF5 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		19738CC42393CD2500D518DF /* BracketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketViewController.swift; sourceTree = "<group>"; };
 		19738CC62393FACE00D518DF /* AccentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentViewController.swift; sourceTree = "<group>"; };
+		197CB73A23A8F17800A8BC8B /* SymbolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
 		1985FEE223954295002DEF65 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		1985FEE623960776002DEF65 /* FlippedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippedView.swift; sourceTree = "<group>"; };
 		199258D223900F5700295CF3 /* MatrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				192AC4DA2383C81A00893DBA /* LimitAndLogViewController.swift */,
 				19A8154E23855617006D6E46 /* OperatorViewController.swift */,
 				199258D223900F5700295CF3 /* MatrixViewController.swift */,
+				197CB73A23A8F17800A8BC8B /* SymbolViewController.swift */,
 			);
 			path = EquationItemTabView;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				1948FDAC238162E60019E3F0 /* ScriptViewController.swift in Sources */,
 				192AC4D72382CD7300893DBA /* IntegralViewController.swift in Sources */,
 				1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */,
+				197CB73B23A8F17800A8BC8B /* SymbolViewController.swift in Sources */,
 				19A8154F23855617006D6E46 /* OperatorViewController.swift in Sources */,
 				1985FEE723960776002DEF65 /* FlippedView.swift in Sources */,
 				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
