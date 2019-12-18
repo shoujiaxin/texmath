@@ -184,4 +184,20 @@ class SymbolViewController: NSViewController {
     @IBAction func uppercaseXiButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\Xi ")
     }
+
+    @IBAction func alephButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\aleph ")
+    }
+
+    @IBAction func bethButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\beth ")
+    }
+
+    @IBAction func dalethButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\daleth ")
+    }
+
+    @IBAction func gimelButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\gimel ")
+    }
 }

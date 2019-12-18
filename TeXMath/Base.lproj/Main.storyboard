@@ -4143,55 +4143,67 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="fDz-78-Xk5" column="h8M-bS-EcC" id="0p9-KH-gg0">
-                                                            <button key="contentView" toolTip="Lambda" translatesAutoresizingMaskIntoConstraints="NO" id="4zL-Wk-4FP" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Aleph" translatesAutoresizingMaskIntoConstraints="NO" id="4zL-Wk-4FP" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
                                                                 <rect key="frame" x="528" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="48" id="296-OM-yJL"/>
                                                                     <constraint firstAttribute="width" constant="48" id="poY-L9-J9K"/>
                                                                 </constraints>
-                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="2x2EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hPe-LE-dOA">
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="AlephButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hPe-LE-dOA">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="alephButtonClicked:" target="aXP-KB-66w" id="9q4-av-LCq"/>
+                                                                </connections>
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="fDz-78-Xk5" column="4tt-Nq-K3R" id="OFz-by-Rah">
-                                                            <button key="contentView" toolTip="Lambda" translatesAutoresizingMaskIntoConstraints="NO" id="hRt-9E-jAk" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Beth" translatesAutoresizingMaskIntoConstraints="NO" id="hRt-9E-jAk" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
                                                                 <rect key="frame" x="576" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="rMt-JK-OON"/>
                                                                     <constraint firstAttribute="height" constant="48" id="reE-fZ-Lj6"/>
                                                                 </constraints>
-                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="2x2EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="t8J-3y-kGm">
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="BethButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="t8J-3y-kGm">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="bethButtonClicked:" target="aXP-KB-66w" id="bkx-bN-4Du"/>
+                                                                </connections>
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="fDz-78-Xk5" column="BA9-Dc-hFM" id="45d-ak-TCW">
-                                                            <button key="contentView" toolTip="Lambda" translatesAutoresizingMaskIntoConstraints="NO" id="Ci6-cO-bz1" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Daleth" translatesAutoresizingMaskIntoConstraints="NO" id="Ci6-cO-bz1" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
                                                                 <rect key="frame" x="624" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="ocD-I8-Ubi"/>
                                                                     <constraint firstAttribute="height" constant="48" id="uEB-nK-aFA"/>
                                                                 </constraints>
-                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="2x2EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="OGt-j5-gWN">
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="DalethButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="OGt-j5-gWN">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="dalethButtonClicked:" target="aXP-KB-66w" id="tlS-Gp-Aau"/>
+                                                                </connections>
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="fDz-78-Xk5" column="K4M-9D-Eib" id="AQD-sQ-Mrd">
-                                                            <button key="contentView" toolTip="Lambda" translatesAutoresizingMaskIntoConstraints="NO" id="w4W-ly-vTm" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Gimel" translatesAutoresizingMaskIntoConstraints="NO" id="w4W-ly-vTm" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
                                                                 <rect key="frame" x="672" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="48" id="3Vj-3y-oty"/>
                                                                     <constraint firstAttribute="width" constant="48" id="JCS-hY-XYa"/>
                                                                 </constraints>
-                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="2x2EmptyMatrixButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mQ6-HQ-25b">
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="GimelButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mQ6-HQ-25b">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="gimelButtonClicked:" target="aXP-KB-66w" id="LEX-pC-M0x"/>
+                                                                </connections>
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="fDz-78-Xk5" column="ygb-QP-KGq" id="l9V-AL-Mxh"/>
@@ -4265,6 +4277,7 @@
         <image name="3x3EmptyMatrixButtonIcon" width="48" height="48"/>
         <image name="AccentTabIcon" width="32" height="32"/>
         <image name="AcuteButtonIcon" width="48" height="48"/>
+        <image name="AlephButtonIcon" width="36" height="36"/>
         <image name="AngleBracketsButtonIcon" width="48" height="48"/>
         <image name="AngleBracketsWithSeparatorButtonIcon" width="48" height="48"/>
         <image name="AngleBracketsWithTwoSeparatorsButtonIcon" width="48" height="48"/>
@@ -4272,6 +4285,7 @@
         <image name="ArcsineFunctionButtonIcon" width="48" height="48"/>
         <image name="ArctangentFunctionButtonIcon" width="48" height="48"/>
         <image name="BarButtonIcon" width="48" height="48"/>
+        <image name="BethButtonIcon" width="36" height="36"/>
         <image name="BracketTabIcon" width="32" height="32"/>
         <image name="BreveButtonIcon" width="48" height="48"/>
         <image name="CasesButtonIcon" width="48" height="48"/>
@@ -4288,6 +4302,7 @@
         <image name="CubicRootButtonIcon" width="48" height="48"/>
         <image name="CurlyBracesButtonIcon" width="48" height="48"/>
         <image name="CurlyBracesWithSeparatorButtonIcon" width="48" height="48"/>
+        <image name="DalethButtonIcon" width="36" height="36"/>
         <image name="DeltaEqualToButtonIcon" width="48" height="48"/>
         <image name="DigammaButtonIcon" width="36" height="36"/>
         <image name="DotButtonIcon" width="48" height="48"/>
@@ -4304,6 +4319,7 @@
         <image name="FloorBracketsButtonIcon" width="48" height="48"/>
         <image name="FractionTabIcon" width="32" height="32"/>
         <image name="FunctionTabIcon" width="32" height="32"/>
+        <image name="GimelButtonIcon" width="36" height="36"/>
         <image name="GraveButtonIcon" width="48" height="48"/>
         <image name="HatButtonIcon" width="48" height="48"/>
         <image name="HyperbolicCosineFunctionButtonIcon" width="48" height="48"/>
