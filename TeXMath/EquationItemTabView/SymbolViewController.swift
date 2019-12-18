@@ -172,4 +172,16 @@ class SymbolViewController: NSViewController {
     @IBAction func uppercaseSigmaButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\Sigma ")
     }
+
+    @IBAction func uppercaseThetaButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Theta ")
+    }
+
+    @IBAction func uppercaseUpsilonButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Upsilon ")
+    }
+
+    @IBAction func uppercaseXiButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Xi ")
+    }
 }
