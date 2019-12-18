@@ -136,4 +136,40 @@ class SymbolViewController: NSViewController {
     @IBAction func LowercaseOmegaButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\omega ")
     }
+
+    @IBAction func digammaButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\digamma ")
+    }
+
+    @IBAction func uppercaseDeltaButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Delta ")
+    }
+
+    @IBAction func uppercaseGammaButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Gamma ")
+    }
+
+    @IBAction func uppercaseLambdaButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Lambda ")
+    }
+
+    @IBAction func uppercaseOmegaButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Omega ")
+    }
+
+    @IBAction func uppercasePhiButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Phi ")
+    }
+
+    @IBAction func uppercasePiButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Pi ")
+    }
+
+    @IBAction func uppercasePsiButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Psi ")
+    }
+
+    @IBAction func uppercaseSigmaButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Sigma ")
+    }
 }
