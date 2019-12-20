@@ -13,6 +13,12 @@ class SymbolViewController: NSViewController {
         super.viewDidLoad()
     }
 
+    // MARK: Basic
+
+    @IBAction func plusMinusButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\pm ")
+    }
+
     // MARK: Lowercase
 
     @IBAction func lowercaseAlphaButtonClicked(_: Any) {
