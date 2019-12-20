@@ -13,6 +13,8 @@ class SymbolViewController: NSViewController {
         super.viewDidLoad()
     }
 
+    // MARK: Lowercase
+
     @IBAction func lowercaseAlphaButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\alpha ")
     }
@@ -85,61 +87,59 @@ class SymbolViewController: NSViewController {
         Utils.insertLatex(latexCode: "o ")
     }
 
-    @IBAction func LowercasePiButtonClicked(_: Any) {
+    @IBAction func lowercasePiButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\pi ")
     }
 
-    @IBAction func LowercaseVarpiButtonClicked(_: Any) {
+    @IBAction func lowercaseVarpiButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\varpi ")
     }
 
-    @IBAction func LowercaseRhoButtonClicked(_: Any) {
+    @IBAction func lowercaseRhoButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\rho ")
     }
 
-    @IBAction func LowercaseVarrhoButtonClicked(_: Any) {
+    @IBAction func lowercaseVarrhoButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\varrho ")
     }
 
-    @IBAction func LowercaseSigmaButtonClicked(_: Any) {
+    @IBAction func lowercaseSigmaButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\sigma ")
     }
 
-    @IBAction func LowercaseVarsigmaButtonClicked(_: Any) {
+    @IBAction func lowercaseVarsigmaButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\varsigma ")
     }
 
-    @IBAction func LowercaseTauButtonClicked(_: Any) {
+    @IBAction func lowercaseTauButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\tau ")
     }
 
-    @IBAction func LowercaseUpsilonButtonClicked(_: Any) {
+    @IBAction func lowercaseUpsilonButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\upsilon ")
     }
 
-    @IBAction func LowercaseVarphiButtonClicked(_: Any) {
+    @IBAction func lowercaseVarphiButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\varphi ")
     }
 
-    @IBAction func LowercasePhiButtonClicked(_: Any) {
+    @IBAction func lowercasePhiButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\phi ")
     }
 
-    @IBAction func LowercaseChiButtonClicked(_: Any) {
+    @IBAction func lowercaseChiButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\chi ")
     }
 
-    @IBAction func LowercasePsiButtonClicked(_: Any) {
+    @IBAction func lowercasePsiButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\psi ")
     }
 
-    @IBAction func LowercaseOmegaButtonClicked(_: Any) {
+    @IBAction func lowercaseOmegaButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\omega ")
     }
 
-    @IBAction func digammaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\digamma ")
-    }
+    // MARK: Uppercase
 
     @IBAction func uppercaseDeltaButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\Delta ")
@@ -183,6 +183,16 @@ class SymbolViewController: NSViewController {
 
     @IBAction func uppercaseXiButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\Xi ")
+    }
+
+    // MARK: Letter-Like
+
+    @IBAction func digammaButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\digamma ")
+    }
+
+    @IBAction func reButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Re ")
     }
 
     @IBAction func alephButtonClicked(_: Any) {

@@ -3753,7 +3753,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercasePiButtonClicked:" target="aXP-KB-66w" id="4nU-aA-2IQ"/>
+                                                                    <action selector="lowercasePiButtonClicked:" target="aXP-KB-66w" id="4nU-aA-2IQ"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3769,7 +3769,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseVarpiButtonClicked:" target="aXP-KB-66w" id="VX2-Nv-t1O"/>
+                                                                    <action selector="lowercaseVarpiButtonClicked:" target="aXP-KB-66w" id="VX2-Nv-t1O"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3785,7 +3785,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseRhoButtonClicked:" target="aXP-KB-66w" id="7N7-cq-hLc"/>
+                                                                    <action selector="lowercaseRhoButtonClicked:" target="aXP-KB-66w" id="7N7-cq-hLc"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3801,7 +3801,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseVarrhoButtonClicked:" target="aXP-KB-66w" id="kHd-Dd-vEm"/>
+                                                                    <action selector="lowercaseVarrhoButtonClicked:" target="aXP-KB-66w" id="kHd-Dd-vEm"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3817,7 +3817,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseSigmaButtonClicked:" target="aXP-KB-66w" id="rpK-I8-dNd"/>
+                                                                    <action selector="lowercaseSigmaButtonClicked:" target="aXP-KB-66w" id="rpK-I8-dNd"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3833,7 +3833,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseVarsigmaButtonClicked:" target="aXP-KB-66w" id="qBE-Xu-ew1"/>
+                                                                    <action selector="lowercaseVarsigmaButtonClicked:" target="aXP-KB-66w" id="qBE-Xu-ew1"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3849,7 +3849,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseTauButtonClicked:" target="aXP-KB-66w" id="TNn-cg-A1l"/>
+                                                                    <action selector="lowercaseTauButtonClicked:" target="aXP-KB-66w" id="TNn-cg-A1l"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3865,7 +3865,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseUpsilonButtonClicked:" target="aXP-KB-66w" id="t33-9d-fnx"/>
+                                                                    <action selector="lowercaseUpsilonButtonClicked:" target="aXP-KB-66w" id="t33-9d-fnx"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3881,7 +3881,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseVarphiButtonClicked:" target="aXP-KB-66w" id="s3R-xY-UI7"/>
+                                                                    <action selector="lowercaseVarphiButtonClicked:" target="aXP-KB-66w" id="s3R-xY-UI7"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3897,7 +3897,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercasePhiButtonClicked:" target="aXP-KB-66w" id="NTM-Am-9nO"/>
+                                                                    <action selector="lowercasePhiButtonClicked:" target="aXP-KB-66w" id="NTM-Am-9nO"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3913,7 +3913,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseChiButtonClicked:" target="aXP-KB-66w" id="7NF-Pb-JcT"/>
+                                                                    <action selector="lowercaseChiButtonClicked:" target="aXP-KB-66w" id="7NF-Pb-JcT"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3929,7 +3929,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercasePsiButtonClicked:" target="aXP-KB-66w" id="KUX-CX-c8F"/>
+                                                                    <action selector="lowercasePsiButtonClicked:" target="aXP-KB-66w" id="KUX-CX-c8F"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -3945,7 +3945,7 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="LowercaseOmegaButtonClicked:" target="aXP-KB-66w" id="GjA-iY-5Ge"/>
+                                                                    <action selector="lowercaseOmegaButtonClicked:" target="aXP-KB-66w" id="GjA-iY-5Ge"/>
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
@@ -4175,7 +4175,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <gridView xPlacement="center" yPlacement="center" rowAlignment="none" rowSpacing="0.0" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="RhJ-RE-nZV">
-                                                    <rect key="frame" x="0.0" y="54" width="240" height="48"/>
+                                                    <rect key="frame" x="0.0" y="54" width="384" height="48"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="48" id="ZWJ-6p-Bce"/>
                                                     </constraints>
@@ -4188,6 +4188,9 @@
                                                         <gridColumn id="uwd-QY-kxZ"/>
                                                         <gridColumn id="4kK-94-1Uv"/>
                                                         <gridColumn id="6YS-jP-yH3"/>
+                                                        <gridColumn id="xYk-88-v0I"/>
+                                                        <gridColumn id="HXf-c0-VaV"/>
+                                                        <gridColumn id="leE-Og-4t9"/>
                                                     </columns>
                                                     <gridCells>
                                                         <gridCell row="bQG-tk-g1i" column="uHK-A5-wC0" id="zUc-ef-coL">
@@ -4207,8 +4210,50 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="bQG-tk-g1i" column="21F-a5-F9y" id="UfB-Z9-v5Z">
-                                                            <button key="contentView" toolTip="Aleph" translatesAutoresizingMaskIntoConstraints="NO" id="4zL-Wk-4FP" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="OtU-R5-0LV" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
                                                                 <rect key="frame" x="48" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="dgM-d8-mEK"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="uqK-nD-4Kk"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="DigammaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fo4-ad-KP1">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="bQG-tk-g1i" column="uwd-QY-kxZ" id="IjX-86-Fq5">
+                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="9QN-Iy-z4Y" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="96" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="48" id="beG-Qp-GVW"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="qxg-P3-tov"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="DigammaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="urt-O4-1OF">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="bQG-tk-g1i" column="4kK-94-1Uv" id="MwQ-Qd-a6P">
+                                                            <button key="contentView" toolTip="Re" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-yO-O7y" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="144" y="0.0" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="Hy7-nG-aeA"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="PUi-E9-3qj"/>
+                                                                </constraints>
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ReButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Bud-Fx-fs4">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="reButtonClicked:" target="aXP-KB-66w" id="LIw-ww-lcQ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </gridCell>
+                                                        <gridCell row="bQG-tk-g1i" column="6YS-jP-yH3" id="mch-9l-VoQ">
+                                                            <button key="contentView" toolTip="Aleph" translatesAutoresizingMaskIntoConstraints="NO" id="4zL-Wk-4FP" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                                <rect key="frame" x="192" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="48" id="296-OM-yJL"/>
                                                                     <constraint firstAttribute="width" constant="48" id="poY-L9-J9K"/>
@@ -4222,9 +4267,9 @@
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
-                                                        <gridCell row="bQG-tk-g1i" column="uwd-QY-kxZ" id="IjX-86-Fq5">
+                                                        <gridCell row="bQG-tk-g1i" column="xYk-88-v0I" id="CUo-mI-zSx">
                                                             <button key="contentView" toolTip="Beth" translatesAutoresizingMaskIntoConstraints="NO" id="hRt-9E-jAk" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
-                                                                <rect key="frame" x="96" y="0.0" width="48" height="48"/>
+                                                                <rect key="frame" x="240" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="rMt-JK-OON"/>
                                                                     <constraint firstAttribute="height" constant="48" id="reE-fZ-Lj6"/>
@@ -4238,9 +4283,9 @@
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
-                                                        <gridCell row="bQG-tk-g1i" column="4kK-94-1Uv" id="MwQ-Qd-a6P">
+                                                        <gridCell row="bQG-tk-g1i" column="HXf-c0-VaV" id="nhU-Qr-RNy">
                                                             <button key="contentView" toolTip="Daleth" translatesAutoresizingMaskIntoConstraints="NO" id="Ci6-cO-bz1" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
-                                                                <rect key="frame" x="144" y="0.0" width="48" height="48"/>
+                                                                <rect key="frame" x="288" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="ocD-I8-Ubi"/>
                                                                     <constraint firstAttribute="height" constant="48" id="uEB-nK-aFA"/>
@@ -4254,9 +4299,9 @@
                                                                 </connections>
                                                             </button>
                                                         </gridCell>
-                                                        <gridCell row="bQG-tk-g1i" column="6YS-jP-yH3" id="mch-9l-VoQ">
+                                                        <gridCell row="bQG-tk-g1i" column="leE-Og-4t9" id="neS-3u-6ej">
                                                             <button key="contentView" toolTip="Gimel" translatesAutoresizingMaskIntoConstraints="NO" id="w4W-ly-vTm" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
-                                                                <rect key="frame" x="192" y="0.0" width="48" height="48"/>
+                                                                <rect key="frame" x="336" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="48" id="3Vj-3y-oty"/>
                                                                     <constraint firstAttribute="width" constant="48" id="JCS-hY-XYa"/>
@@ -4464,6 +4509,7 @@
         <image name="ProductWithLimitsButtonIcon" width="48" height="48"/>
         <image name="RadicalTabIcon" width="32" height="32"/>
         <image name="RadicalWithDegreeButtonIcon" width="48" height="48"/>
+        <image name="ReButtonIcon" width="36" height="36"/>
         <image name="RightAngleBracketsButtonIcon" width="48" height="48"/>
         <image name="RightCeilingBracketsButtonIcon" width="48" height="48"/>
         <image name="RightCurlyBracesButtonIcon" width="48" height="48"/>
