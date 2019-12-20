@@ -12,8 +12,8 @@ class MainWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
 
-        let windowWidth: CGFloat = 768
-        let windowHeight: CGFloat = 416
+        let windowWidth: CGFloat = 960
+        let windowHeight: CGFloat = 640
         if let screenFrame = window?.screen?.frame {
             window?.setFrame(NSRect(x: (screenFrame.width - windowWidth) / 2, y: (screenFrame.height - windowHeight) / 2, width: windowWidth, height: windowHeight), display: true)
         }
