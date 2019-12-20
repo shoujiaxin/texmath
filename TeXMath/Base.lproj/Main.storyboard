@@ -4210,33 +4210,39 @@
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="bQG-tk-g1i" column="21F-a5-F9y" id="UfB-Z9-v5Z">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="OtU-R5-0LV" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Script Small L" translatesAutoresizingMaskIntoConstraints="NO" id="OtU-R5-0LV" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
                                                                 <rect key="frame" x="48" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="dgM-d8-mEK"/>
                                                                     <constraint firstAttribute="height" constant="48" id="uqK-nD-4Kk"/>
                                                                 </constraints>
-                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="DigammaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fo4-ad-KP1">
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="EllButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fo4-ad-KP1">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="ellButtonClicked:" target="aXP-KB-66w" id="Fq9-DM-kEy"/>
+                                                                </connections>
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="bQG-tk-g1i" column="uwd-QY-kxZ" id="IjX-86-Fq5">
-                                                            <button key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="9QN-Iy-z4Y" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Weierstrass Elliptic Function" translatesAutoresizingMaskIntoConstraints="NO" id="9QN-Iy-z4Y" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
                                                                 <rect key="frame" x="96" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="beG-Qp-GVW"/>
                                                                     <constraint firstAttribute="height" constant="48" id="qxg-P3-tov"/>
                                                                 </constraints>
-                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="DigammaButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="urt-O4-1OF">
+                                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="WpButtonIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="urt-O4-1OF">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="wpButtonClicked:" target="aXP-KB-66w" id="JAe-NQ-dFX"/>
+                                                                </connections>
                                                             </button>
                                                         </gridCell>
                                                         <gridCell row="bQG-tk-g1i" column="4kK-94-1Uv" id="MwQ-Qd-a6P">
-                                                            <button key="contentView" toolTip="Re" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-yO-O7y" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
+                                                            <button key="contentView" toolTip="Real Part" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-yO-O7y" customClass="EquationItemButton" customModule="TeXMath" customModuleProvider="target">
                                                                 <rect key="frame" x="144" y="0.0" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="48" id="Hy7-nG-aeA"/>
@@ -4414,6 +4420,7 @@
         <image name="DoubleIntegralButtonIcon" width="48" height="48"/>
         <image name="DoubleIntegralWithLimitsButtonIcon" width="48" height="48"/>
         <image name="DoubleVerticalBarsButtonIcon" width="48" height="48"/>
+        <image name="EllButtonIcon" width="36" height="36"/>
         <image name="Empty2x2MatrixInBracesButtonIcon" width="48" height="48"/>
         <image name="Empty2x2MatrixInBracketsButtonIcon" width="48" height="48"/>
         <image name="Empty2x2MatrixInDeterminantButtonIcon" width="48" height="48"/>
@@ -4555,5 +4562,6 @@
         <image name="UppercaseXiButtonIcon" width="36" height="36"/>
         <image name="VectorButtonIcon" width="48" height="48"/>
         <image name="VerticalBarsButtonIcon" width="48" height="48"/>
+        <image name="WpButtonIcon" width="36" height="36"/>
     </resources>
 </document>

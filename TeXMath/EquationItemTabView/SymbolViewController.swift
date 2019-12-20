@@ -191,6 +191,14 @@ class SymbolViewController: NSViewController {
         Utils.insertLatex(latexCode: "\\digamma ")
     }
 
+    @IBAction func ellButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\ell ")
+    }
+
+    @IBAction func wpButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\wp ")
+    }
+
     @IBAction func reButtonClicked(_: Any) {
         Utils.insertLatex(latexCode: "\\Re ")
     }
