@@ -19,6 +19,194 @@ class SymbolViewController: NSViewController {
         Utils.insertLatex(latexCode: "\\pm ")
     }
 
+    @IBAction func minusPlusButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\mp ")
+    }
+
+    @IBAction func infinityButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\infty ")
+    }
+
+    @IBAction func notEqualToButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\neq ")
+    }
+
+    @IBAction func multiplicationSignButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\times ")
+    }
+
+    @IBAction func divisionSignButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\div ")
+    }
+
+    @IBAction func proportionalToButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\propto ")
+    }
+
+    @IBAction func muchLessThanButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\ll ")
+    }
+
+    @IBAction func muchGreaterThanButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\gg ")
+    }
+
+    @IBAction func lessThanOrEqualToButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\leq ")
+    }
+
+    @IBAction func greaterThanOrEqualToButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\geq ")
+    }
+
+    @IBAction func approximatelyEqualToButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\cong ")
+    }
+
+    @IBAction func asymptoticToButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\approx ")
+    }
+
+    @IBAction func identicalToButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\equiv ")
+    }
+
+    @IBAction func forAllButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\forall ")
+    }
+
+    @IBAction func existsButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\exists ")
+    }
+
+    @IBAction func notExistsButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\nexists ")
+    }
+
+    @IBAction func inButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\in ")
+    }
+
+    @IBAction func niButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\ni ")
+    }
+
+    @IBAction func notInButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\notin ")
+    }
+
+    @IBAction func partialDifferentialButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\partial ")
+    }
+
+    @IBAction func angleButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\angle ")
+    }
+
+    @IBAction func intersectionButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\cap ")
+    }
+
+    @IBAction func unionButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\cup ")
+    }
+
+    @IBAction func uplusButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\uplus ")
+    }
+
+    @IBAction func sqcapButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\sqcap ")
+    }
+
+    @IBAction func sqcupButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\sqcup ")
+    }
+
+    @IBAction func wedgeButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\wedge ")
+    }
+
+    @IBAction func veeButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\vee ")
+    }
+
+    @IBAction func circledDotButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\odot ")
+    }
+
+    @IBAction func circledMinusButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\ominus ")
+    }
+
+    @IBAction func circledPlusButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\oplus ")
+    }
+
+    @IBAction func circledSlashButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\oslash ")
+    }
+
+    @IBAction func circledTimesButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\otimes ")
+    }
+
+    @IBAction func leftArrowButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\leftarrow ")
+    }
+
+    @IBAction func rightArrowButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\rightarrow ")
+    }
+
+    @IBAction func upArrowButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\uparrow ")
+    }
+
+    @IBAction func downArrowButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\downarrow ")
+    }
+
+    @IBAction func leftDoubleArrowButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Leftarrow ")
+    }
+
+    @IBAction func rightDoubleArrowButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Rightarrow ")
+    }
+
+    @IBAction func leftRightArrowButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\leftrightarrow ")
+    }
+
+    @IBAction func leftRightDoubleArrowButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\Leftrightarrow ")
+    }
+
+    @IBAction func thereforeButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\therefore ")
+    }
+
+    @IBAction func becauseButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\because ")
+    }
+
+    @IBAction func cdotButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\cdot ")
+    }
+
+    @IBAction func cdotsButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\cdots ")
+    }
+
+    @IBAction func vdotsButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\vdots ")
+    }
+
+    @IBAction func ddotsButtonClicked(_: Any) {
+        Utils.insertLatex(latexCode: "\\ddots ")
+    }
+
     // MARK: Lowercase
 
     @IBAction func lowercaseAlphaButtonClicked(_: Any) {
