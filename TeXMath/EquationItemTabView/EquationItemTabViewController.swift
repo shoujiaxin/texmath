@@ -17,7 +17,9 @@ class EquationItemTabViewController: NSTabViewController {
         super.updateViewConstraints()
 
         for tabViewItem in tabViewItems {
-            tabViewItem.image?.tint(withColor: NSColor(named: NSColor.Name("IconColor"))!)
+            if let image = tabViewItem.image {
+                image.tint(withColor: NSColor.textColor)
+            }
         }
     }
 }
