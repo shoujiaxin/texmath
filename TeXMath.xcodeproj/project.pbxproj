@@ -168,7 +168,6 @@
 				19F5D339237BF6CC004CDF73 /* Sources */,
 				19F5D33A237BF6CC004CDF73 /* Frameworks */,
 				19F5D33B237BF6CC004CDF73 /* Resources */,
-				43F2AA6DFCA3CF5EE5206A58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,23 +224,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43F2AA6DFCA3CF5EE5206A58 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TeXMath/Pods-TeXMath-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TeXMath/Pods-TeXMath-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeXMath/Pods-TeXMath-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		959E239436793C30551E8A0F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
