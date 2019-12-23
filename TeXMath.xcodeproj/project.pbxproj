@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1906A15D237FD3EA00772D46 /* EquationItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906A15C237FD3EA00772D46 /* EquationItemButton.swift */; };
+		192477EA23B0826E00A2673E /* MathJax-3.0.0 in Resources */ = {isa = PBXBuildFile; fileRef = 192477E923B0826D00A2673E /* MathJax-3.0.0 */; };
 		192AC4D72382CD7300893DBA /* IntegralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC4D62382CD7300893DBA /* IntegralViewController.swift */; };
 		192AC4D92383A10200893DBA /* LargeOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC4D82383A10200893DBA /* LargeOperatorViewController.swift */; };
 		192AC4DB2383C81A00893DBA /* LimitAndLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC4DA2383C81A00893DBA /* LimitAndLogViewController.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		1906A15C237FD3EA00772D46 /* EquationItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemButton.swift; sourceTree = "<group>"; };
+		192477E923B0826D00A2673E /* MathJax-3.0.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "MathJax-3.0.0"; sourceTree = "<group>"; };
 		192AC4D62382CD7300893DBA /* IntegralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralViewController.swift; sourceTree = "<group>"; };
 		192AC4D82383A10200893DBA /* LargeOperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeOperatorViewController.swift; sourceTree = "<group>"; };
 		192AC4DA2383C81A00893DBA /* LimitAndLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitAndLogViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				19F5D33F237BF6CC004CDF73 /* TeXMath */,
 				19F5D33E237BF6CC004CDF73 /* Products */,
+				192477E923B0826D00A2673E /* MathJax-3.0.0 */,
 				1C3104C91D16FFB38114DBA5 /* Pods */,
 				D873428BE8C0B7D525FFC7AD /* Frameworks */,
 			);
@@ -213,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192477EA23B0826E00A2673E /* MathJax-3.0.0 in Resources */,
 				19F5D345237BF6D0004CDF73 /* Assets.xcassets in Resources */,
 				19F5D348237BF6D0004CDF73 /* Main.storyboard in Resources */,
 			);
