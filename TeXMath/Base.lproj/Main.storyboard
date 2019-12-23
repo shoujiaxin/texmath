@@ -958,12 +958,6 @@
                                     <action selector="clearButtonClicked:" target="T2G-gq-yQ3" id="VxF-5t-PDW"/>
                                 </connections>
                             </button>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="bv0-98-DnQ" customClass="PreviewView" customModule="TeXMath" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="172" width="450" height="151"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="151" id="dRo-Hu-FvB"/>
-                                </constraints>
-                            </customView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KcY-bw-QWU">
                                 <rect key="frame" x="374" y="3" width="72" height="32"/>
                                 <buttonCell key="cell" type="push" title="Copy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ITf-Mu-5q9">
@@ -1009,26 +1003,21 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="kAo-T2-dDE" secondAttribute="trailing" id="A30-1l-ebF"/>
-                            <constraint firstItem="bv0-98-DnQ" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" id="Ami-BN-TaS"/>
                             <constraint firstItem="kAo-T2-dDE" firstAttribute="centerY" secondItem="zsf-XJ-2Tb" secondAttribute="centerY" id="Cq5-VW-X8h"/>
                             <constraint firstItem="aKI-ib-oXB" firstAttribute="top" secondItem="kAo-T2-dDE" secondAttribute="bottom" constant="5" id="M5q-yt-bTi"/>
                             <constraint firstAttribute="bottom" secondItem="KcY-bw-QWU" secondAttribute="bottom" constant="10" id="OLh-iB-Jaj"/>
                             <constraint firstItem="fLO-YE-qwN" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" constant="10" id="PSX-ee-XeA"/>
                             <constraint firstItem="aKI-ib-oXB" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" id="PUB-oz-Zps"/>
-                            <constraint firstItem="bv0-98-DnQ" firstAttribute="top" secondItem="zsf-XJ-2Tb" secondAttribute="top" constant="10" id="VQP-cF-FzJ"/>
                             <constraint firstItem="fLO-YE-qwN" firstAttribute="top" secondItem="aKI-ib-oXB" secondAttribute="bottom" constant="10" id="ZlZ-Nw-JEZ"/>
                             <constraint firstAttribute="trailing" secondItem="KcY-bw-QWU" secondAttribute="trailing" constant="10" id="Zpw-u9-F6A"/>
                             <constraint firstItem="KcY-bw-QWU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fLO-YE-qwN" secondAttribute="trailing" constant="12" symbolic="YES" id="arw-yv-Tcg"/>
                             <constraint firstAttribute="trailing" secondItem="aKI-ib-oXB" secondAttribute="trailing" id="iYN-xk-i77"/>
-                            <constraint firstItem="kAo-T2-dDE" firstAttribute="top" secondItem="bv0-98-DnQ" secondAttribute="bottom" constant="5" id="lvE-cR-qFU"/>
-                            <constraint firstAttribute="trailing" secondItem="bv0-98-DnQ" secondAttribute="trailing" id="qYu-wa-Scs"/>
                             <constraint firstItem="KcY-bw-QWU" firstAttribute="top" secondItem="aKI-ib-oXB" secondAttribute="bottom" constant="10" id="z7S-by-7xc"/>
                             <constraint firstItem="kAo-T2-dDE" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" id="zVg-3s-7hz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="codeTextView" destination="EE5-Gp-vPY" id="eeo-B4-V5b"/>
-                        <outlet property="previewView" destination="bv0-98-DnQ" id="Id3-Xb-Hny"/>
                     </connections>
                 </viewController>
                 <customObject id="cnw-np-eU0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

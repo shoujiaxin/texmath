@@ -9,7 +9,6 @@
 import Cocoa
 
 class EditorViewController: NSViewController, NSTextViewDelegate {
-    @IBOutlet var previewView: PreviewView!
     @IBOutlet var codeTextView: NSTextView!
 
     override func viewDidLoad() {
@@ -36,9 +35,7 @@ class EditorViewController: NSViewController, NSTextViewDelegate {
         }
     }
 
-    func textDidChange(_: Notification) {
-        previewView.show(latex: codeTextView.string)
-    }
+    func textDidChange(_: Notification) {}
 
     func textView(_: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
         switch commandSelector {
