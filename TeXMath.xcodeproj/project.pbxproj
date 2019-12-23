@@ -12,6 +12,7 @@
 		192AC4D72382CD7300893DBA /* IntegralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC4D62382CD7300893DBA /* IntegralViewController.swift */; };
 		192AC4D92383A10200893DBA /* LargeOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC4D82383A10200893DBA /* LargeOperatorViewController.swift */; };
 		192AC4DB2383C81A00893DBA /* LimitAndLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192AC4DA2383C81A00893DBA /* LimitAndLogViewController.swift */; };
+		194781E223B09A6E00928F3D /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194781E123B09A6E00928F3D /* PreviewView.swift */; };
 		1948FDAC238162E60019E3F0 /* ScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948FDAB238162E60019E3F0 /* ScriptViewController.swift */; };
 		1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948FDAD238176D90019E3F0 /* RadicalViewController.swift */; };
 		19738CC52393CD2500D518DF /* BracketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19738CC42393CD2500D518DF /* BracketViewController.swift */; };
@@ -38,6 +39,7 @@
 		192AC4D62382CD7300893DBA /* IntegralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralViewController.swift; sourceTree = "<group>"; };
 		192AC4D82383A10200893DBA /* LargeOperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeOperatorViewController.swift; sourceTree = "<group>"; };
 		192AC4DA2383C81A00893DBA /* LimitAndLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitAndLogViewController.swift; sourceTree = "<group>"; };
+		194781E123B09A6E00928F3D /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		1948FDAB238162E60019E3F0 /* ScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptViewController.swift; sourceTree = "<group>"; };
 		1948FDAD238176D90019E3F0 /* RadicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadicalViewController.swift; sourceTree = "<group>"; };
 		19738CC42393CD2500D518DF /* BracketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				19CC7207237D927400929A15 /* EditorViewController.swift */,
+				194781E123B09A6E00928F3D /* PreviewView.swift */,
 			);
 			path = EditorView;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				19738CC52393CD2500D518DF /* BracketViewController.swift in Sources */,
 				1948FDAC238162E60019E3F0 /* ScriptViewController.swift in Sources */,
 				192AC4D72382CD7300893DBA /* IntegralViewController.swift in Sources */,
+				194781E223B09A6E00928F3D /* PreviewView.swift in Sources */,
 				1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */,
 				197CB73B23A8F17800A8BC8B /* SymbolViewController.swift in Sources */,
 				19A8154F23855617006D6E46 /* OperatorViewController.swift in Sources */,

@@ -1001,7 +1001,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-Se-bPL">
+                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-Se-bPL" customClass="PreviewView" customModule="TeXMath" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="172" width="450" height="151"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="151" id="g1n-5O-0Nz"/>
@@ -1033,7 +1033,7 @@
                     </view>
                     <connections>
                         <outlet property="codeTextView" destination="EE5-Gp-vPY" id="eeo-B4-V5b"/>
-                        <outlet property="webView" destination="oJL-Se-bPL" id="s28-eD-Lh0"/>
+                        <outlet property="previewView" destination="oJL-Se-bPL" id="s28-eD-Lh0"/>
                     </connections>
                 </viewController>
                 <customObject id="cnw-np-eU0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

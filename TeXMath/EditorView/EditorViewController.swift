@@ -10,13 +10,13 @@ import Cocoa
 import WebKit
 
 class EditorViewController: NSViewController, NSTextViewDelegate {
-    @IBOutlet var webView: WKWebView!
+    @IBOutlet var previewView: PreviewView!
     @IBOutlet var codeTextView: NSTextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        webView.setValue(false, forKey: "drawsBackground")
+        previewView.setValue(false, forKey: "drawsBackground")
 
         codeTextView.delegate = self
         codeTextView.font = NSFont(name: "Menlo", size: 14)
@@ -39,7 +39,9 @@ class EditorViewController: NSViewController, NSTextViewDelegate {
         }
     }
 
-    func textDidChange(_: Notification) {}
+    func textDidChange(_: Notification) {
+        previewView.show(latex: codeTextView.string)
+    }
 
     func textView(_: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
         switch commandSelector {
