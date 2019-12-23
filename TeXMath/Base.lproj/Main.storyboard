@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="15702"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -1000,10 +1001,22 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-Se-bPL">
+                                <rect key="frame" x="0.0" y="172" width="450" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="151" id="g1n-5O-0Nz"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="oJL-Se-bPL" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" id="2Da-oc-VTW"/>
                             <constraint firstAttribute="trailing" secondItem="kAo-T2-dDE" secondAttribute="trailing" id="A30-1l-ebF"/>
                             <constraint firstItem="kAo-T2-dDE" firstAttribute="centerY" secondItem="zsf-XJ-2Tb" secondAttribute="centerY" id="Cq5-VW-X8h"/>
+                            <constraint firstItem="oJL-Se-bPL" firstAttribute="top" secondItem="zsf-XJ-2Tb" secondAttribute="top" constant="10" id="L3N-JQ-1Wi"/>
                             <constraint firstItem="aKI-ib-oXB" firstAttribute="top" secondItem="kAo-T2-dDE" secondAttribute="bottom" constant="5" id="M5q-yt-bTi"/>
                             <constraint firstAttribute="bottom" secondItem="KcY-bw-QWU" secondAttribute="bottom" constant="10" id="OLh-iB-Jaj"/>
                             <constraint firstItem="fLO-YE-qwN" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" constant="10" id="PSX-ee-XeA"/>
@@ -1012,17 +1025,20 @@
                             <constraint firstAttribute="trailing" secondItem="KcY-bw-QWU" secondAttribute="trailing" constant="10" id="Zpw-u9-F6A"/>
                             <constraint firstItem="KcY-bw-QWU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fLO-YE-qwN" secondAttribute="trailing" constant="12" symbolic="YES" id="arw-yv-Tcg"/>
                             <constraint firstAttribute="trailing" secondItem="aKI-ib-oXB" secondAttribute="trailing" id="iYN-xk-i77"/>
+                            <constraint firstAttribute="trailing" secondItem="oJL-Se-bPL" secondAttribute="trailing" id="nE4-Pa-abc"/>
+                            <constraint firstItem="kAo-T2-dDE" firstAttribute="top" secondItem="oJL-Se-bPL" secondAttribute="bottom" constant="5" id="wBg-LC-bgc"/>
                             <constraint firstItem="KcY-bw-QWU" firstAttribute="top" secondItem="aKI-ib-oXB" secondAttribute="bottom" constant="10" id="z7S-by-7xc"/>
                             <constraint firstItem="kAo-T2-dDE" firstAttribute="leading" secondItem="zsf-XJ-2Tb" secondAttribute="leading" id="zVg-3s-7hz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="codeTextView" destination="EE5-Gp-vPY" id="eeo-B4-V5b"/>
+                        <outlet property="webView" destination="oJL-Se-bPL" id="s28-eD-Lh0"/>
                     </connections>
                 </viewController>
                 <customObject id="cnw-np-eU0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="1475"/>
+            <point key="canvasLocation" x="74" y="1474.5"/>
         </scene>
         <!--Radical-->
         <scene sceneID="nG7-jq-KeU">

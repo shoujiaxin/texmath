@@ -7,12 +7,16 @@
 //
 
 import Cocoa
+import WebKit
 
 class EditorViewController: NSViewController, NSTextViewDelegate {
+    @IBOutlet var webView: WKWebView!
     @IBOutlet var codeTextView: NSTextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        webView.setValue(false, forKey: "drawsBackground")
 
         codeTextView.delegate = self
         codeTextView.font = NSFont(name: "Menlo", size: 14)
