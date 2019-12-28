@@ -6,6 +6,6 @@ target 'TeXMath' do
   use_frameworks!
 
   # Pods for TeXMath
-  pod 'iosMath', :git => 'https://github.com/kostub/iosmath.git'
+  # pod 'iosMath', :git => 'https://github.com/kostub/iosmath.git'
 
 end
