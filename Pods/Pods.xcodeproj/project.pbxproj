@@ -16,9 +16,9 @@
 		1D42F270988268668C97883E74B2FFB7 /* Pods-TeXMath-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeXMath-Info.plist"; sourceTree = "<group>"; };
 		319AF0F1F115F33D96648BD82D6A7B38 /* Pods-TeXMath-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeXMath-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6924810469E482532A2B114311AEC5BE /* Pods-TeXMath-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeXMath-umbrella.h"; sourceTree = "<group>"; };
-		8A839B2E733B87151ACE5AAA66C1B9C0 /* Pods_TeXMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TeXMath.framework; path = "Pods-TeXMath.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A839B2E733B87151ACE5AAA66C1B9C0 /* Pods_TeXMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeXMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E775A37DC246A413E15F25A1A54CB8 /* Pods-TeXMath.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TeXMath.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C0010C389E3827597B62E13DA2E510DA /* Pods-TeXMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeXMath.release.xcconfig"; sourceTree = "<group>"; };
 		C7E7B82C54B2937A24753C2C2AB0BEDC /* Pods-TeXMath-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeXMath-acknowledgements.plist"; sourceTree = "<group>"; };
 		CE1577C00440C4625CE067ABD07C97E3 /* Pods-TeXMath-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeXMath-dummy.m"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -306,7 +306,6 @@
 			baseConfigurationReference = D271993EBC44A83757BD3CD91566A22C /* Pods-TeXMath.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -346,7 +345,6 @@
 			baseConfigurationReference = C0010C389E3827597B62E13DA2E510DA /* Pods-TeXMath.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
