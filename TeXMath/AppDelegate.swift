@@ -21,4 +21,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_: NSApplication) -> Bool {
         return true
     }
+
+    @IBAction func latexMathematicsHelpMenuItemClicked(_: Any) {
+        NSWorkspace.shared.open(URL(string: "https://en.wikibooks.org/wiki/LaTeX/Mathematics")!)
+    }
 }
