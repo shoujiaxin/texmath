@@ -9,63 +9,48 @@
 import Cocoa
 
 class LargeOperatorViewController: NSViewController {
+    @IBOutlet var collectionView: NSCollectionView!
+
+    var items = EquationItems()
+
+    override func viewWillLayout() {
+        collectionView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        items.addSection(withName: "")
+        items.sections[0].addItem(withName: "Summation", imageName: "SummationButtonIcon", latexCode: "\\sum{} ")
+        items.sections[0].addItem(withName: "Summation with Limits", imageName: "SummationWithLimitsButtonIcon", latexCode: "\\sum_{}^{}{} ")
+        items.sections[0].addItem(withName: "Product", imageName: "ProductButtonIcon", latexCode: "\\prod{} ")
+        items.sections[0].addItem(withName: "Product with Limits", imageName: "ProductWithLimitsButtonIcon", latexCode: "\\prod_{}^{}{} ")
+        items.sections[0].addItem(withName: "CoProduct", imageName: "CoProductButtonIcon", latexCode: "\\coprod{} ")
+        items.sections[0].addItem(withName: "CoProduct with Limits", imageName: "CoProductWithLimitsButtonIcon", latexCode: "\\coprod_{}^{}{} ")
+        items.sections[0].addItem(withName: "Union", imageName: "UnionButtonIcon", latexCode: "\\bigcup{} ")
+        items.sections[0].addItem(withName: "Union with Limits", imageName: "UnionWithLimitsButtonIcon", latexCode: "\\bigcup_{}^{}{} ")
+        items.sections[0].addItem(withName: "Intersection", imageName: "IntersectionButtonIcon", latexCode: "\\bigcap{} ")
+        items.sections[0].addItem(withName: "Intersection with Limits", imageName: "IntersectionWithLimitsButtonIcon", latexCode: "\\bigcap_{}^{}{} ")
+        items.sections[0].addItem(withName: "Logical Or", imageName: "LogicalOrButtonIcon", latexCode: "\\bigvee{} ")
+        items.sections[0].addItem(withName: "Logical Or with Limits", imageName: "LogicalOrWithLimitsButtonIcon", latexCode: "\\bigvee_{}^{}{} ")
+        items.sections[0].addItem(withName: "Logical And", imageName: "LogicalAndButtonIcon", latexCode: "\\bigwedge{} ")
+        items.sections[0].addItem(withName: "Logical And with Limits", imageName: "LogicalAndWithLimitsButtonIcon", latexCode: "\\bigwedge_{}^{}{} ")
+    }
+}
+
+extension LargeOperatorViewController: NSCollectionViewDataSource {
+    func collectionView(_: NSCollectionView, numberOfItemsInSection _: Int) -> Int {
+        return items.numberOfItems(inSection: 0)
     }
 
-    @IBAction func summationButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sum{} ")
-    }
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItem(withIdentifier: .init("CollectionViewItem"), for: indexPath)
+        guard let collectionViewItem = item as? CollectionViewItem else {
+            return item
+        }
 
-    @IBAction func summationWithLimitsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sum_{}^{}{} ")
-    }
+        collectionViewItem.itemInfo = items.item(inSection: indexPath.section, atIndex: indexPath.item)
 
-    @IBAction func productButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\prod{} ")
-    }
-
-    @IBAction func productWithLimitsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\prod_{}^{}{} ")
-    }
-
-    @IBAction func coProductButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\coprod{} ")
-    }
-
-    @IBAction func coProeuctWithLimitsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\coprod_{}^{}{} ")
-    }
-
-    @IBAction func unionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\bigcup{} ")
-    }
-
-    @IBAction func unionWithLimitsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\bigcup_{}^{}{} ")
-    }
-
-    @IBAction func intersectionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\bigcap{} ")
-    }
-
-    @IBAction func intersectionWithLimitsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\bigcap_{}^{}{} ")
-    }
-
-    @IBAction func logicalOrButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\bigvee{} ")
-    }
-
-    @IBAction func logicalOrWithLimitsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\bigvee_{}^{}{} ")
-    }
-
-    @IBAction func logicalAndButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\bigwedge{} ")
-    }
-
-    @IBAction func logicalAndWithLimitsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\bigwedge_{}^{}{} ")
+        return collectionViewItem
     }
 }
