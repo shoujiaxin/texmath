@@ -195,7 +195,7 @@
                 <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="TeXMath" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="960" height="462"/>
+                        <rect key="contentRect" x="196" y="240" width="940" height="462"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -285,20 +285,21 @@
             <objects>
                 <viewController title="Fraction" id="OOx-se-k8D" customClass="FractionViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="kym-hJ-i82">
-                        <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzz-Ch-Va6">
-                                <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzz-Ch-Va6">
+                                <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                 <clipView key="contentView" id="3Rf-RY-85E">
-                                    <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView id="58T-tR-Des">
-                                            <rect key="frame" x="0.0" y="0.0" width="960" height="158"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" id="hXs-Ot-9Js">
                                                 <size key="itemSize" width="64" height="64"/>
+                                                <size key="headerReferenceSize" width="0.0" height="21"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -340,20 +341,21 @@
             <objects>
                 <viewController title="Script" id="YFS-UG-S2f" customClass="ScriptViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="kXy-q1-dBH">
-                        <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMk-XV-Gqz">
-                                <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMk-XV-Gqz">
+                                <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                 <clipView key="contentView" id="wCD-rj-q6J">
-                                    <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView id="Dfe-x8-QjD">
-                                            <rect key="frame" x="0.0" y="0.0" width="960" height="158"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" id="E8e-xK-7B0">
                                                 <size key="itemSize" width="64" height="64"/>
+                                                <size key="headerReferenceSize" width="0.0" height="21"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -494,20 +496,21 @@
             <objects>
                 <viewController title="Radical" id="Bic-n5-pNm" customClass="RadicalViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="mlP-vm-DOz">
-                        <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxg-qW-Sim">
-                                <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxg-qW-Sim">
+                                <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                 <clipView key="contentView" id="lO0-mo-JtU">
-                                    <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView id="QnR-Eh-uZb">
-                                            <rect key="frame" x="0.0" y="0.0" width="960" height="158"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" id="ozO-he-0tu">
                                                 <size key="itemSize" width="64" height="64"/>
+                                                <size key="headerReferenceSize" width="0.0" height="21"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -549,20 +552,21 @@
             <objects>
                 <viewController title="Integral" id="01T-bZ-pOp" customClass="IntegralViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Q5W-Q9-7LN">
-                        <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbP-9K-gAK">
-                                <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbP-9K-gAK">
+                                <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                 <clipView key="contentView" id="ixh-nM-mMP">
-                                    <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView id="Bnh-H3-i6Q">
-                                            <rect key="frame" x="0.0" y="0.0" width="960" height="158"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" id="Hje-Kt-ZQZ">
                                                 <size key="itemSize" width="64" height="64"/>
+                                                <size key="headerReferenceSize" width="0.0" height="21"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -604,20 +608,21 @@
             <objects>
                 <viewController title="Large Operator" id="7ys-0T-Hnh" customClass="LargeOperatorViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="N8w-Y8-ggh">
-                        <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOe-g5-g4t">
-                                <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOe-g5-g4t">
+                                <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                 <clipView key="contentView" id="rTb-xq-jv0">
-                                    <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView id="eLf-6K-mWD">
-                                            <rect key="frame" x="0.0" y="0.0" width="960" height="158"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" id="gFV-v3-1HZ">
                                                 <size key="itemSize" width="64" height="64"/>
+                                                <size key="headerReferenceSize" width="0.0" height="21"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -659,17 +664,17 @@
             <objects>
                 <viewController title="Bracket" id="dec-vw-hZL" customClass="BracketViewController" customModule="TeXMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="1n4-Nc-L5M">
-                        <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuT-G7-Wsu">
-                                <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuT-G7-Wsu">
+                                <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                 <clipView key="contentView" id="1en-m8-mKT">
-                                    <rect key="frame" x="0.0" y="0.0" width="960" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView id="FGj-PT-WBz">
-                                            <rect key="frame" x="0.0" y="0.0" width="960" height="158"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="940" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" id="Dsj-6m-h7k">
                                                 <size key="itemSize" width="64" height="64"/>

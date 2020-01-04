@@ -20,7 +20,7 @@ class ScriptViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        items.addSection(withName: "")
+        items.addSection(withName: "Subscripts and Superscripts")
         items.sections[0].addItem(withName: "Superscript", imageName: "SuperscriptButtonIcon", latexCode: "{}^{} ")
         items.sections[0].addItem(withName: "Subscript", imageName: "SubscriptButtonIcon", latexCode: "{}_{} ")
         items.sections[0].addItem(withName: "Subscript-Superscript", imageName: "SubscriptSuperscriptButtonIcon", latexCode: "{}_{}^{} ")
@@ -29,6 +29,10 @@ class ScriptViewController: NSViewController {
 }
 
 extension ScriptViewController: NSCollectionViewDataSource {
+    func numberOfSections(in _: NSCollectionView) -> Int {
+        return items.numberOfSections
+    }
+
     func collectionView(_: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.numberOfItems(in: section)
     }
@@ -42,5 +46,13 @@ extension ScriptViewController: NSCollectionViewDataSource {
         collectionViewItem.itemInfo = items.item(in: indexPath.section, at: indexPath.item)
 
         return collectionViewItem
+    }
+
+    func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind _: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
+        let view = collectionView.makeSupplementaryView(ofKind: NSCollectionView.elementKindSectionHeader, withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "SectionHeaderView"), for: indexPath) as! SectionHeaderView
+
+        view.sectionTitle.stringValue = items.sections[indexPath.section].name!
+
+        return view
     }
 }

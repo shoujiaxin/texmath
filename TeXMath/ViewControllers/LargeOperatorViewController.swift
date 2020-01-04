@@ -20,7 +20,7 @@ class LargeOperatorViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        items.addSection(withName: "")
+        items.addSection(withName: "Large Operators")
         items.sections[0].addItem(withName: "Summation", imageName: "SummationButtonIcon", latexCode: "\\sum{} ")
         items.sections[0].addItem(withName: "Summation with Limits", imageName: "SummationWithLimitsButtonIcon", latexCode: "\\sum_{}^{}{} ")
         items.sections[0].addItem(withName: "Product", imageName: "ProductButtonIcon", latexCode: "\\prod{} ")
@@ -39,6 +39,10 @@ class LargeOperatorViewController: NSViewController {
 }
 
 extension LargeOperatorViewController: NSCollectionViewDataSource {
+    func numberOfSections(in _: NSCollectionView) -> Int {
+        return items.numberOfSections
+    }
+
     func collectionView(_: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.numberOfItems(in: section)
     }
@@ -52,5 +56,13 @@ extension LargeOperatorViewController: NSCollectionViewDataSource {
         collectionViewItem.itemInfo = items.item(in: indexPath.section, at: indexPath.item)
 
         return collectionViewItem
+    }
+
+    func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind _: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
+        let view = collectionView.makeSupplementaryView(ofKind: NSCollectionView.elementKindSectionHeader, withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "SectionHeaderView"), for: indexPath) as! SectionHeaderView
+
+        view.sectionTitle.stringValue = items.sections[indexPath.section].name!
+
+        return view
     }
 }
