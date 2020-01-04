@@ -9,15 +9,35 @@
 import Cocoa
 
 class FractionViewController: NSViewController {
+    @IBOutlet var collectionView: NSCollectionView!
+
+    var equationItemList: [EquationItemInfo] = []
+
+    override func viewWillLayout() {
+        collectionView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        equationItemList.append(EquationItemInfo(withName: "Stacked Fraction", imageName: "StackedFractionButtonIcon", latexCode: "\\frac{}{} "))
+        equationItemList.append(EquationItemInfo(withName: "Linear Fraction", imageName: "LinearFractionButtonIcon", latexCode: "{}/{} "))
+    }
+}
+
+extension FractionViewController: NSCollectionViewDataSource {
+    func collectionView(_: NSCollectionView, numberOfItemsInSection _: Int) -> Int {
+        return equationItemList.count
     }
 
-    @IBAction func stackedFractionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\frac{}{} ")
-    }
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItem(withIdentifier: .init("CollectionViewItem"), for: indexPath)
+        guard let collectionViewItem = item as? CollectionViewItem else {
+            return item
+        }
 
-    @IBAction func linearFractionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "{}/{} ")
+        collectionViewItem.itemInfo = equationItemList[indexPath.item]
+
+        return collectionViewItem
     }
 }

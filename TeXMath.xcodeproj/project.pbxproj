@@ -21,6 +21,9 @@
 		1985FEE323954295002DEF65 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1985FEE223954295002DEF65 /* MainWindowController.swift */; };
 		1985FEE723960776002DEF65 /* FlippedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1985FEE623960776002DEF65 /* FlippedView.swift */; };
 		199258D323900F5700295CF3 /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199258D223900F5700295CF3 /* MatrixViewController.swift */; };
+		199AF19023C097FA007E6F40 /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF18E23C097FA007E6F40 /* CollectionViewItem.swift */; };
+		199AF19123C097FA007E6F40 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199AF18F23C097FA007E6F40 /* CollectionViewItem.xib */; };
+		199AF19323C0AACC007E6F40 /* EquationItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF19223C0AACC007E6F40 /* EquationItemInfo.swift */; };
 		19A8154D2384E156006D6E46 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8154C2384E156006D6E46 /* FunctionViewController.swift */; };
 		19A8154F23855617006D6E46 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8154E23855617006D6E46 /* OperatorViewController.swift */; };
 		19CC7208237D927400929A15 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC7207237D927400929A15 /* EditorViewController.swift */; };
@@ -47,6 +50,9 @@
 		1985FEE223954295002DEF65 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		1985FEE623960776002DEF65 /* FlippedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippedView.swift; sourceTree = "<group>"; };
 		199258D223900F5700295CF3 /* MatrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
+		199AF18E23C097FA007E6F40 /* CollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
+		199AF18F23C097FA007E6F40 /* CollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
+		199AF19223C0AACC007E6F40 /* EquationItemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItemInfo.swift; sourceTree = "<group>"; };
 		19A8154C2384E156006D6E46 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		19A8154E23855617006D6E46 /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
 		19CC7207237D927400929A15 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +121,8 @@
 			children = (
 				1906A15C237FD3EA00772D46 /* EquationItemButton.swift */,
 				1985FEE623960776002DEF65 /* FlippedView.swift */,
+				199AF18E23C097FA007E6F40 /* CollectionViewItem.swift */,
+				199AF18F23C097FA007E6F40 /* CollectionViewItem.xib */,
 			);
 			name = TabView;
 			sourceTree = "<group>";
@@ -133,6 +141,15 @@
 				19CC7207237D927400929A15 /* EditorViewController.swift */,
 			);
 			path = EditorView;
+			sourceTree = "<group>";
+		};
+		199AF19423C0AAD1007E6F40 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				19F21ECF238108AD003A1CC1 /* Utils.swift */,
+				199AF19223C0AACC007E6F40 /* EquationItemInfo.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		19F5D334237BF6CC004CDF73 = {
@@ -158,8 +175,8 @@
 				19F5D344237BF6D0004CDF73 /* Assets.xcassets */,
 				19F5D346237BF6D0004CDF73 /* Main.storyboard */,
 				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
-				19F21ECF238108AD003A1CC1 /* Utils.swift */,
 				1985FEE223954295002DEF65 /* MainWindowController.swift */,
+				199AF19423C0AAD1007E6F40 /* Utils */,
 				199AF18823C07DD4007E6F40 /* Views */,
 				199AF18623C07D67007E6F40 /* ViewControllers */,
 				19F5D349237BF6D0004CDF73 /* Info.plist */,
@@ -228,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				192477EA23B0826E00A2673E /* MathJax-3.0.0 in Resources */,
+				199AF19123C097FA007E6F40 /* CollectionViewItem.xib in Resources */,
 				19F5D345237BF6D0004CDF73 /* Assets.xcassets in Resources */,
 				19F5D348237BF6D0004CDF73 /* Main.storyboard in Resources */,
 			);
@@ -269,11 +287,13 @@
 				194781E223B09A6E00928F3D /* PreviewView.swift in Sources */,
 				1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */,
 				197CB73B23A8F17800A8BC8B /* SymbolViewController.swift in Sources */,
+				199AF19023C097FA007E6F40 /* CollectionViewItem.swift in Sources */,
 				19A8154F23855617006D6E46 /* OperatorViewController.swift in Sources */,
 				1985FEE723960776002DEF65 /* FlippedView.swift in Sources */,
 				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
 				1985FEE323954295002DEF65 /* MainWindowController.swift in Sources */,
 				192AC4DB2383C81A00893DBA /* LimitAndLogViewController.swift in Sources */,
+				199AF19323C0AACC007E6F40 /* EquationItemInfo.swift in Sources */,
 				19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */,
 				19F21ED0238108AD003A1CC1 /* Utils.swift in Sources */,
 				199258D323900F5700295CF3 /* MatrixViewController.swift in Sources */,
@@ -419,7 +439,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
@@ -442,7 +462,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
