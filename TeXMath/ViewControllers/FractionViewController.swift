@@ -11,7 +11,7 @@ import Cocoa
 class FractionViewController: NSViewController {
     @IBOutlet var collectionView: NSCollectionView!
 
-    var equationItemList: [EquationItemInfo] = []
+    var items = EquationItems()
 
     override func viewWillLayout() {
         collectionView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
@@ -20,14 +20,15 @@ class FractionViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        equationItemList.append(EquationItemInfo(withName: "Stacked Fraction", imageName: "StackedFractionButtonIcon", latexCode: "\\frac{}{} "))
-        equationItemList.append(EquationItemInfo(withName: "Linear Fraction", imageName: "LinearFractionButtonIcon", latexCode: "{}/{} "))
+        items.addSection(withName: "")
+        items.sections[0].addItem(withName: "Stacked Fraction", imageName: "StackedFractionButtonIcon", latexCode: "\\frac{}{} ")
+        items.sections[0].addItem(withName: "Linear Fraction", imageName: "LinearFractionButtonIcon", latexCode: "{}/{} ")
     }
 }
 
 extension FractionViewController: NSCollectionViewDataSource {
     func collectionView(_: NSCollectionView, numberOfItemsInSection _: Int) -> Int {
-        return equationItemList.count
+        return items.numberOfItems(inSection: 0)
     }
 
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
@@ -36,7 +37,7 @@ extension FractionViewController: NSCollectionViewDataSource {
             return item
         }
 
-        collectionViewItem.itemInfo = equationItemList[indexPath.item]
+        collectionViewItem.itemInfo = items.item(inSection: indexPath.section, atIndex: indexPath.item)
 
         return collectionViewItem
     }

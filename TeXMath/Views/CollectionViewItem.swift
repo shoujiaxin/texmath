@@ -11,7 +11,7 @@ import Cocoa
 class CollectionViewItem: NSCollectionViewItem {
     @IBOutlet var button: EquationItemButton!
 
-    var itemInfo: EquationItemInfo? {
+    var itemInfo: (name: String, imageName: String, latexCode: String)? {
         didSet {
             guard isViewLoaded else {
                 return

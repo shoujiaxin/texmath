@@ -11,7 +11,7 @@ import Cocoa
 class ScriptViewController: NSViewController {
     @IBOutlet var collectionView: NSCollectionView!
 
-    var equationItemList: [EquationItemInfo] = []
+    var items = EquationItems()
 
     override func viewWillLayout() {
         collectionView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
@@ -20,16 +20,17 @@ class ScriptViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        equationItemList.append(EquationItemInfo(withName: "Superscript", imageName: "SuperscriptButtonIcon", latexCode: "{}^{} "))
-        equationItemList.append(EquationItemInfo(withName: "Subscript", imageName: "SubscriptButtonIcon", latexCode: "{}_{} "))
-        equationItemList.append(EquationItemInfo(withName: "Subscript-Superscript", imageName: "SubscriptSuperscriptButtonIcon", latexCode: "{}_{}^{} "))
-        equationItemList.append(EquationItemInfo(withName: "Left Subscript-Superscript", imageName: "LeftSubscriptSuperscriptButtonIcon", latexCode: "_{}^{}{} "))
+        items.addSection(withName: "")
+        items.sections[0].addItem(withName: "Superscript", imageName: "SuperscriptButtonIcon", latexCode: "{}^{} ")
+        items.sections[0].addItem(withName: "Subscript", imageName: "SubscriptButtonIcon", latexCode: "{}_{} ")
+        items.sections[0].addItem(withName: "Subscript-Superscript", imageName: "SubscriptSuperscriptButtonIcon", latexCode: "{}_{}^{} ")
+        items.sections[0].addItem(withName: "Left Subscript-Superscript", imageName: "LeftSubscriptSuperscriptButtonIcon", latexCode: "_{}^{}{} ")
     }
 }
 
 extension ScriptViewController: NSCollectionViewDataSource {
     func collectionView(_: NSCollectionView, numberOfItemsInSection _: Int) -> Int {
-        return equationItemList.count
+        return items.numberOfItems(inSection: 0)
     }
 
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
@@ -38,7 +39,7 @@ extension ScriptViewController: NSCollectionViewDataSource {
             return item
         }
 
-        collectionViewItem.itemInfo = equationItemList[indexPath.item]
+        collectionViewItem.itemInfo = items.item(inSection: indexPath.section, atIndex: indexPath.item)
 
         return collectionViewItem
     }
