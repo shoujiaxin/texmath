@@ -72,20 +72,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		194C3430237D8B5200955DF5 /* EditorView */ = {
+		199AF18623C07D67007E6F40 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				19CC7207237D927400929A15 /* EditorViewController.swift */,
-				194781E123B09A6E00928F3D /* PreviewView.swift */,
+				199AF18723C07D9D007E6F40 /* TabView */,
+				199AF18B23C07E60007E6F40 /* EditorView */,
 			);
-			path = EditorView;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		19F2AD48237FD2F8000E5003 /* EquationItemTabView */ = {
+		199AF18723C07D9D007E6F40 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
-				1906A15C237FD3EA00772D46 /* EquationItemButton.swift */,
-				1985FEE623960776002DEF65 /* FlippedView.swift */,
 				19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */,
 				19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */,
 				1948FDAB238162E60019E3F0 /* ScriptViewController.swift */,
@@ -100,7 +98,41 @@
 				199258D223900F5700295CF3 /* MatrixViewController.swift */,
 				197CB73A23A8F17800A8BC8B /* SymbolViewController.swift */,
 			);
-			path = EquationItemTabView;
+			name = TabView;
+			sourceTree = "<group>";
+		};
+		199AF18823C07DD4007E6F40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				199AF18923C07E10007E6F40 /* TabView */,
+				199AF18A23C07E23007E6F40 /* PreviewView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		199AF18923C07E10007E6F40 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				1906A15C237FD3EA00772D46 /* EquationItemButton.swift */,
+				1985FEE623960776002DEF65 /* FlippedView.swift */,
+			);
+			name = TabView;
+			sourceTree = "<group>";
+		};
+		199AF18A23C07E23007E6F40 /* PreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				194781E123B09A6E00928F3D /* PreviewView.swift */,
+			);
+			path = PreviewView;
+			sourceTree = "<group>";
+		};
+		199AF18B23C07E60007E6F40 /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				19CC7207237D927400929A15 /* EditorViewController.swift */,
+			);
+			path = EditorView;
 			sourceTree = "<group>";
 		};
 		19F5D334237BF6CC004CDF73 = {
@@ -128,8 +160,8 @@
 				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
 				19F21ECF238108AD003A1CC1 /* Utils.swift */,
 				1985FEE223954295002DEF65 /* MainWindowController.swift */,
-				19F2AD48237FD2F8000E5003 /* EquationItemTabView */,
-				194C3430237D8B5200955DF5 /* EditorView */,
+				199AF18823C07DD4007E6F40 /* Views */,
+				199AF18623C07D67007E6F40 /* ViewControllers */,
 				19F5D349237BF6D0004CDF73 /* Info.plist */,
 				19F5D34A237BF6D0004CDF73 /* TeXMath.entitlements */,
 			);
@@ -387,7 +419,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
@@ -410,7 +442,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
