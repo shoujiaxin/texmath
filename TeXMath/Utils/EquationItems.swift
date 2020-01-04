@@ -31,11 +31,11 @@ class EquationItems {
         sections.append(Section(withName: name))
     }
 
-    func numberOfItems(inSection section: Int) -> Int {
+    func numberOfItems(in section: Int) -> Int {
         return sections[section].items.count
     }
 
-    func item(inSection section: Int, atIndex index: Int) -> (name: String, imageName: String, latexCode: String) {
+    func item(in section: Int, at index: Int) -> (name: String, imageName: String, latexCode: String) {
         return sections[section].items[index]
     }
 }

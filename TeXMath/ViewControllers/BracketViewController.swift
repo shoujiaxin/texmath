@@ -9,129 +9,80 @@
 import Cocoa
 
 class BracketViewController: NSViewController {
-    @IBOutlet var scrollView: NSScrollView!
+    @IBOutlet var collectionView: NSCollectionView!
+
+    var items = EquationItems()
+
+    override func viewWillLayout() {
+        collectionView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        items.addSection(withName: "Brackets")
+        items.sections[0].addItem(withName: "Parentheses", imageName: "ParenthesesButtonIcon", latexCode: "\\left( {} \\right) ")
+        items.sections[0].addItem(withName: "Square Brackets", imageName: "SquareBracketsButtonIcon", latexCode: "\\left[ {} \\right] ")
+        items.sections[0].addItem(withName: "Curly Braces", imageName: "CurlyBracesButtonIcon", latexCode: "\\left\\{ {} \\right\\} ")
+        items.sections[0].addItem(withName: "Angle Brackets", imageName: "AngleBracketsButtonIcon", latexCode: "\\left< {} \\right> ")
+        items.sections[0].addItem(withName: "Floor Brackets", imageName: "FloorBracketsButtonIcon", latexCode: "\\left\\lfloor {} \\right\\rfloor ")
+        items.sections[0].addItem(withName: "Ceiling Brackets", imageName: "CeilingBracketsButtonIcon", latexCode: "\\left\\lceil {} \\right\\rceil ")
+        items.sections[0].addItem(withName: "Vertical Bars", imageName: "VerticalBarsButtonIcon", latexCode: "\\left| {} \\right| ")
+        items.sections[0].addItem(withName: "Double Vertical Bars", imageName: "DoubleVerticalBarsButtonIcon", latexCode: "\\left\\| {} \\right\\| ")
+
+        items.addSection(withName: "Brackets with Separators")
+        items.sections[1].addItem(withName: "Parentheses with Separator", imageName: "ParenthesesWithSeparatorButtonIcon", latexCode: "\\left( {} | {} \\right) ")
+        items.sections[1].addItem(withName: "Square Brackets with Separator", imageName: "SquareBracketsWithSeparatorButtonIcon", latexCode: "\\left[ {} | {} \\right] ")
+        items.sections[1].addItem(withName: "Curly Braces with Separator", imageName: "CurlyBracesWithSeparatorButtonIcon", latexCode: "\\left\\{ {} | {} \\right\\} ")
+        items.sections[1].addItem(withName: "Angle Brackets with Separator", imageName: "AngleBracketsWithSeparatorButtonIcon", latexCode: "\\left< {} | {} \\right> ")
+        items.sections[1].addItem(withName: "Angle Brackets with Two Separators", imageName: "AngleBracketsWithTwoSeparatorsButtonIcon", latexCode: "\\left< {} | {} | {} \\right> ")
+
+        items.addSection(withName: "Single Bracket")
+        items.sections[2].addItem(withName: "Left Parenthesis", imageName: "LeftParenthesisButtonIcon", latexCode: "\\left( {} \\right. ")
+        items.sections[2].addItem(withName: "Right Parenthesis", imageName: "RightParenthesisButtonIcon", latexCode: "\\left. {} \\right) ")
+        items.sections[2].addItem(withName: "Left Square Brackets", imageName: "LeftSquareBracketsButtonIcon", latexCode: "\\left[ {} \\right. ")
+        items.sections[2].addItem(withName: "Right Square Brackets", imageName: "RightSquareBracketsButtonIcon", latexCode: "\\left. {} \\right] ")
+        items.sections[2].addItem(withName: "Left Curly Braces", imageName: "LeftCurlyBracesButtonIcon", latexCode: "\\left\\{ {} \\right. ")
+        items.sections[2].addItem(withName: "Right Curly Braces", imageName: "RightCurlyBracesButtonIcon", latexCode: "\\left. {} \\right\\} ")
+        items.sections[2].addItem(withName: "Left Angle Brackets", imageName: "LeftAngleBracketsButtonIcon", latexCode: "\\left< {} \\right. ")
+        items.sections[2].addItem(withName: "Right Angle Brackets", imageName: "RightAngleBracketsButtonIcon", latexCode: "\\left. {} \\right> ")
+        items.sections[2].addItem(withName: "Left Floor Brackets", imageName: "LeftFloorBracketsButtonIcon", latexCode: "\\left\\lfloor {} \\right. ")
+        items.sections[2].addItem(withName: "Right Floor Brackets", imageName: "RightFloorBracketsButtonIcon", latexCode: "\\left. {} \\right\\rfloor ")
+        items.sections[2].addItem(withName: "Left Ceiling Brackets", imageName: "LeftCeilingBracketsButtonIcon", latexCode: "\\left\\lceil {} \\right. ")
+        items.sections[2].addItem(withName: "Right Ceiling Brackets", imageName: "RightCeilingBracketsButtonIcon", latexCode: "\\left. {} \\right\\rceil ")
+        items.sections[2].addItem(withName: "Left Vertical Bars", imageName: "LeftVerticalBarsButtonIcon", latexCode: "\\left| {} \\right. ")
+        items.sections[2].addItem(withName: "Right Vertical Bars", imageName: "RightVerticalBarsButtonIcon", latexCode: "\\left. {} \\right| ")
+        items.sections[2].addItem(withName: "Left Double Vertical Bars", imageName: "LeftDoubleVerticalBarsButtonIcon", latexCode: "\\left\\| {} \\right. ")
+        items.sections[2].addItem(withName: "Right Double Vertical Bars", imageName: "RightDoubleVerticalBarsButtonIcon", latexCode: "\\left. {} \\right\\| ")
+        items.sections[2].addItem(withName: "Cases", imageName: "CasesButtonIcon", latexCode: "\\begin{cases} {} \\\\ {} \\end{cases} ")
+    }
+}
+
+extension BracketViewController: NSCollectionViewDataSource {
+    func numberOfSections(in _: NSCollectionView) -> Int {
+        return items.numberOfSections
     }
 
-    @IBAction func parenthesesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left( {} \\right) ")
+    func collectionView(_: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.numberOfItems(in: section)
     }
 
-    @IBAction func squareBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left[ {} \\right] ")
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItem(withIdentifier: .init("CollectionViewItem"), for: indexPath)
+        guard let collectionViewItem = item as? CollectionViewItem else {
+            return item
+        }
+
+        collectionViewItem.itemInfo = items.item(in: indexPath.section, at: indexPath.item)
+
+        return collectionViewItem
     }
 
-    @IBAction func curlyBracesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left\\{ {} \\right\\} ")
-    }
+    func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind _: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
+        let view = collectionView.makeSupplementaryView(ofKind: NSCollectionView.elementKindSectionHeader, withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "SectionHeaderView"), for: indexPath) as! SectionHeaderView
 
-    @IBAction func angleBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left< {} \\right> ")
-    }
+        view.sectionTitle.stringValue = items.sections[indexPath.section].name!
 
-    @IBAction func floorBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left\\lfloor {} \\right\\rfloor ")
-    }
-
-    @IBAction func ceilingBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left\\lceil {} \\right\\rceil ")
-    }
-
-    @IBAction func verticalBarsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left| {} \\right| ")
-    }
-
-    @IBAction func doubleVerticalBarsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left\\| {} \\right\\| ")
-    }
-
-    @IBAction func parenthesesWithSeparatorButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left( {} | {} \\right) ")
-    }
-
-    @IBAction func squareBracketsWithSeparatorButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left[ {} | {} \\right] ")
-    }
-
-    @IBAction func curlyBracesWithSeparatorButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left\\{ {} | {} \\right\\} ")
-    }
-
-    @IBAction func angleBracketsWithSeparatorButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left< {} | {} \\right> ")
-    }
-
-    @IBAction func angleBracketsWithTwoSeparatorsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left< {} | {} | {} \\right> ")
-    }
-
-    @IBAction func leftParenthesesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left( {} \\right. ")
-    }
-
-    @IBAction func rightParenthesesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left. {} \\right) ")
-    }
-
-    @IBAction func leftSquareBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left[ {} \\right. ")
-    }
-
-    @IBAction func rightSquareBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left. {} \\right] ")
-    }
-
-    @IBAction func leftCurlyBracesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left\\{ {} \\right. ")
-    }
-
-    @IBAction func rightCurlyBracesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left. {} \\right\\} ")
-    }
-
-    @IBAction func leftAngleBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left< {} \\right. ")
-    }
-
-    @IBAction func rightAngleBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left. {} \\right> ")
-    }
-
-    @IBAction func leftFloorBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left\\lfloor {} \\right. ")
-    }
-
-    @IBAction func rightFloorBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left. {} \\right\\rfloor ")
-    }
-
-    @IBAction func leftCeilingBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left\\lceil {} \\right. ")
-    }
-
-    @IBAction func rightCeilingBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left. {} \\right\\rceil ")
-    }
-
-    @IBAction func leftVerticalBarsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left| {} \\right. ")
-    }
-
-    @IBAction func rightVerticalBarsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left. {} \\right| ")
-    }
-
-    @IBAction func leftDoubleVerticalBarsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left\\| {} \\right. ")
-    }
-
-    @IBAction func rightDoubleVerticalBarsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\left. {} \\right\\| ")
-    }
-
-    @IBAction func casesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{cases} {} \\\\ {} \\end{cases} ")
+        return view
     }
 }

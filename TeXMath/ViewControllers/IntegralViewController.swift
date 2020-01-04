@@ -33,8 +33,8 @@ class IntegralViewController: NSViewController {
 }
 
 extension IntegralViewController: NSCollectionViewDataSource {
-    func collectionView(_: NSCollectionView, numberOfItemsInSection _: Int) -> Int {
-        return items.numberOfItems(inSection: 0)
+    func collectionView(_: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.numberOfItems(in: section)
     }
 
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
@@ -43,7 +43,7 @@ extension IntegralViewController: NSCollectionViewDataSource {
             return item
         }
 
-        collectionViewItem.itemInfo = items.item(inSection: indexPath.section, atIndex: indexPath.item)
+        collectionViewItem.itemInfo = items.item(in: indexPath.section, at: indexPath.item)
 
         return collectionViewItem
     }
