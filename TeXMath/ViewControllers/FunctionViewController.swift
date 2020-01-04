@@ -9,83 +9,69 @@
 import Cocoa
 
 class FunctionViewController: NSViewController {
+    @IBOutlet var collectionView: NSCollectionView!
+
+    var items = EquationItems()
+
+    override func viewWillLayout() {
+        collectionView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        items.addSection(withName: "Trigonometric Functions")
+        items.sections[0].addItem(withName: "Sine Function", imageName: "SineFunctionButtonIcon", latexCode: "\\sin{} ")
+        items.sections[0].addItem(withName: "Cosine Function", imageName: "CosineFunctionButtonIcon", latexCode: "\\cos{} ")
+        items.sections[0].addItem(withName: "Tangent Function", imageName: "TangentFunctionButtonIcon", latexCode: "\\tan{} ")
+        items.sections[0].addItem(withName: "Cotangent Function", imageName: "CotangentFunctionButtonIcon", latexCode: "\\cot{} ")
+        items.sections[0].addItem(withName: "Secant Function", imageName: "SecantFunctionButtonIcon", latexCode: "\\sec{} ")
+        items.sections[0].addItem(withName: "Cosecant Function", imageName: "CosecantFunctionButtonIcon", latexCode: "\\csc{} ")
+
+        items.addSection(withName: "Inverse Trigonometric Functions")
+        items.sections[1].addItem(withName: "Inverse Sine Function", imageName: "InverseSineFunctionButtonIcon", latexCode: "\\sin^{-1}{} ")
+        items.sections[1].addItem(withName: "Inverse Cosine Function", imageName: "InverseCosineFunctionButtonIcon", latexCode: "\\cos^{-1}{} ")
+        items.sections[1].addItem(withName: "Inverse Tangent Function", imageName: "InverseTangentFunctionButtonIcon", latexCode: "\\tan^{-1}{} ")
+        items.sections[1].addItem(withName: "Inverse Cotangent Function", imageName: "InverseCotangentFunctionButtonIcon", latexCode: "\\cot^{-1}{} ")
+        items.sections[1].addItem(withName: "Inverse Secant Function", imageName: "InverseSecantFunctionButtonIcon", latexCode: "\\sec^{-1}{} ")
+        items.sections[1].addItem(withName: "Inverse Cosecant Function", imageName: "InverseCosecantFunctionButtonIcon", latexCode: "\\csc^{-1}{} ")
+        items.sections[1].addItem(withName: "Arcsine Function", imageName: "ArcsineFunctionButtonIcon", latexCode: "\\arcsin{} ")
+        items.sections[1].addItem(withName: "Arccosine Function", imageName: "ArccosineFunctionButtonIcon", latexCode: "\\arccos{} ")
+        items.sections[1].addItem(withName: "Arctangent Function", imageName: "ArctangentFunctionButtonIcon", latexCode: "\\arctan{} ")
+
+        items.addSection(withName: "Hyperbolic Trigonometric Functions")
+        items.sections[2].addItem(withName: "Hyperbolic Sine Function", imageName: "HyperbolicSineFunctionButtonIcon", latexCode: "\\sinh{} ")
+        items.sections[2].addItem(withName: "Hyperbolic Cosine Function", imageName: "HyperbolicCosineFunctionButtonIcon", latexCode: "\\cosh{} ")
+        items.sections[2].addItem(withName: "Hyperbolic Tangent Function", imageName: "HyperbolicTangentFunctionButtonIcon", latexCode: "\\tanh{} ")
+        items.sections[2].addItem(withName: "Hyperbolic Cotangent Function", imageName: "HyperbolicCotangentFunctionButtonIcon", latexCode: "\\coth{} ")
+    }
+}
+
+extension FunctionViewController: NSCollectionViewDataSource {
+    func numberOfSections(in _: NSCollectionView) -> Int {
+        return items.numberOfSections
     }
 
-    @IBAction func sineFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sin{} ")
+    func collectionView(_: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.numberOfItems(in: section)
     }
 
-    @IBAction func cosineFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cos{} ")
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItem(withIdentifier: .init("CollectionViewItem"), for: indexPath)
+        guard let collectionViewItem = item as? CollectionViewItem else {
+            return item
+        }
+
+        collectionViewItem.itemInfo = items.item(in: indexPath.section, at: indexPath.item)
+
+        return collectionViewItem
     }
 
-    @IBAction func tangentFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\tan{} ")
-    }
+    func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind _: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
+        let view = collectionView.makeSupplementaryView(ofKind: NSCollectionView.elementKindSectionHeader, withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "SectionHeaderView"), for: indexPath) as! SectionHeaderView
 
-    @IBAction func cotangentFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cot{} ")
-    }
+        view.sectionTitle.stringValue = items.sections[indexPath.section].name!
 
-    @IBAction func secantFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sec{} ")
-    }
-
-    @IBAction func cosecantFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\csc{} ")
-    }
-
-    @IBAction func inverseSineFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sin^{-1}{} ")
-    }
-
-    @IBAction func inverseCosineFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cos^{-1}{} ")
-    }
-
-    @IBAction func inverseTangentFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\tan^{-1}{} ")
-    }
-
-    @IBAction func inverseCotangentFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cot^{-1}{} ")
-    }
-
-    @IBAction func inverseSecantFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sec^{-1}{} ")
-    }
-
-    @IBAction func inverseCosecantFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\csc^{-1}{} ")
-    }
-
-    @IBAction func hyperbolicSineFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sinh{} ")
-    }
-
-    @IBAction func hyperbolicCosineFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cosh{} ")
-    }
-
-    @IBAction func hyperbolicTangentFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\tanh{} ")
-    }
-
-    @IBAction func hyperbolicCotangentFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\coth{} ")
-    }
-
-    @IBAction func arcsineFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\arcsin{} ")
-    }
-
-    @IBAction func arccosineFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\arccos{} ")
-    }
-
-    @IBAction func arctangentFunctionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\arctan{} ")
+        return view
     }
 }
