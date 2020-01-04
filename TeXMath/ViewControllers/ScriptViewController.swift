@@ -9,23 +9,37 @@
 import Cocoa
 
 class ScriptViewController: NSViewController {
+    @IBOutlet var collectionView: NSCollectionView!
+
+    var equationItemList: [EquationItemInfo] = []
+
+    override func viewWillLayout() {
+        collectionView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        equationItemList.append(EquationItemInfo(withName: "Superscript", imageName: "SuperscriptButtonIcon", latexCode: "{}^{} "))
+        equationItemList.append(EquationItemInfo(withName: "Subscript", imageName: "SubscriptButtonIcon", latexCode: "{}_{} "))
+        equationItemList.append(EquationItemInfo(withName: "Subscript-Superscript", imageName: "SubscriptSuperscriptButtonIcon", latexCode: "{}_{}^{} "))
+        equationItemList.append(EquationItemInfo(withName: "Left Subscript-Superscript", imageName: "LeftSubscriptSuperscriptButtonIcon", latexCode: "_{}^{}{} "))
+    }
+}
+
+extension ScriptViewController: NSCollectionViewDataSource {
+    func collectionView(_: NSCollectionView, numberOfItemsInSection _: Int) -> Int {
+        return equationItemList.count
     }
 
-    @IBAction func superscriptButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "{}^{} ")
-    }
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItem(withIdentifier: .init("CollectionViewItem"), for: indexPath)
+        guard let collectionViewItem = item as? CollectionViewItem else {
+            return item
+        }
 
-    @IBAction func subscriptButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "{}_{} ")
-    }
+        collectionViewItem.itemInfo = equationItemList[indexPath.item]
 
-    @IBAction func subscriptSuperscriptButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "{}_{}^{} ")
-    }
-
-    @IBAction func leftSubscriptSuperscriptButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "_{}^{}{} ")
+        return collectionViewItem
     }
 }
