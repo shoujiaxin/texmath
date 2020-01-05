@@ -8,408 +8,122 @@
 
 import Cocoa
 
-class SymbolViewController: NSViewController {
+class SymbolViewController: ViewControllerBase {
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
 
-    // MARK: Basic
-
-    @IBAction func plusMinusButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\pm ")
-    }
-
-    @IBAction func minusPlusButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\mp ")
-    }
-
-    @IBAction func infinityButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\infty ")
-    }
-
-    @IBAction func notEqualToButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\neq ")
-    }
-
-    @IBAction func multiplicationSignButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\times ")
-    }
-
-    @IBAction func divisionSignButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\div ")
-    }
-
-    @IBAction func proportionalToButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\propto ")
-    }
-
-    @IBAction func muchLessThanButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\ll ")
-    }
-
-    @IBAction func muchGreaterThanButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\gg ")
-    }
-
-    @IBAction func lessThanOrEqualToButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\leq ")
-    }
-
-    @IBAction func greaterThanOrEqualToButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\geq ")
-    }
-
-    @IBAction func approximatelyEqualToButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cong ")
-    }
-
-    @IBAction func asymptoticToButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\approx ")
-    }
-
-    @IBAction func identicalToButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\equiv ")
-    }
-
-    @IBAction func forAllButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\forall ")
-    }
-
-    @IBAction func existsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\exists ")
-    }
-
-    @IBAction func notExistsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\nexists ")
-    }
-
-    @IBAction func inButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\in ")
-    }
-
-    @IBAction func niButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\ni ")
-    }
-
-    @IBAction func notInButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\notin ")
-    }
-
-    @IBAction func partialDifferentialButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\partial ")
-    }
-
-    @IBAction func angleButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\angle ")
-    }
-
-    @IBAction func intersectionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cap ")
-    }
-
-    @IBAction func unionButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cup ")
-    }
-
-    @IBAction func uplusButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\uplus ")
-    }
-
-    @IBAction func sqcapButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sqcap ")
-    }
-
-    @IBAction func sqcupButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sqcup ")
-    }
-
-    @IBAction func wedgeButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\wedge ")
-    }
-
-    @IBAction func veeButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\vee ")
-    }
-
-    @IBAction func circledDotButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\odot ")
-    }
-
-    @IBAction func circledMinusButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\ominus ")
-    }
-
-    @IBAction func circledPlusButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\oplus ")
-    }
-
-    @IBAction func circledSlashButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\oslash ")
-    }
-
-    @IBAction func circledTimesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\otimes ")
-    }
-
-    @IBAction func leftArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\leftarrow ")
-    }
-
-    @IBAction func rightArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\rightarrow ")
-    }
-
-    @IBAction func upArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\uparrow ")
-    }
-
-    @IBAction func downArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\downarrow ")
-    }
-
-    @IBAction func leftDoubleArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Leftarrow ")
-    }
-
-    @IBAction func rightDoubleArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Rightarrow ")
-    }
-
-    @IBAction func leftRightArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\leftrightarrow ")
-    }
-
-    @IBAction func leftRightDoubleArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Leftrightarrow ")
-    }
-
-    @IBAction func thereforeButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\therefore ")
-    }
-
-    @IBAction func becauseButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\because ")
-    }
-
-    @IBAction func cdotButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cdot ")
-    }
-
-    @IBAction func cdotsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\cdots ")
-    }
-
-    @IBAction func vdotsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\vdots ")
-    }
-
-    @IBAction func ddotsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\ddots ")
-    }
-
-    // MARK: Lowercase
-
-    @IBAction func lowercaseAlphaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\alpha ")
-    }
-
-    @IBAction func lowercaseBetaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\beta ")
-    }
-
-    @IBAction func lowercaseGammaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\gamma ")
-    }
-
-    @IBAction func lowercaseDeltaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\delta ")
-    }
-
-    @IBAction func lowercaseVarepsilonButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\varepsilon ")
-    }
-
-    @IBAction func lowercaseEpsilonButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\epsilon ")
-    }
-
-    @IBAction func lowercaseZetaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\zeta ")
-    }
-
-    @IBAction func lowercaseEtaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\eta ")
-    }
-
-    @IBAction func lowercaseThetaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\theta ")
-    }
-
-    @IBAction func lowercaseVarthetaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\vartheta ")
-    }
-
-    @IBAction func lowercaseIotaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\iota ")
-    }
-
-    @IBAction func lowercaseKappaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\kappa ")
-    }
-
-    @IBAction func lowercaseVarkappaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\varkappa ")
-    }
-
-    @IBAction func lowercaseLambdaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\lambda ")
-    }
-
-    @IBAction func lowercaseMuButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\mu ")
-    }
-
-    @IBAction func lowercaseNuButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\nu ")
-    }
-
-    @IBAction func lowercaseXiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\xi ")
-    }
-
-    @IBAction func lowercaseOmicronButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "o ")
-    }
-
-    @IBAction func lowercasePiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\pi ")
-    }
-
-    @IBAction func lowercaseVarpiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\varpi ")
-    }
-
-    @IBAction func lowercaseRhoButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\rho ")
-    }
-
-    @IBAction func lowercaseVarrhoButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\varrho ")
-    }
-
-    @IBAction func lowercaseSigmaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\sigma ")
-    }
-
-    @IBAction func lowercaseVarsigmaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\varsigma ")
-    }
-
-    @IBAction func lowercaseTauButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\tau ")
-    }
-
-    @IBAction func lowercaseUpsilonButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\upsilon ")
-    }
-
-    @IBAction func lowercaseVarphiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\varphi ")
-    }
-
-    @IBAction func lowercasePhiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\phi ")
-    }
-
-    @IBAction func lowercaseChiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\chi ")
-    }
-
-    @IBAction func lowercasePsiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\psi ")
-    }
-
-    @IBAction func lowercaseOmegaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\omega ")
-    }
-
-    // MARK: Uppercase
-
-    @IBAction func uppercaseDeltaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Delta ")
-    }
-
-    @IBAction func uppercaseGammaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Gamma ")
-    }
-
-    @IBAction func uppercaseLambdaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Lambda ")
-    }
-
-    @IBAction func uppercaseOmegaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Omega ")
-    }
-
-    @IBAction func uppercasePhiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Phi ")
-    }
-
-    @IBAction func uppercasePiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Pi ")
-    }
-
-    @IBAction func uppercasePsiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Psi ")
-    }
-
-    @IBAction func uppercaseSigmaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Sigma ")
-    }
-
-    @IBAction func uppercaseThetaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Theta ")
-    }
-
-    @IBAction func uppercaseUpsilonButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Upsilon ")
-    }
-
-    @IBAction func uppercaseXiButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Xi ")
-    }
-
-    // MARK: Letter-Like
-
-    @IBAction func digammaButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\digamma ")
-    }
-
-    @IBAction func ellButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\ell ")
-    }
-
-    @IBAction func wpButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\wp ")
-    }
-
-    @IBAction func reButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\Re ")
-    }
-
-    @IBAction func alephButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\aleph ")
-    }
-
-    @IBAction func bethButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\beth ")
-    }
-
-    @IBAction func dalethButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\daleth ")
-    }
-
-    @IBAction func gimelButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\gimel ")
+        // MARK: Basic
+
+        items.addSection(withName: "Basic")
+        items.sections[0].addItem(withName: "Plus Minus", imageName: "PlusMinusButtonIcon", latexCode: "\\pm ")
+        items.sections[0].addItem(withName: "Minus Plus", imageName: "MinusPlusButtonIcon", latexCode: "\\mp ")
+        items.sections[0].addItem(withName: "Infinity", imageName: "InfinityButtonIcon", latexCode: "\\infty ")
+        items.sections[0].addItem(withName: "Not Equal to", imageName: "NotEqualToButtonIcon", latexCode: "\\neq ")
+        items.sections[0].addItem(withName: "Multiplication Sign", imageName: "MultiplicationSignButtonIcon", latexCode: "\\times ")
+        items.sections[0].addItem(withName: "Division Sign", imageName: "DivisionSignButtonIcon", latexCode: "\\div ")
+        items.sections[0].addItem(withName: "Proportional to", imageName: "ProportionalToButtonIcon", latexCode: "\\propto ")
+        items.sections[0].addItem(withName: "Much Less Than", imageName: "MuchLessThanButtonIcon", latexCode: "\\ll ")
+        items.sections[0].addItem(withName: "Much Greater Than", imageName: "MuchGreaterThanButtonIcon", latexCode: "\\gg ")
+        items.sections[0].addItem(withName: "Less Than or Equal to", imageName: "LessThanOrEqualToButtonIcon", latexCode: "\\leq ")
+        items.sections[0].addItem(withName: "Greater Than or Equal to", imageName: "GreaterThanOrEqualToButtonIcon", latexCode: "\\geq ")
+        items.sections[0].addItem(withName: "Approximately Equal to", imageName: "ApproximatelyEqualToButtonIcon", latexCode: "\\cong ")
+        items.sections[0].addItem(withName: "Asymptotic to", imageName: "AsymptoticToButtonIcon", latexCode: "\\approx ")
+        items.sections[0].addItem(withName: "Identical to", imageName: "IdenticalToButtonIcon", latexCode: "\\equiv ")
+        items.sections[0].addItem(withName: "For All", imageName: "ForAllButtonIcon", latexCode: "\\forall ")
+        items.sections[0].addItem(withName: "There Exists", imageName: "ExistsButtonIcon", latexCode: "\\exists ")
+        items.sections[0].addItem(withName: "There Does Not Exist", imageName: "NotExistsButtonIcon", latexCode: "\\nexists ")
+        items.sections[0].addItem(withName: "Element of", imageName: "InButtonIcon", latexCode: "\\in ")
+        items.sections[0].addItem(withName: "Contains as Member", imageName: "NiButtonIcon", latexCode: "\\ni ")
+        items.sections[0].addItem(withName: "Not An Element of", imageName: "NotInButtonIcon", latexCode: "\\notin ")
+        items.sections[0].addItem(withName: "Partial Differential", imageName: "PartialDifferentialButtonIcon", latexCode: "\\partial ")
+        items.sections[0].addItem(withName: "Angle", imageName: "AngleButtonIcon", latexCode: "\\angle ")
+        items.sections[0].addItem(withName: "Intersection", imageName: "CapButtonIcon", latexCode: "\\cap ")
+        items.sections[0].addItem(withName: "Union", imageName: "CupButtonIcon", latexCode: "\\cup ")
+        items.sections[0].addItem(withName: "Multiset Union", imageName: "UplusButtonIcon", latexCode: "\\uplus ")
+        items.sections[0].addItem(withName: "Square Cap", imageName: "SqcapButtonIcon", latexCode: "\\sqcap ")
+        items.sections[0].addItem(withName: "Square Cup", imageName: "SqcupButtonIcon", latexCode: "\\sqcup ")
+        items.sections[0].addItem(withName: "Logical And", imageName: "WedgeButtonIcon", latexCode: "\\wedge ")
+        items.sections[0].addItem(withName: "Logical Or", imageName: "VeeButtonIcon", latexCode: "\\vee ")
+        items.sections[0].addItem(withName: "Circled Dot", imageName: "CircledDotButtonIcon", latexCode: "\\odot ")
+        items.sections[0].addItem(withName: "Circled Minus", imageName: "CircledMinusButtonIcon", latexCode: "\\ominus ")
+        items.sections[0].addItem(withName: "Circled Plus", imageName: "CircledPlusButtonIcon", latexCode: "\\oplus ")
+        items.sections[0].addItem(withName: "Circled Slash", imageName: "CircledSlashButtonIcon", latexCode: "\\oslash ")
+        items.sections[0].addItem(withName: "Circled Times", imageName: "CircledTimesButtonIcon", latexCode: "\\otimes ")
+        items.sections[0].addItem(withName: "Left Arrow", imageName: "LeftArrowButtonIcon", latexCode: "\\leftarrow ")
+        items.sections[0].addItem(withName: "Right Arrow", imageName: "RightArrowButtonIcon", latexCode: "\\rightarrow ")
+        items.sections[0].addItem(withName: "Up Arrow", imageName: "UpArrowButtonIcon", latexCode: "\\uparrow ")
+        items.sections[0].addItem(withName: "Down Arrow", imageName: "DownArrowButtonIcon", latexCode: "\\downarrow ")
+        items.sections[0].addItem(withName: "Left Double Arrow", imageName: "LeftDoubleArrowButtonIcon", latexCode: "\\Leftarrow ")
+        items.sections[0].addItem(withName: "Right Double Arrow", imageName: "RightDoubleArrowButtonIcon", latexCode: "\\Rightarrow ")
+        items.sections[0].addItem(withName: "Left-Right Arrow", imageName: "LeftRightArrowButtonIcon", latexCode: "\\leftrightarrow ")
+        items.sections[0].addItem(withName: "Left-Right Double Arrow", imageName: "LeftRightDoubleArrowButtonIcon", latexCode: "\\Leftrightarrow ")
+        items.sections[0].addItem(withName: "Therefore", imageName: "ThereforeButtonIcon", latexCode: "\\therefore ")
+        items.sections[0].addItem(withName: "Because", imageName: "BecauseButtonIcon", latexCode: "\\because ")
+        items.sections[0].addItem(withName: "Dot Operator", imageName: "CdotButtonIcon", latexCode: "\\cdot ")
+        items.sections[0].addItem(withName: "Midline Horizontal Ellipsis", imageName: "CdotsButtonIcon", latexCode: "\\cdots ")
+        items.sections[0].addItem(withName: "Vertical Ellipsis", imageName: "VdotsButtonIcon", latexCode: "\\vdots ")
+        items.sections[0].addItem(withName: "Diagonal Ellipsis", imageName: "DdotsButtonIcon", latexCode: "\\ddots ")
+
+        // MARK: Lowercase
+
+        items.addSection(withName: "Lowercase")
+        items.sections[1].addItem(withName: "Alpha", imageName: "LowercaseAlphaButtonIcon", latexCode: "\\alpha ")
+        items.sections[1].addItem(withName: "Beta", imageName: "LowercaseBetaButtonIcon", latexCode: "\\beta ")
+        items.sections[1].addItem(withName: "Gamma", imageName: "LowercaseGammaButtonIcon", latexCode: "\\gamma ")
+        items.sections[1].addItem(withName: "Delta", imageName: "LowercaseDeltaButtonIcon", latexCode: "\\delta ")
+        items.sections[1].addItem(withName: "Epsilon Variant", imageName: "LowercaseVarepsilonButtonIcon", latexCode: "\\varepsilon ")
+        items.sections[1].addItem(withName: "Epsilon", imageName: "LowercaseEpsilonButtonIcon", latexCode: "\\epsilon ")
+        items.sections[1].addItem(withName: "Zeta", imageName: "LowercaseZetaButtonIcon", latexCode: "\\zeta ")
+        items.sections[1].addItem(withName: "Eta", imageName: "LowercaseEtaButtonIcon", latexCode: "\\eta ")
+        items.sections[1].addItem(withName: "Theta", imageName: "LowercaseThetaButtonIcon", latexCode: "\\theta ")
+        items.sections[1].addItem(withName: "Theta Variant", imageName: "LowercaseVarthetaButtonIcon", latexCode: "\\vartheta ")
+        items.sections[1].addItem(withName: "Iota", imageName: "LowercaseIotaButtonIcon", latexCode: "\\iota ")
+        items.sections[1].addItem(withName: "Kappa", imageName: "LowercaseKappaButtonIcon", latexCode: "\\kappa ")
+        items.sections[1].addItem(withName: "Kappa Variant", imageName: "LowercaseVarkappaButtonIcon", latexCode: "\\varkappa ")
+        items.sections[1].addItem(withName: "Lambda", imageName: "LowercaseLambdaButtonIcon", latexCode: "\\lambda ")
+        items.sections[1].addItem(withName: "Mu", imageName: "LowercaseMuButtonIcon", latexCode: "\\mu ")
+        items.sections[1].addItem(withName: "Nu", imageName: "LowercaseNuButtonIcon", latexCode: "\\nu ")
+        items.sections[1].addItem(withName: "Xi", imageName: "LowercaseXiButtonIcon", latexCode: "\\xi ")
+        items.sections[1].addItem(withName: "Omicron", imageName: "LowercaseOmicronButtonIcon", latexCode: "o ")
+        items.sections[1].addItem(withName: "Pi", imageName: "LowercasePiButtonIcon", latexCode: "\\pi ")
+        items.sections[1].addItem(withName: "Pi Variant", imageName: "LowercaseVarpiButtonIcon", latexCode: "\\varpi ")
+        items.sections[1].addItem(withName: "Rho", imageName: "LowercaseRhoButtonIcon", latexCode: "\\rho ")
+        items.sections[1].addItem(withName: "Rho Variant", imageName: "LowercaseVarrhoButtonIcon", latexCode: "\\varrho ")
+        items.sections[1].addItem(withName: "Sigma", imageName: "LowercaseSigmaButtonIcon", latexCode: "\\sigma ")
+        items.sections[1].addItem(withName: "Sigma Variant", imageName: "LowercaseVarsigmaButtonIcon", latexCode: "\\varsigma ")
+        items.sections[1].addItem(withName: "Tau", imageName: "LowercaseTauButtonIcon", latexCode: "\\tau ")
+        items.sections[1].addItem(withName: "Upsilon", imageName: "LowercaseUpsilonButtonIcon", latexCode: "\\upsilon ")
+        items.sections[1].addItem(withName: "Phi Variant", imageName: "LowercaseVarphiButtonIcon", latexCode: "\\varphi ")
+        items.sections[1].addItem(withName: "Phi", imageName: "LowercasePhiButtonIcon", latexCode: "\\phi ")
+        items.sections[1].addItem(withName: "Chi", imageName: "LowercaseChiButtonIcon", latexCode: "\\chi ")
+        items.sections[1].addItem(withName: "Psi", imageName: "LowercasePsiButtonIcon", latexCode: "\\psi ")
+        items.sections[1].addItem(withName: "Omega", imageName: "LowercaseOmegaButtonIcon", latexCode: "\\omega ")
+
+        // MARK: Uppercase
+
+        items.addSection(withName: "Uppercase")
+        items.sections[2].addItem(withName: "Delta", imageName: "UppercaseDeltaButtonIcon", latexCode: "\\Delta ")
+        items.sections[2].addItem(withName: "Gamma", imageName: "UppercaseGammaButtonIcon", latexCode: "\\Gamma ")
+        items.sections[2].addItem(withName: "Lambda", imageName: "UppercaseLambdaButtonIcon", latexCode: "\\Lambda ")
+        items.sections[2].addItem(withName: "Omega", imageName: "UppercaseOmegaButtonIcon", latexCode: "\\Omega ")
+        items.sections[2].addItem(withName: "Phi", imageName: "UppercasePhiButtonIcon", latexCode: "\\Phi ")
+        items.sections[2].addItem(withName: "Pi", imageName: "UppercasePiButtonIcon", latexCode: "\\Pi ")
+        items.sections[2].addItem(withName: "Psi", imageName: "UppercasePsiButtonIcon", latexCode: "\\Psi ")
+        items.sections[2].addItem(withName: "Sigma", imageName: "UppercaseSigmaButtonIcon", latexCode: "\\Sigma ")
+        items.sections[2].addItem(withName: "Theta", imageName: "UppercaseThetaButtonIcon", latexCode: "\\Theta ")
+        items.sections[2].addItem(withName: "Upsilon", imageName: "UppercaseUpsilonButtonIcon", latexCode: "\\Upsilon ")
+        items.sections[2].addItem(withName: "Xi", imageName: "UppercaseXiButtonIcon", latexCode: "\\Xi ")
+
+        // MARK: Letter-Like
+
+        items.addSection(withName: "Letter-Like Symbols")
+        items.sections[3].addItem(withName: "Digamma", imageName: "DigammaButtonIcon", latexCode: "\\digamma ")
+        items.sections[3].addItem(withName: "Script Small L", imageName: "EllButtonIcon", latexCode: "\\ell ")
+        items.sections[3].addItem(withName: "Weierstrass Elliptic Function", imageName: "WpButtonIcon", latexCode: "\\wp ")
+        items.sections[3].addItem(withName: "Real Part", imageName: "ReButtonIcon", latexCode: "\\Re ")
+        items.sections[3].addItem(withName: "Aleph", imageName: "AlephButtonIcon", latexCode: "\\aleph ")
+        items.sections[3].addItem(withName: "Beth", imageName: "BethButtonIcon", latexCode: "\\beth ")
+        items.sections[3].addItem(withName: "Daleth", imageName: "DalethButtonIcon", latexCode: "\\daleth ")
+        items.sections[3].addItem(withName: "Gimel", imageName: "GimelButtonIcon", latexCode: "\\gimel ")
     }
 }
