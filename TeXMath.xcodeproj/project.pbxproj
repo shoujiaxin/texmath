@@ -26,6 +26,7 @@
 		199AF19323C0AACC007E6F40 /* EquationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF19223C0AACC007E6F40 /* EquationItems.swift */; };
 		199AF19623C0CD1F007E6F40 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199AF19523C0CD1F007E6F40 /* SectionHeaderView.xib */; };
 		199AF19823C0CD8F007E6F40 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF19723C0CD8F007E6F40 /* SectionHeaderView.swift */; };
+		199AF19C23C17118007E6F40 /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF19B23C17118007E6F40 /* ViewControllerBase.swift */; };
 		19A8154D2384E156006D6E46 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8154C2384E156006D6E46 /* FunctionViewController.swift */; };
 		19A8154F23855617006D6E46 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A8154E23855617006D6E46 /* OperatorViewController.swift */; };
 		19CC7208237D927400929A15 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC7207237D927400929A15 /* EditorViewController.swift */; };
@@ -57,6 +58,7 @@
 		199AF19223C0AACC007E6F40 /* EquationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItems.swift; sourceTree = "<group>"; };
 		199AF19523C0CD1F007E6F40 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		199AF19723C0CD8F007E6F40 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		199AF19B23C17118007E6F40 /* ViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
 		19A8154C2384E156006D6E46 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		19A8154E23855617006D6E46 /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
 		19CC7207237D927400929A15 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				19F2AD43237F99E4000E5003 /* EquationItemTabViewController.swift */,
+				199AF19B23C17118007E6F40 /* ViewControllerBase.swift */,
 				19F21ECD2380FCCC003A1CC1 /* FractionViewController.swift */,
 				1948FDAB238162E60019E3F0 /* ScriptViewController.swift */,
 				1948FDAD238176D90019E3F0 /* RadicalViewController.swift */,
@@ -307,6 +310,7 @@
 				199258D323900F5700295CF3 /* MatrixViewController.swift in Sources */,
 				192AC4D92383A10200893DBA /* LargeOperatorViewController.swift in Sources */,
 				19CC7208237D927400929A15 /* EditorViewController.swift in Sources */,
+				199AF19C23C17118007E6F40 /* ViewControllerBase.swift in Sources */,
 				19A8154D2384E156006D6E46 /* FunctionViewController.swift in Sources */,
 				1906A15D237FD3EA00772D46 /* EquationItemButton.swift in Sources */,
 			);
@@ -447,7 +451,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
@@ -470,7 +474,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
