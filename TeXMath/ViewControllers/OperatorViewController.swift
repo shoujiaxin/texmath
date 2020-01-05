@@ -17,7 +17,7 @@ class OperatorViewController: ViewControllerBase {
         items.sections[0].addItem(withName: "Equal Equal", imageName: "EqualEqualButtonIcon", latexCode: "== ")
         items.sections[0].addItem(withName: "Plus Equal", imageName: "PlusEqualButtonIcon", latexCode: "+= ")
         items.sections[0].addItem(withName: "Minus Equal", imageName: "MinusEqualButtonIcon", latexCode: "-= ")
-        items.sections[0].addItem(withName: "Delta Equal To", imageName: "DeltaEqualToButtonIcon", latexCode: "\\triangleq ")
+        items.sections[0].addItem(withName: "Delta Equal to", imageName: "DeltaEqualToButtonIcon", latexCode: "\\triangleq ")
 
         items.addSection(withName: "Operator Structures")
         items.sections[1].addItem(withName: "Leftwards Arrow Below", imageName: "LeftwardsArrowBelowButtonIcon", latexCode: "\\xleftarrow{} ")

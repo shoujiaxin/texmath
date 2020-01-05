@@ -8,60 +8,25 @@
 
 import Cocoa
 
-class MatrixViewController: NSViewController {
+class MatrixViewController: ViewControllerBase {
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
 
-    @IBAction func oneByTwoEmptyMatrixButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{matrix} {} & {} \\end{matrix} ")
-    }
+        items.addSection(withName: "Empty Matrices")
+        items.sections[0].addItem(withName: "1x2 Empty Matrix", imageName: "1x2EmptyMatrixButtonIcon", latexCode: "\\begin{matrix} {} & {} \\end{matrix} ")
+        items.sections[0].addItem(withName: "2x1 Empty Matrix", imageName: "2x1EmptyMatrixButtonIcon", latexCode: "\\begin{matrix} {} \\\\ {} \\end{matrix} ")
+        items.sections[0].addItem(withName: "1x3 Empty Matrix", imageName: "1x3EmptyMatrixButtonIcon", latexCode: "\\begin{matrix} {} & {} & {} \\end{matrix} ")
+        items.sections[0].addItem(withName: "3x1 Empty Matrix", imageName: "3x1EmptyMatrixButtonIcon", latexCode: "\\begin{matrix} {} \\\\ {} \\\\ {} \\end{matrix} ")
+        items.sections[0].addItem(withName: "2x2 Empty Matrix", imageName: "2x2EmptyMatrixButtonIcon", latexCode: "\\begin{matrix} {} & {} \\\\ {} & {} \\end{matrix} ")
+        items.sections[0].addItem(withName: "2x3 Empty Matrix", imageName: "2x3EmptyMatrixButtonIcon", latexCode: "\\begin{matrix} {} & {} & {} \\\\ {} & {} & {} \\end{matrix} ")
+        items.sections[0].addItem(withName: "3x2 Empty Matrix", imageName: "3x2EmptyMatrixButtonIcon", latexCode: "\\begin{matrix} {} & {} \\\\ {} & {} \\\\ {} & {} \\end{matrix} ")
+        items.sections[0].addItem(withName: "3x3 Empty Matrix", imageName: "3x3EmptyMatrixButtonIcon", latexCode: "\\begin{matrix} {} & {} & {} \\\\ {} & {} & {} \\\\ {} & {} & {} \\end{matrix} ")
 
-    @IBAction func twoByOneEmptyMatrixButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{matrix} {} \\\\ {} \\end{matrix} ")
-    }
-
-    @IBAction func oneByThreeEmptyMatrixButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{matrix} {} & {} & {} \\end{matrix} ")
-    }
-
-    @IBAction func threeByOneEmptyMatrixButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{matrix} {} \\\\ {} \\\\ {} \\end{matrix} ")
-    }
-
-    @IBAction func twoByTwoEmptyMatrixButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{matrix} {} & {} \\\\ {} & {} \\end{matrix} ")
-    }
-
-    @IBAction func twoByThreeEmptyMatrixButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{matrix} {} & {} & {} \\\\ {} & {} & {} \\end{matrix} ")
-    }
-
-    @IBAction func threeByTwoEmptyMatrixButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{matrix} {} & {} \\\\ {} & {} \\\\ {} & {} \\end{matrix} ")
-    }
-
-    @IBAction func threeByThreeEmptyMatrixButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{matrix} {} & {} & {} \\\\ {} & {} & {} \\\\ {} & {} & {} \\end{matrix} ")
-    }
-
-    @IBAction func empty2x2MatrixInParenthesesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{pmatrix} {} & {} \\\\ {} & {} \\end{pmatrix} ")
-    }
-
-    @IBAction func empty2x2MatrixInBracketsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{bmatrix} {} & {} \\\\ {} & {} \\end{bmatrix} ")
-    }
-
-    @IBAction func empty2x2MatrixInBracesButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{Bmatrix} {} & {} \\\\ {} & {} \\end{Bmatrix} ")
-    }
-
-    @IBAction func empty2x2MatrixInDeterminantButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{vmatrix} {} & {} \\\\ {} & {} \\end{vmatrix} ")
-    }
-
-    @IBAction func empty2x2MatrixInDoubleVerticalBarsButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\begin{Vmatrix} {} & {} \\\\ {} & {} \\end{Vmatrix} ")
+        items.addSection(withName: "Matrices with Brackets")
+        items.sections[1].addItem(withName: "Empty 2x2 Matrix in Parentheses", imageName: "Empty2x2MatrixInParenthesesButtonIcon", latexCode: "\\begin{pmatrix} {} & {} \\\\ {} & {} \\end{pmatrix} ")
+        items.sections[1].addItem(withName: "Empty 2x2 Matrix in Brackets", imageName: "Empty2x2MatrixInBracketsButtonIcon", latexCode: "\\begin{bmatrix} {} & {} \\\\ {} & {} \\end{bmatrix} ")
+        items.sections[1].addItem(withName: "Empty 2x2 Matrix in Braces", imageName: "Empty2x2MatrixInBracesButtonIcon", latexCode: "\\begin{Bmatrix} {} & {} \\\\ {} & {} \\end{Bmatrix} ")
+        items.sections[1].addItem(withName: "Empty 2x2 Matrix in Determinant", imageName: "Empty2x2MatrixInDeterminantButtonIcon", latexCode: "\\begin{vmatrix} {} & {} \\\\ {} & {} \\end{vmatrix} ")
+        items.sections[1].addItem(withName: "Empty 2x2 Matrix in Double Vertical Bars", imageName: "Empty2x2MatrixInDoubleVerticalBarsButtonIcon", latexCode: "\\begin{Vmatrix} {} & {} \\\\ {} & {} \\end{Vmatrix} ")
     }
 }
