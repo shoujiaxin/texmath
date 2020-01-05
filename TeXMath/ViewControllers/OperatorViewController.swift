@@ -8,44 +8,21 @@
 
 import Cocoa
 
-class OperatorViewController: NSViewController {
+class OperatorViewController: ViewControllerBase {
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
 
-    @IBAction func colonEqualButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: ":= ")
-    }
+        items.addSection(withName: "Basic Operators")
+        items.sections[0].addItem(withName: "Colon Equal", imageName: "ColonEqualButtonIcon", latexCode: ":= ")
+        items.sections[0].addItem(withName: "Equal Equal", imageName: "EqualEqualButtonIcon", latexCode: "== ")
+        items.sections[0].addItem(withName: "Plus Equal", imageName: "PlusEqualButtonIcon", latexCode: "+= ")
+        items.sections[0].addItem(withName: "Minus Equal", imageName: "MinusEqualButtonIcon", latexCode: "-= ")
+        items.sections[0].addItem(withName: "Delta Equal To", imageName: "DeltaEqualToButtonIcon", latexCode: "\\triangleq ")
 
-    @IBAction func equalEqualButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "== ")
-    }
-
-    @IBAction func plusEqualButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "+= ")
-    }
-
-    @IBAction func minusEqualButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "-= ")
-    }
-
-    @IBAction func deltaEqualToButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\triangleq ")
-    }
-
-    @IBAction func leftwardsArrowBelowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\xleftarrow{} ")
-    }
-
-    @IBAction func leftwardsArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\xleftarrow[]{} ")
-    }
-
-    @IBAction func rightwardsArrowBelowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\xrightarrow{} ")
-    }
-
-    @IBAction func rightwardsArrowButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\xrightarrow[]{} ")
+        items.addSection(withName: "Operator Structures")
+        items.sections[1].addItem(withName: "Leftwards Arrow Below", imageName: "LeftwardsArrowBelowButtonIcon", latexCode: "\\xleftarrow{} ")
+        items.sections[1].addItem(withName: "Leftwards Arrow", imageName: "LeftwardsArrowButtonIcon", latexCode: "\\xleftarrow[]{} ")
+        items.sections[1].addItem(withName: "Rightwards Arrow Below", imageName: "RightwardsArrowBelowButtonIcon", latexCode: "\\xrightarrow{} ")
+        items.sections[1].addItem(withName: "Rightwards Arrow", imageName: "RightwardsArrowButtonIcon", latexCode: "\\xrightarrow[]{} ")
     }
 }
