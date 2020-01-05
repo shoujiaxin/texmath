@@ -14,7 +14,7 @@ class ViewControllerBase: NSViewController {
     var items = EquationItems()
 
     override func viewWillLayout() {
-        collectionView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
+        collectionView.backgroundColors = [.clear]
     }
 }
 

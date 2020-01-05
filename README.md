@@ -15,6 +15,6 @@
 A simple helper and editor of LaTeX mathematical equations for macOS.
 
 <p align="center">
-  <img width="400" src="images/screenshot1.png">
-  <img width="400" src="images/screenshot2.png">
+  <img width="400" src="images/screenshot_light.png">
+  <img width="400" src="images/screenshot_dark.png">
 </p>
