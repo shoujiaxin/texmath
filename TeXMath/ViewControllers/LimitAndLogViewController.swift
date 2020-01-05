@@ -8,40 +8,18 @@
 
 import Cocoa
 
-class LimitAndLogViewController: NSViewController {
+class LimitAndLogViewController: ViewControllerBase {
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
 
-    @IBAction func logarithmWithEmptyBaseButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\log_{}{} ")
-    }
-
-    @IBAction func logarithmWithNoBaseButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\log{} ")
-    }
-
-    @IBAction func naturalLogarithmButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\ln{} ")
-    }
-
-    @IBAction func limitButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\lim_{}{} ")
-    }
-
-    @IBAction func maximumButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\max{} ")
-    }
-
-    @IBAction func maximumWithBaseButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\max_{}{} ")
-    }
-
-    @IBAction func minimumButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\min{} ")
-    }
-
-    @IBAction func minimumWithBaseButtonClicked(_: Any) {
-        Utils.insertLatex(latexCode: "\\min_{}{} ")
+        items.addSection(withName: "Functions")
+        items.sections[0].addItem(withName: "Logarithm with Empty Base", imageName: "LogarithmWithEmptyBaseButtonIcon", latexCode: "\\log_{}{} ")
+        items.sections[0].addItem(withName: "Logarithm", imageName: "LogarithmWithNoBaseButtonIcon", latexCode: "\\log{} ")
+        items.sections[0].addItem(withName: "Natural Logarithm", imageName: "NaturalLogarithmButtonIcon", latexCode: "\\ln{} ")
+        items.sections[0].addItem(withName: "Limit", imageName: "LimitButtonIcon", latexCode: "\\lim_{}{} ")
+        items.sections[0].addItem(withName: "Maximum", imageName: "MaximumButtonIcon", latexCode: "\\max{} ")
+        items.sections[0].addItem(withName: "Maximum with Base", imageName: "MaximumWithBaseButtonIcon", latexCode: "\\max_{}{} ")
+        items.sections[0].addItem(withName: "Minimum", imageName: "MinimumButtonIcon", latexCode: "\\min{} ")
+        items.sections[0].addItem(withName: "Minimum with Base", imageName: "MinimumWithBaseButtonIcon", latexCode: "\\min_{}{} ")
     }
 }
