@@ -78,7 +78,7 @@
          <ExecutionAction
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
-               title = "Run Script"
+               title = "Bump Build Number"
                scriptText = "cd ${PROJECT_DIR}&#10;agvtool next-version&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
