@@ -19,8 +19,7 @@ class CollectionViewItem: NSCollectionViewItem {
 
             if let itemInfo = itemInfo {
                 button.toolTip = itemInfo.name
-
-                button.image = NSImage(imageLiteralResourceName: itemInfo.imageName)
+                button.image = NSImage(named: NSImage.Name(itemInfo.imageName))
 
                 button.target = self
                 button.action = #selector(buttonClicked)
