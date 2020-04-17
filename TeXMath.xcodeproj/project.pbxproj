@@ -15,6 +15,7 @@
 		194781E223B09A6E00928F3D /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194781E123B09A6E00928F3D /* PreviewView.swift */; };
 		1948FDAC238162E60019E3F0 /* ScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948FDAB238162E60019E3F0 /* ScriptViewController.swift */; };
 		1948FDAE238176D90019E3F0 /* RadicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948FDAD238176D90019E3F0 /* RadicalViewController.swift */; };
+		1958E604244A159B0003C62E /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958E603244A159B0003C62E /* CodeTextView.swift */; };
 		19738CC52393CD2500D518DF /* BracketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19738CC42393CD2500D518DF /* BracketViewController.swift */; };
 		19738CC72393FACE00D518DF /* AccentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19738CC62393FACE00D518DF /* AccentViewController.swift */; };
 		197CB73B23A8F17800A8BC8B /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197CB73A23A8F17800A8BC8B /* SymbolViewController.swift */; };
@@ -46,6 +47,7 @@
 		194781E123B09A6E00928F3D /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		1948FDAB238162E60019E3F0 /* ScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptViewController.swift; sourceTree = "<group>"; };
 		1948FDAD238176D90019E3F0 /* RadicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadicalViewController.swift; sourceTree = "<group>"; };
+		1958E603244A159B0003C62E /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		19738CC42393CD2500D518DF /* BracketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketViewController.swift; sourceTree = "<group>"; };
 		19738CC62393FACE00D518DF /* AccentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentViewController.swift; sourceTree = "<group>"; };
 		197CB73A23A8F17800A8BC8B /* SymbolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		199AF18B23C07E60007E6F40 /* EditorView */ = {
 			isa = PBXGroup;
 			children = (
+				1958E603244A159B0003C62E /* CodeTextView.swift */,
 				19CC7207237D927400929A15 /* EditorViewController.swift */,
 			);
 			path = EditorView;
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1958E604244A159B0003C62E /* CodeTextView.swift in Sources */,
 				19F21ECE2380FCCC003A1CC1 /* FractionViewController.swift in Sources */,
 				19738CC72393FACE00D518DF /* AccentViewController.swift in Sources */,
 				19738CC52393CD2500D518DF /* BracketViewController.swift in Sources */,

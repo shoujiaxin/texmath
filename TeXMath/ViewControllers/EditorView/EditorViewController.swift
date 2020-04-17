@@ -11,7 +11,7 @@ import WebKit
 
 class EditorViewController: NSViewController, NSTextViewDelegate {
     @IBOutlet var previewView: PreviewView!
-    @IBOutlet var codeTextView: NSTextView!
+    @IBOutlet var codeTextView: CodeTextView!
 
     override func viewWillAppear() {
         super.viewWillAppear()
@@ -47,29 +47,5 @@ class EditorViewController: NSViewController, NSTextViewDelegate {
 
     func textDidChange(_: Notification) {
         previewView.show(latex: codeTextView.string)
-    }
-
-    func textView(_: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
-        switch commandSelector {
-        case #selector(insertNewline(_:)):
-            Utils.insertLatex(latexCode: "\\\\")
-            return true
-        case #selector(insertTab(_:)):
-            // Get sub-string after current cursor position
-            let cursorPosition = codeTextView.selectedRange().location
-            let str = codeTextView.string[codeTextView.string.index(codeTextView.string.startIndex, offsetBy: cursorPosition)...]
-
-            if let firstIndex = str.range(of: "{}") {
-                // Move cursor to the middle of the first "{}"
-                let offset = str.distance(from: str.startIndex, to: firstIndex.lowerBound) + 1
-                codeTextView.setSelectedRange(NSRange(location: cursorPosition + offset, length: 0))
-            } else {
-                // Move to the end
-                codeTextView.moveToEndOfLine(nil)
-            }
-            return true
-        default:
-            return false
-        }
     }
 }
