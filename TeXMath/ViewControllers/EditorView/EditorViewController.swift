@@ -9,7 +9,7 @@
 import Cocoa
 import WebKit
 
-class EditorViewController: NSViewController, NSTextViewDelegate {
+class EditorViewController: NSViewController {
     @IBOutlet var previewView: PreviewView!
     @IBOutlet var codeTextView: CodeTextView!
 
@@ -42,7 +42,9 @@ class EditorViewController: NSViewController, NSTextViewDelegate {
             pasteboard.setString(latexCode, forType: NSPasteboard.PasteboardType.string)
         }
     }
+}
 
+extension EditorViewController: NSTextViewDelegate {
     func textDidChange(_: Notification) {
         previewView.show(latex: codeTextView.string)
     }

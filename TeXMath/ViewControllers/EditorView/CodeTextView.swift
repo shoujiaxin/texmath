@@ -84,6 +84,10 @@ class CodeTextView: NSTextView {
         }
     }
 
+    override func makeTouchBar() -> NSTouchBar? {
+        return nil
+    }
+
     public func insertLatex(_ str: String) {
         var cursorPosition = selectedRange().lowerBound
         let index = string.index(string.startIndex, offsetBy: cursorPosition)
