@@ -19,7 +19,7 @@ class CodeTextView: NSTextView {
     }
 
     override func insertNewline(_: Any?) {
-        Utils.insertLatex(latexCode: "\\\\ ")
+        insertLatex("\\\\ ")
     }
 
     override func insertTab(_ sender: Any?) {
@@ -81,6 +81,39 @@ class CodeTextView: NSTextView {
             }
         } else {
             super.insertText(string, replacementRange: replacementRange)
+        }
+    }
+
+    public func insertLatex(_ str: String) {
+        var cursorPosition = selectedRange().lowerBound
+        let index = string.index(string.startIndex, offsetBy: cursorPosition)
+
+        // Insert a spcae before the code
+        if cursorPosition != 0, string[string.index(before: index)] != " " {
+            super.insertText(" ", replacementRange: selectedRange())
+            cursorPosition += 1
+        }
+        // Insert code to current cursor position
+        super.insertText(str, replacementRange: selectedRange())
+
+        // Move cursor to the middle of the first brackets
+        var bracketsIndex = str.endIndex
+        if let range = str.range(of: "()") {
+            bracketsIndex = min(bracketsIndex, range.lowerBound)
+        }
+        if let range = str.range(of: "[]") {
+            bracketsIndex = min(bracketsIndex, range.lowerBound)
+        }
+        if let range = str.range(of: "{}") {
+            bracketsIndex = min(bracketsIndex, range.lowerBound)
+        }
+
+        if bracketsIndex == str.endIndex {
+            moveToEndOfLine(nil)
+        } else {
+            // Move the cursor to the middle of the first "()", "[]" or "{}"
+            let offset = str.distance(from: str.startIndex, to: bracketsIndex) + 1
+            setSelectedRange(NSRange(location: cursorPosition + offset, length: 0))
         }
     }
 

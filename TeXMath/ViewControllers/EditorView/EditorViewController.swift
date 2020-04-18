@@ -26,8 +26,6 @@ class EditorViewController: NSViewController, NSTextViewDelegate {
 
         codeTextView.delegate = self
         codeTextView.font = NSFont(name: "Menlo", size: 14)
-
-        Utils.codeTextView = codeTextView
     }
 
     @IBAction func clearButtonClicked(_: Any) {

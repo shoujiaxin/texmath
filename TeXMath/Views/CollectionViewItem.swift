@@ -32,6 +32,8 @@ class CollectionViewItem: NSCollectionViewItem {
     }
 
     @objc func buttonClicked() {
-        Utils.insertLatex(latexCode: itemInfo!.latexCode)
+        let mainWindowController = NSApp.mainWindow?.windowController
+        let editorViewController = mainWindowController?.contentViewController?.children[1] as? EditorViewController
+        editorViewController?.codeTextView.insertLatex(itemInfo!.latexCode)
     }
 }
