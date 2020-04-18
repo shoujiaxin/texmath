@@ -12,8 +12,8 @@ class FractionViewController: ViewControllerBase {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        items.addSection(withName: "Fractions")
-        items.sections[0].addItem(withName: "Stacked Fraction", imageName: "StackedFractionButtonIcon", latexCode: "\\frac{}{} ")
-        items.sections[0].addItem(withName: "Linear Fraction", imageName: "LinearFractionButtonIcon", latexCode: "{}/{} ")
+        addSection(withName: "Fractions")
+        sections[0].addItem(withName: "Stacked Fraction", imageName: "StackedFractionButtonIcon", latexCode: "\\frac{}{} ")
+        sections[0].addItem(withName: "Linear Fraction", imageName: "LinearFractionButtonIcon", latexCode: "{}/{} ")
     }
 }

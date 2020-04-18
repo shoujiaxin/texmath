@@ -23,7 +23,7 @@
 		199258D323900F5700295CF3 /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199258D223900F5700295CF3 /* MatrixViewController.swift */; };
 		199AF19023C097FA007E6F40 /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF18E23C097FA007E6F40 /* CollectionViewItem.swift */; };
 		199AF19123C097FA007E6F40 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199AF18F23C097FA007E6F40 /* CollectionViewItem.xib */; };
-		199AF19323C0AACC007E6F40 /* EquationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF19223C0AACC007E6F40 /* EquationItems.swift */; };
+		199AF19323C0AACC007E6F40 /* EquationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF19223C0AACC007E6F40 /* EquationItem.swift */; };
 		199AF19623C0CD1F007E6F40 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199AF19523C0CD1F007E6F40 /* SectionHeaderView.xib */; };
 		199AF19823C0CD8F007E6F40 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF19723C0CD8F007E6F40 /* SectionHeaderView.swift */; };
 		199AF19C23C17118007E6F40 /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AF19B23C17118007E6F40 /* ViewControllerBase.swift */; };
@@ -54,7 +54,7 @@
 		199258D223900F5700295CF3 /* MatrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
 		199AF18E23C097FA007E6F40 /* CollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
 		199AF18F23C097FA007E6F40 /* CollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
-		199AF19223C0AACC007E6F40 /* EquationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItems.swift; sourceTree = "<group>"; };
+		199AF19223C0AACC007E6F40 /* EquationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationItem.swift; sourceTree = "<group>"; };
 		199AF19523C0CD1F007E6F40 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		199AF19723C0CD8F007E6F40 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		199AF19B23C17118007E6F40 /* ViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		199AF19423C0AAD1007E6F40 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				199AF19223C0AACC007E6F40 /* EquationItems.swift */,
+				199AF19223C0AACC007E6F40 /* EquationItem.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				19F5D341237BF6CC004CDF73 /* AppDelegate.swift in Sources */,
 				1985FEE323954295002DEF65 /* MainWindowController.swift in Sources */,
 				192AC4DB2383C81A00893DBA /* LimitAndLogViewController.swift in Sources */,
-				199AF19323C0AACC007E6F40 /* EquationItems.swift in Sources */,
+				199AF19323C0AACC007E6F40 /* EquationItem.swift in Sources */,
 				19F2AD44237F99E4000E5003 /* EquationItemTabViewController.swift in Sources */,
 				199258D323900F5700295CF3 /* MatrixViewController.swift in Sources */,
 				192AC4D92383A10200893DBA /* LargeOperatorViewController.swift in Sources */,
@@ -425,7 +425,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
@@ -449,7 +449,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;

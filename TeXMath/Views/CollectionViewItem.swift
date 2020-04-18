@@ -11,15 +11,15 @@ import Cocoa
 class CollectionViewItem: NSCollectionViewItem {
     @IBOutlet var button: EquationItemButton!
 
-    var itemInfo: (name: String, imageName: String, latexCode: String)? {
+    var item: EquationItem? {
         didSet {
             guard isViewLoaded else {
                 return
             }
 
-            if let itemInfo = itemInfo {
-                button.toolTip = itemInfo.name
-                button.image = NSImage(named: NSImage.Name(itemInfo.imageName))
+            if let item = item {
+                button.toolTip = item.name!
+                button.image = NSImage(named: NSImage.Name(item.imageName!))
 
                 button.target = self
                 button.action = #selector(buttonClicked)
@@ -34,6 +34,6 @@ class CollectionViewItem: NSCollectionViewItem {
     @objc func buttonClicked() {
         let mainWindowController = NSApp.mainWindow?.windowController
         let editorViewController = mainWindowController?.contentViewController?.children[1] as? EditorViewController
-        editorViewController?.codeTextView.insertLatex(itemInfo!.latexCode)
+        editorViewController?.codeTextView.insertLatex(item!.latexCode!)
     }
 }

@@ -11,22 +11,29 @@ import Cocoa
 class ViewControllerBase: NSViewController {
     @IBOutlet var collectionView: NSCollectionView!
 
-    var items = EquationItems()
+    var sections: [EquationItemSection] = []
 
     override func viewWillLayout() {
         super.viewWillLayout()
 
         collectionView.backgroundColors = [.clear]
     }
+
+    func addSection(withName name: String) {
+        let section = EquationItemSection()
+        section.name = name
+
+        sections.append(section)
+    }
 }
 
 extension ViewControllerBase: NSCollectionViewDataSource {
     func numberOfSections(in _: NSCollectionView) -> Int {
-        return items.numberOfSections
+        return sections.count
     }
 
     func collectionView(_: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.numberOfItems(in: section)
+        return sections[section].items.count
     }
 
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
@@ -35,7 +42,7 @@ extension ViewControllerBase: NSCollectionViewDataSource {
             return item
         }
 
-        collectionViewItem.itemInfo = items.item(in: indexPath.section, at: indexPath.item)
+        collectionViewItem.item = sections[indexPath.section].items[indexPath.item]
 
         return collectionViewItem
     }
@@ -43,7 +50,7 @@ extension ViewControllerBase: NSCollectionViewDataSource {
     func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind _: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
         let view = collectionView.makeSupplementaryView(ofKind: NSCollectionView.elementKindSectionHeader, withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "SectionHeaderView"), for: indexPath) as! SectionHeaderView
 
-        view.sectionTitle.stringValue = items.sections[indexPath.section].name!
+        view.sectionTitle.stringValue = sections[indexPath.section].name!
 
         return view
     }
