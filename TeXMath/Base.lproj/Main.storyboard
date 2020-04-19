@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="16002"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
         <plugIn identifier="com.apple.WebKit2IBPlugin" version="16096"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -196,12 +198,61 @@
                     <window key="window" title="TeXMath" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="940" height="462"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
+                    <touchBar key="touchBar" id="Uxo-43-RIf">
+                        <touchBarItems>
+                            <touchBarItem id="cQu-xs-E7u">
+                                <viewController key="viewController" id="mMA-Z2-DEU">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="poH-1f-DqO">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarDeleteTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="heG-Q9-njT">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="clearButtonTouched:" target="B8D-0N-5wS" id="TdY-yU-Vfk"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="hZg-fe-gKW"/>
+                            <touchBarItem id="H4M-gL-bPR">
+                                <viewController key="viewController" id="EM4-eY-oea">
+                                    <scrubber key="view" mode="1" showsArrowButtons="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ps5-zE-gyE">
+                                        <rect key="frame" x="0.0" y="0.0" width="509" height="30"/>
+                                        <scrubberFlowLayout key="scrubberLayout">
+                                            <size key="itemSize" width="60" height="30"/>
+                                        </scrubberFlowLayout>
+                                        <connections>
+                                            <outlet property="dataSource" destination="B8D-0N-5wS" id="Y1G-vK-dAe"/>
+                                            <outlet property="delegate" destination="B8D-0N-5wS" id="x0t-Ny-iKT"/>
+                                        </connections>
+                                    </scrubber>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="dHi-5M-Ff7"/>
+                            <touchBarItem id="09l-mJ-T8r">
+                                <viewController key="viewController" id="fSU-Wf-iW2">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-U4-axz">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarRefreshTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="arN-dp-ZQI">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="reloadButtonTouched:" target="B8D-0N-5wS" id="fyF-JD-Hkw"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
                     <connections>
+                        <outlet property="scrubber" destination="ps5-zE-gyE" id="mwp-ui-04k"/>
                         <segue destination="chT-FY-LVo" kind="relationship" relationship="window.shadowedContentViewController" id="cbf-9B-fWn"/>
                     </connections>
                 </windowController>
@@ -1058,6 +1109,8 @@
         <image name="LargeOperatorTabIcon" width="32" height="32"/>
         <image name="LimitAndLogTabIcon" width="32" height="32"/>
         <image name="MatrixTabIcon" width="32" height="32"/>
+        <image name="NSTouchBarDeleteTemplate" width="15" height="30"/>
+        <image name="NSTouchBarRefreshTemplate" width="19" height="30"/>
         <image name="OperatorTabIcon" width="32" height="32"/>
         <image name="RadicalTabIcon" width="32" height="32"/>
         <image name="ScriptTabIcon" width="32" height="32"/>

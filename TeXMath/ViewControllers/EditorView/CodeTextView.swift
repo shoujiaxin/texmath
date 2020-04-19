@@ -18,9 +18,9 @@ class CodeTextView: NSTextView {
         super.deleteBackward(sender)
     }
 
-    override func insertNewline(_: Any?) {
-        insertLatex("\\\\ ")
-    }
+//    override func insertNewline(_: Any?) {
+//        insertLatex("\\\\ ")
+//    }
 
     override func insertTab(_ sender: Any?) {
         // Get sub-string after current cursor position

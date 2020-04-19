@@ -28,8 +28,8 @@ class EditorViewController: NSViewController {
         codeTextView.font = NSFont(name: "Menlo", size: 14)
     }
 
-    @IBAction func clearButtonClicked(_: Any) {
-        codeTextView.selectAll(nil)
+    @IBAction func clearButtonClicked(_ sender: Any) {
+        codeTextView.selectAll(sender)
         codeTextView.insertText("", replacementRange: codeTextView.selectedRange())
     }
 

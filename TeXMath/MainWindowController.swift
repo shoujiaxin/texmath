@@ -9,6 +9,10 @@
 import Cocoa
 
 class MainWindowController: NSWindowController {
+    @IBOutlet var scrubber: NSScrubber!
+
+    private var tabViewController: EquationItemTabViewController!
+
     override func windowDidLoad() {
         super.windowDidLoad()
 
@@ -17,5 +21,50 @@ class MainWindowController: NSWindowController {
         if let screenFrame = window?.screen?.frame {
             window?.setFrame(NSRect(x: (screenFrame.width - windowWidth) / 2, y: (screenFrame.height - windowHeight) / 2, width: windowWidth, height: windowHeight), display: true)
         }
+
+        tabViewController = contentViewController?.children[0] as? EquationItemTabViewController
+
+        scrubber.selectionOverlayStyle = .outlineOverlay
+        scrubber.selectedIndex = tabViewController.selectedTabViewItemIndex
+    }
+
+    @IBAction func clearButtonTouched(_ sender: Any) {
+        let mainWindowController = NSApp.mainWindow?.windowController
+        let editorViewController = mainWindowController?.contentViewController?.children[1] as! EditorViewController
+        editorViewController.codeTextView.selectAll(sender)
+        editorViewController.codeTextView.insertText("", replacementRange: editorViewController.codeTextView.selectedRange())
+    }
+
+    @IBAction func reloadButtonTouched(_: Any) {
+        let mainWindowController = NSApp.mainWindow?.windowController
+        let editorViewController = mainWindowController?.contentViewController?.children[1] as! EditorViewController
+        editorViewController.previewView.reload()
+    }
+}
+
+extension MainWindowController: NSScrubberDataSource {
+    func numberOfItems(for _: NSScrubber) -> Int {
+        return tabViewController.tabViewItems.count
+    }
+
+    func scrubber(_: NSScrubber, viewForItemAt index: Int) -> NSScrubberItemView {
+        let view = NSScrubberImageItemView()
+
+        if let imageName = tabViewController.tabViewItems[index].image?.name(), let image = NSImage(named: imageName)?.copy() as? NSImage {
+            view.imageView.imageScaling = .scaleNone
+
+            image.size = NSSize(width: 18, height: 18)
+            image.tint(withColor: NSColor.white)
+
+            view.image = image
+        }
+
+        return view
+    }
+}
+
+extension MainWindowController: NSScrubberDelegate {
+    func scrubber(_: NSScrubber, didSelectItemAt index: Int) {
+        tabViewController.selectedTabViewItemIndex = index
     }
 }
