@@ -86,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				199AF18723C07D9D007E6F40 /* TabView */,
-				199AF18B23C07E60007E6F40 /* EditorView */,
+				19CC7207237D927400929A15 /* EditorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -116,7 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				199AF18923C07E10007E6F40 /* TabView */,
-				199AF18A23C07E23007E6F40 /* PreviewView */,
+				194781E123B09A6E00928F3D /* PreviewView.swift */,
+				1958E603244A159B0003C62E /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,31 +132,6 @@
 				199AF19523C0CD1F007E6F40 /* SectionHeaderView.xib */,
 			);
 			name = TabView;
-			sourceTree = "<group>";
-		};
-		199AF18A23C07E23007E6F40 /* PreviewView */ = {
-			isa = PBXGroup;
-			children = (
-				194781E123B09A6E00928F3D /* PreviewView.swift */,
-			);
-			path = PreviewView;
-			sourceTree = "<group>";
-		};
-		199AF18B23C07E60007E6F40 /* EditorView */ = {
-			isa = PBXGroup;
-			children = (
-				1958E603244A159B0003C62E /* CodeTextView.swift */,
-				19CC7207237D927400929A15 /* EditorViewController.swift */,
-			);
-			path = EditorView;
-			sourceTree = "<group>";
-		};
-		199AF19423C0AAD1007E6F40 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				199AF19223C0AACC007E6F40 /* EquationItem.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		19F5D334237BF6CC004CDF73 = {
@@ -182,7 +158,7 @@
 				19F5D346237BF6D0004CDF73 /* Main.storyboard */,
 				19F5D340237BF6CC004CDF73 /* AppDelegate.swift */,
 				1985FEE223954295002DEF65 /* MainWindowController.swift */,
-				199AF19423C0AAD1007E6F40 /* Utils */,
+				199AF19223C0AACC007E6F40 /* EquationItem.swift */,
 				199AF18823C07DD4007E6F40 /* Views */,
 				199AF18623C07D67007E6F40 /* ViewControllers */,
 				19F5D349237BF6D0004CDF73 /* Info.plist */,
@@ -425,7 +401,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
@@ -449,7 +425,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TeXMath/Info.plist;
