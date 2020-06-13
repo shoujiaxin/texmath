@@ -1,22 +1,12 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "filename" : "UppercaseLambdaButtonIcon_36x36.png",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "UppercaseLambdaButtonIcon_36x36@2x.png",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "UppercaseLambdaButtonIcon.pdf",
+      "idiom" : "universal"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }
