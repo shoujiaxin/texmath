@@ -11,7 +11,8 @@ import Cocoa
 class MainWindowController: NSWindowController {
     @IBOutlet var scrubber: NSScrubber!
 
-    private var tabViewController: EquationItemTabViewController!
+    private weak var tabViewController: EquationItemTabViewController!
+    private weak var editorViewController: EditorViewController!
 
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -23,24 +24,24 @@ class MainWindowController: NSWindowController {
         }
 
         tabViewController = contentViewController?.children[0] as? EquationItemTabViewController
+        editorViewController = contentViewController?.children[1] as? EditorViewController
 
+        scrubber.isContinuous = true
         scrubber.selectionOverlayStyle = .outlineOverlay
         scrubber.selectedIndex = tabViewController.selectedTabViewItemIndex
     }
 
     @IBAction func clearButtonTouched(_ sender: Any) {
-        let mainWindowController = NSApp.mainWindow?.windowController
-        let editorViewController = mainWindowController?.contentViewController?.children[1] as! EditorViewController
         editorViewController.codeTextView.selectAll(sender)
         editorViewController.codeTextView.insertText("", replacementRange: editorViewController.codeTextView.selectedRange())
     }
 
     @IBAction func reloadButtonTouched(_: Any) {
-        let mainWindowController = NSApp.mainWindow?.windowController
-        let editorViewController = mainWindowController?.contentViewController?.children[1] as! EditorViewController
         editorViewController.previewView.reload()
     }
 }
+
+// MARK: NSScrubberDataSource
 
 extension MainWindowController: NSScrubberDataSource {
     func numberOfItems(for _: NSScrubber) -> Int {
@@ -62,6 +63,8 @@ extension MainWindowController: NSScrubberDataSource {
         return view
     }
 }
+
+// MARK: NSScrubberDelegate
 
 extension MainWindowController: NSScrubberDelegate {
     func scrubber(_: NSScrubber, didSelectItemAt index: Int) {

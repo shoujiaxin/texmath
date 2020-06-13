@@ -25,7 +25,6 @@ class EquationItemTabViewController: NSTabViewController {
 
     override func tabView(_: NSTabView, didSelect _: NSTabViewItem?) {
         if let mainWindowController = NSApp.mainWindow?.windowController as? MainWindowController {
-            mainWindowController.scrubber.scrollItem(at: selectedTabViewItemIndex, to: .center)
             mainWindowController.scrubber.selectedIndex = selectedTabViewItemIndex
         }
     }
