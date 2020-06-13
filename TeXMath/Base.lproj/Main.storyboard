@@ -205,6 +205,20 @@
                     </window>
                     <touchBar key="touchBar" id="Uxo-43-RIf">
                         <touchBarItems>
+                            <touchBarItem id="ehK-x6-HB1">
+                                <viewController key="viewController" id="hxU-lY-1Mp">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cJe-el-aoc">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" title="Copy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="omk-ug-fK9">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="copyButtonTouched:" target="B8D-0N-5wS" id="gXo-Ew-xkU"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
                             <touchBarItem id="cQu-xs-E7u">
                                 <viewController key="viewController" id="mMA-Z2-DEU">
                                     <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="poH-1f-DqO">
@@ -223,7 +237,7 @@
                             <touchBarItem id="H4M-gL-bPR">
                                 <viewController key="viewController" id="EM4-eY-oea">
                                     <scrubber key="view" mode="1" itemAlignment="3" showsArrowButtons="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ps5-zE-gyE">
-                                        <rect key="frame" x="0.0" y="0.0" width="509" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="429" height="30"/>
                                         <scrubberFlowLayout key="scrubberLayout">
                                             <size key="itemSize" width="60" height="30"/>
                                         </scrubberFlowLayout>

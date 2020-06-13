@@ -32,8 +32,11 @@ class MainWindowController: NSWindowController {
     }
 
     @IBAction func clearButtonTouched(_ sender: Any) {
-        editorViewController.codeTextView.selectAll(sender)
-        editorViewController.codeTextView.insertText("", replacementRange: editorViewController.codeTextView.selectedRange())
+        editorViewController.clearButtonClicked(sender)
+    }
+
+    @IBAction func copyButtonTouched(_ sender: Any) {
+        editorViewController.copyButtonClicked(sender)
     }
 
     @IBAction func reloadButtonTouched(_: Any) {
