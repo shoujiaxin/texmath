@@ -10,7 +10,7 @@ import Cocoa
 import WebKit
 
 class EditorViewController: NSViewController {
-    @IBOutlet var previewView: PreviewView!
+    @IBOutlet var previewView: WKWebView!
     @IBOutlet var codeTextView: CodeTextView!
 
     override func viewWillAppear() {
@@ -46,6 +46,59 @@ class EditorViewController: NSViewController {
 
 extension EditorViewController: NSTextViewDelegate {
     func textDidChange(_: Notification) {
-        previewView.show(latex: codeTextView.string)
+        let htmlStr = """
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <script>
+                MathJax = {
+                    options: {
+                        enableMenu: false
+                    }
+                };
+            </script>
+            <script type="text/javascript" id="MathJax-script" async
+                src="Contents/Resources/MathJax/es5/tex-svg.js">
+                </script>
+
+            <style>
+                :root {
+                    color-scheme: light dark;
+                }
+
+                body,
+                html {
+                    height: 100%;
+                    margin: 0%;
+                }
+
+                .container {
+                    align-items: center;
+                    display: flex;
+                    height: 100%;
+                    justify-content: center;
+                }
+
+                .equation {
+                    font-size: 18pt;
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="container">
+                <div class="equation">
+                    \\begin{equation}
+                    \(codeTextView.string)
+                    \\end{equation}
+                </div>
+            </div>
+        </body>
+
+        </html>
+        """
+
+        previewView.loadHTMLString(htmlStr, baseURL: Bundle.main.bundleURL)
     }
 }
