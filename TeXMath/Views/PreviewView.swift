@@ -25,7 +25,33 @@ class PreviewView: WKWebView {
     }
 
     func show(latex: String) {
-        let htmlStr = "<!DOCTYPE html><head><meta charset=\"utf-8\"><script>MathJax = {tex: { inlineMath: [['$', '$'], ['\\\\(', '\\\\)']] }, options: { renderActions: { addMenu: [0] } }};</script><script async src=\"Contents/Resources/MathJax-3.0.0/es5/tex-svg.js\"></script></head><body><div style=\"background-color:transparent; font-size: 18pt; color: \(NSColor.textColor.hexValue); text-align:center;\">$$\\begin{equation}\(latex)\\end{equation}$$</div></body>"
+        let htmlStr = """
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <script>
+                MathJax = {
+                    options: {
+                        enableMenu: false
+                    }
+                };
+            </script>
+            <script type="text/javascript" id="MathJax-script" async
+                src="Contents/Resources/MathJax/es5/tex-svg.js">
+                </script>
+        </head>
+
+        <body>
+            <div style="background-color: transparent; color: \(NSColor.textColor.hexValue); font-size: 18pt; text-align: center;">
+                \\begin{equation}
+                \(latex)
+                \\end{equation}
+            </div>
+        </body>
+
+        </html>
+        """
 
         loadHTMLString(htmlStr, baseURL: Bundle.main.bundleURL)
 
