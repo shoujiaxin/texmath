@@ -34,6 +34,7 @@
 		19F5D345237BF6D0004CDF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D344237BF6D0004CDF73 /* Assets.xcassets */; };
 		19F5D348237BF6D0004CDF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5D346237BF6D0004CDF73 /* Main.storyboard */; };
 		294DAE37250B8D1C00D7D748 /* MathJax in Resources */ = {isa = PBXBuildFile; fileRef = 294DAE36250B8D1C00D7D748 /* MathJax */; };
+		294DAE40250BAD6F00D7D748 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294DAE3F250BAD6F00D7D748 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		19F5D349237BF6D0004CDF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19F5D34A237BF6D0004CDF73 /* TeXMath.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TeXMath.entitlements; sourceTree = "<group>"; };
 		294DAE36250B8D1C00D7D748 /* MathJax */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MathJax; sourceTree = "<group>"; };
+		294DAE3F250BAD6F00D7D748 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294DAE40250BAD6F00D7D748 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				19F5D33F237BF6CC004CDF73 /* TeXMath */,
+				294DAE3E250BAD6F00D7D748 /* Frameworks */,
 				19F5D33E237BF6CC004CDF73 /* Products */,
 				294DAE36250B8D1C00D7D748 /* MathJax */,
 			);
@@ -162,6 +166,14 @@
 				19F5D34A237BF6D0004CDF73 /* TeXMath.entitlements */,
 			);
 			path = TeXMath;
+			sourceTree = "<group>";
+		};
+		294DAE3E250BAD6F00D7D748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				294DAE3F250BAD6F00D7D748 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
